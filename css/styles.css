@@ -11,20 +11,6 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
-.menu {
-  background-color: cyan;
-}
-.menu ul {
-  list-style: none;
-}
-.menu li {
-  display: block;
-  float: left;
-  border: 1px solid black;
-}
-.selected {
-  background-color: white;
-}
 @media (max-width: 960px) {
   body {
     width: 100%;
