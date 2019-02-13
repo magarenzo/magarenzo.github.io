@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
+body {
+  font-family: 'Anton', sans-serif;
+}
+@media (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+}
