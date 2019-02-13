@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Anton);
 body {
   font-family: 'Anton', sans-serif;
+  background-color: white;
+  color: cyan;
+}
+#menu {
+  background-color: cyan;
+  color: white;
+}
+#selected {
+  background-color: white;
+  color: cyan;
 }
 @media (max-width: 960px) {
   body {
