@@ -1,5 +1,5 @@
 # magarenzo.github.io
-Source for my current website hosted at github.io
+Source for my current static website hosted at [magarenzo.github.io](https://magarenzo.github.io)
 
 ---
 
@@ -14,3 +14,15 @@ Source for my current website hosted at github.io
 * [`mmenu`](http://mmenu.frebsite.nl/)
 
 * [`ScrollReveal`](https://scrollrevealjs.org/)
+
+---
+
+<h3>To Do:</h3>
+
+* Reconstruct objects (classes vs IDs, etc.)
+
+* Remove fade in
+
+* Remove scroll
+
+* Add volunteer shout-out
