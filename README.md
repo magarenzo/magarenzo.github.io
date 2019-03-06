@@ -12,3 +12,9 @@ Source for my current static website hosted at [magarenzo.github.io](https://mag
 * [`jQuery`](https://jquery.com/)
 
 * [`mmenu`](http://mmenu.frebsite.nl/)
+
+---
+
+<h3>TODO:</h3>
+
+* Remove use of Formspree and implement own contact form
