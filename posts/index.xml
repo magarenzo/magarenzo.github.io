@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Michael A. Agarenzo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2019 13:28:55 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 21 Mar 2019 20:28:55 -0400</lastBuildDate>
     
 	<atom:link href="https://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>Welcome!</title>
       <link>https://localhost:1313/posts/welcome/</link>
-      <pubDate>Tue, 19 Mar 2019 13:28:55 -0400</pubDate>
+      <pubDate>Thu, 21 Mar 2019 20:28:55 -0400</pubDate>
       
       <guid>https://localhost:1313/posts/welcome/</guid>
       <description>This is the beginnings of my website&amp;rsquo;s migration back to Hugo to start up my blog again. Hugo is &amp;ldquo;the world&amp;rsquo;s fastest framework for building websites&amp;rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.
-If you didn&amp;rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.</description>
+If you don&amp;rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.</description>
     </item>
     
   </channel>

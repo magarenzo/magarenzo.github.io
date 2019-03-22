@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://localhost:1313/posts/welcome/</loc>
+    <lastmod>2019-03-21T20:28:55-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://localhost:1313/more/</loc>
     <lastmod>2019-03-19T14:10:14-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -24,13 +31,6 @@
   </url>
   
   <url>
-    <loc>https://localhost:1313/posts/welcome/</loc>
-    <lastmod>2019-03-19T13:28:55-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://localhost:1313/about/</loc>
     <lastmod>2019-03-19T11:23:07-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -45,7 +45,7 @@
   
   <url>
     <loc>https://localhost:1313/posts/</loc>
-    <lastmod>2019-03-19T13:28:55-04:00</lastmod>
+    <lastmod>2019-03-21T20:28:55-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -58,7 +58,7 @@
   
   <url>
     <loc>https://localhost:1313/</loc>
-    <lastmod>2019-03-19T14:10:14-04:00</lastmod>
+    <lastmod>2019-03-21T20:28:55-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
