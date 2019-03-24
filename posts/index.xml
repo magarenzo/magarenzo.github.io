@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on magarenzo.github.io</title>
+    <title>Posts on magarenzo.github.io</title>
     <link>https://magarenzo.github.io/posts/</link>
-    <description>Recent content in Blog on magarenzo.github.io</description>
+    <description>Recent content in Posts on magarenzo.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Mar 2019 20:28:55 -0400</lastBuildDate>
