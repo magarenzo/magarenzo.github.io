@@ -216,7 +216,7 @@ Being that I had to span multiple resources to gather all of the information I n
 mysql -u username -ppassword -h destination databaseName &gt; schema.sql
 </code></pre>
 
-<p>Alternatively, you can dump the contents of the source database directly into a pipe to the destination database, which is my preferred method. Again, this method could be limited by your network, especially if you are transferring a large database.</p>
+<p>Alternatively, you can dump the contents of the source database directly into a pipe to the destination database, which is my preferred method. This method could possibly be limited by your network, especially if you are transferring a large database.</p>
 
 <pre><code>mysqldump -u username -ppassword -h source databaseName | mysql -u username -ppassword -h desination databaseName
 </code></pre>
