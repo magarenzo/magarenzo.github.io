@@ -6,9 +6,3 @@ Source for my current static website hosted at [magarenzo.github.io](https://mag
 <h3>Created With:</h3>
 
 * [`Hugo`](https://gohugo.io/)
-
----
-
-<h3>TODO:</h3>
-
-* Implement subscribe function

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>magarenzo.github.io  | Welcome!</title>
+    <title>magarenzo.github.io  | Migrating MySQL Database and Users</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -28,30 +28,42 @@
 
     
 
-    <meta property="og:title" content="Welcome!" />
-<meta property="og:description" content="This is the beginnings of my website&rsquo;s migration back to Hugo to start up my blog again. Hugo is &ldquo;the world&rsquo;s fastest framework for building websites&rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.
-If you don&rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer." />
+    <meta property="og:title" content="Migrating MySQL Database and Users" />
+<meta property="og:description" content="MySQL Version: 5.7
+Linux Versions:
+ RHEL 6
+ Ubuntu 14
+  I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.
+Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://magarenzo.github.io/posts/welcome/" />
-<meta property="article:published_time" content="2019-03-21T20:28:55-04:00"/>
-<meta property="article:modified_time" content="2019-03-21T20:28:55-04:00"/>
+<meta property="og:url" content="https://magarenzo.github.io/posts/migrating-mysql-database-and-users/" />
+<meta property="article:published_time" content="2019-03-27T12:28:55-04:00"/>
+<meta property="article:modified_time" content="2019-03-27T12:28:55-04:00"/>
 
-<meta itemprop="name" content="Welcome!">
-<meta itemprop="description" content="This is the beginnings of my website&rsquo;s migration back to Hugo to start up my blog again. Hugo is &ldquo;the world&rsquo;s fastest framework for building websites&rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.
-If you don&rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.">
+<meta itemprop="name" content="Migrating MySQL Database and Users">
+<meta itemprop="description" content="MySQL Version: 5.7
+Linux Versions:
+ RHEL 6
+ Ubuntu 14
+  I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.
+Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing.">
 
 
-<meta itemprop="datePublished" content="2019-03-21T20:28:55-04:00" />
-<meta itemprop="dateModified" content="2019-03-21T20:28:55-04:00" />
-<meta itemprop="wordCount" content="429">
+<meta itemprop="datePublished" content="2019-03-27T12:28:55-04:00" />
+<meta itemprop="dateModified" content="2019-03-27T12:28:55-04:00" />
+<meta itemprop="wordCount" content="613">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Welcome!"/>
-<meta name="twitter:description" content="This is the beginnings of my website&rsquo;s migration back to Hugo to start up my blog again. Hugo is &ldquo;the world&rsquo;s fastest framework for building websites&rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.
-If you don&rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer."/>
+<meta name="twitter:title" content="Migrating MySQL Database and Users"/>
+<meta name="twitter:description" content="MySQL Version: 5.7
+Linux Versions:
+ RHEL 6
+ Ubuntu 14
+  I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.
+Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing."/>
 
   </head>
 
@@ -157,61 +169,92 @@ If you don&rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">Welcome!</h1>
+      <h1 class="f1 athelas mb1">Migrating MySQL Database and Users</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2019-03-21T20:28:55-04:00">March 21, 2019</time>      
+      <time class="f6 mv4 dib tracked" datetime="2019-03-27T12:28:55-04:00">March 27, 2019</time>      
       
       
         <span class="f6 mv4 dib tracked"> - 3 minutes read</span>
-        <span class="f6 mv4 dib tracked"> - 429 words</span>
+        <span class="f6 mv4 dib tracked"> - 613 words</span>
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This is the beginnings of my website&rsquo;s migration back to <a href="https://gohugo.io/">Hugo</a> to start up my blog again. Hugo is <em>&ldquo;the world&rsquo;s fastest framework for building websites&rdquo;</em>, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<p>If you don&rsquo;t know yet, <strong>my name is Michael A. Agarenzo, and I am a Software Engineer</strong>. This blog will serve as a way to</p>
+<p><strong>MySQL Version:</strong> 5.7</p>
 
-<p>1) share some of my experiences, ideas, and projects, and</p>
+<p><strong>Linux Versions:</strong></p>
 
-<p>2) simply learn more about me.</p>
+<ul>
+<li><p>RHEL 6</p></li>
+
+<li><p>Ubuntu 14</p></li>
+</ul>
 
 <hr />
 
-<p>When I had my own domain name, I used to constantly go back and forth between different ways to host my website. At some point in time, it was a:</p>
+<p>I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.</p>
 
-<ul>
-<li><p>Custom static site - <em>fun, good way to learn basic structure of a small, static website</em></p></li>
+<p>Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing.</p>
 
-<li><p>WordPress site - <em>way too heavy for my needs, but good for when I thought I wanted to be solely a Front End Web Developer</em></p></li>
+<p>Before starting, lets connect to your instance and verify that our MySQL versions match up.</p>
 
-<li><p>Jekyll blog - <em>oof</em></p></li>
-</ul>
+<pre><code>mysql -u username -ppassword -h source -e &quot;SHOW VARIABLES LIKE '%version%';&quot;
+</code></pre>
 
-<p>And then nothing, it was gone when I decided to ditch the domain and server and go in the dark.</p>
+<p>If your <code>innodb_version</code> is not 5.7, feel free to look at the documentation I linked to at the end of each section to check if these methods will still work for you. If they do not, you can use the documentation as a starting point for researching how to do each method for <em>your</em> version of MySQL.</p>
 
-<p>&hellip;</p>
+<h3 id="dumping-piping-the-database">Dumping &amp; Piping the Database</h3>
 
-<p>But now I&rsquo;m back via hosting this site with <a href="https://pages.github.com/">GitHub Pages</a>! I loosely<sup>1</sup> followed Hugo&rsquo;s <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> article and here we are. I plan on this one sticking around for a while.</p>
+<p>There are multiple ways to go about migrating the MySQL database. If you have network limitations, this could be the best way for you:</p>
 
-<p>Now that you&rsquo;re here and have gotten this far, I think the best thing for me to do is to direct you to the static content on this site so you can start to get to know me better until I start pumping out some more blog posts. So without further ado, here I am:</p>
+<p>1) Dump the database from the source instance to a SQL file</p>
 
-<ul>
-<li><p><a href="https://magarenzo.github.io/about">About Me, My Skills and Education</a></p></li>
+<p>2) Pipe the SQL file to the destination instance</p>
 
-<li><p><a href="https://magarenzo.github.io/work">Projects and Work Experience</a></p></li>
+<pre><code>mysqldump -u username -ppassword -h source databaseName | schema.sql
+mysql -u username -ppassword -h destination databaseName &gt; schema.sql
+</code></pre>
 
-<li><p><a href="https://magarenzo.github.io/more">Volunteer Involvement and Leadership Experience</a></p></li>
-</ul>
+<p>Alternatively, you can dump the contents of the source database directly into a pipe to the destination database, which is my preferred method. Again, this method could be limited by your network, especially if you are transferring a large database.</p>
 
-<p>Lastly, feel free to reach out to me using my <a href="https://magarenzo.github.io/contact">contact</a> page.</p>
+<pre><code>mysqldump -u username -ppassword -h source databaseName | mysql -u username -ppassword -h desination databaseName
+</code></pre>
 
-<p>P.S. I&rsquo;ll try to get a subscribe widget up <em>sooner</em> rather than <em>later</em>.</p>
+<p>If you want to keep progress of the pipe, you can install <a href="http://www.ivarch.com/programs/pv.shtml">pipeviewer</a> and use the following command instead to monitor the data that is flowing through:</p>
 
-<p><sup>1</sup> - <em>Loosely</em> because I only followed the tutorial enough to remember that when you deploy with the <code>Hugo</code> command, a public directory is spit out with all of the static content needed for the site to function. I host my development repository privately and when I&rsquo;m ready to post new content, I push the contents of the new public directory to my <a href="https://github.com/magarenzo/magarenzo.github.io">magarenzo.github.io</a> repository and I&rsquo;m good to go.</p>
+<pre><code>mysqldump -u username -ppassword -h source databaseName | pv | mysql -u username -ppassword -h desination databaseName
+</code></pre>
+
+<p><strong>Section Resources:</strong> <a href="https://dev.mysql.com/doc/refman/5.7/en/">mysql</a>, <a href="https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html">mysqldump</a>, <a href="http://www.ivarch.com/programs/pv.shtml">pipeviewer</a></p>
 
 <hr />
 
-<p><strong>Update: March 24, 2019 -</strong> You can now subscribe to my posts! See below.</p>
+<h3 id="migrating-users">Migrating Users</h3>
+
+<p>First, run the following command on your original instance to get the create queries for each user, along with the hash value for each user&rsquo;s password, and store them in a SQL file. Note that you will have to run this query for each user that you want to migrate, and then you can run the generated SQL file in your destination instance to create the users and their passwords all at once.</p>
+
+<pre><code>mysql -u username -ppassword -h source -e &quot;show create user username;&quot; &gt;&gt; users.sql
+</code></pre>
+
+<p>After you have run the users queries, run the following command on your original instance to get all of the users and store it in a text file:</p>
+
+<pre><code>mysql -B -N -u username -ppassword -h source -e &quot;SELECT CONCAT('\'', user,'\'@\'', host, '\'') FROM user&quot; mysql &gt; users.txt
+</code></pre>
+
+<p>Next, use that text file to grab the grants for each user listed, and store the grant queries returned in a SQL file. Lastly, append a semicolon to the end of each line:</p>
+
+<pre><code>while read line; do mysql -B -N -u username -ppassword -h source -e &quot;SHOW GRANTS FOR $line&quot;; done &lt; users.txt &gt; grants.sql
+sed -i 's/$/;/' grants.sql
+</code></pre>
+
+<p>Now you can run the grants queries to grant the permissions on all of the users that you have already created. Your users should now match on both your old and new MySQL instances.</p>
+
+<p><strong>Section Resources:</strong> <a href="https://dev.mysql.com/doc/refman/5.7/en/show-create-user.html">SHOW CREATE USER</a></p>
+
+<hr />
+
+<p>Feel free to <a href="https://magarenzo.github.io/contact/">contact me</a> for any reason. I would love to get some feedback!</p>
 
 <p><link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">

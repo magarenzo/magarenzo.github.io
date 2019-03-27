@@ -71,6 +71,20 @@ Volunteer Spotlight
     </item>
     
     <item>
+      <title>Migrating MySQL Database and Users</title>
+      <link>https://magarenzo.github.io/posts/migrating-mysql-database-and-users/</link>
+      <pubDate>Wed, 27 Mar 2019 12:28:55 -0400</pubDate>
+      
+      <guid>https://magarenzo.github.io/posts/migrating-mysql-database-and-users/</guid>
+      <description>MySQL Version: 5.7
+Linux Versions:
+ RHEL 6
+ Ubuntu 14
+  I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.
+Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing.</description>
+    </item>
+    
+    <item>
       <title>Welcome!</title>
       <link>https://magarenzo.github.io/posts/welcome/</link>
       <pubDate>Thu, 21 Mar 2019 20:28:55 -0400</pubDate>
