@@ -36,7 +36,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://magarenzo.github.io/posts/" />
 
-<meta property="og:updated_time" content="2019-03-27T12:28:55-04:00"/>
+<meta property="og:updated_time" content="2019-04-07T14:36:33-04:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="Michael A. Agarenzo - Full Stack Software Engineer">
@@ -177,16 +177,38 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/monitoring-resources-with-grafana/" class="link black dim">
+        Monitoring Resources with Grafana
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Grafana Version: 6.0.2
+Linux Version: RHEL 6
+NGINX Version: 1.15.10
+Grafana is &ldquo;the leading open source software for time series analytics&rdquo;. It should be taken under great consideration if you are looking to:
+ monitor a wide range of resources and their statistics
+ set up real-time alerts and notifications
+ create dashboards which can be put in kiosk view for constant live monitoring
+  This post will take you through the basic steps of installing Grafana, setting up data sources, creating dashboards, configuring notification channels and alerts, and configuring port forwarding for the application using NGINX.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/migrating-mysql-database-and-users/" class="link black dim">
         Migrating MySQL Database and Users
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      MySQL Version: 5.7
-Linux Versions:
+      Linux Versions:
  RHEL 6
  Ubuntu 14
-  I recently migrated a MySQL database from an old instance to a new one, and with that, all of the existing users with their passwords and grants.
+  MySQL Version: 5.7
+I recently migrated a MySQL database between servers, and with that, all of the existing users with their passwords and grants.
 Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing.
     </div>
   </div>
