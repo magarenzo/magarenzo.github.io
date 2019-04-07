@@ -78,12 +78,11 @@ Volunteer Spotlight
       <guid>https://magarenzo.github.io/posts/monitoring-resources-with-grafana/</guid>
       <description>Grafana Version: 6.0.2
 Linux Version: RHEL 6
-NGINX Version: 1.15.10
 Grafana is &amp;ldquo;the leading open source software for time series analytics&amp;rdquo;. It should be taken under great consideration if you are looking to:
  monitor a wide range of resources and their statistics
  set up real-time alerts and notifications
  create dashboards which can be put in kiosk view for constant live monitoring
-  This post will take you through the basic steps of installing Grafana, setting up data sources, creating dashboards, configuring notification channels and alerts, and configuring port forwarding for the application using NGINX.</description>
+  This post will take you through the basic steps of installing Grafana, setting up data sources, creating dashboards, and configuring notification channels and alerts.</description>
     </item>
     
     <item>
