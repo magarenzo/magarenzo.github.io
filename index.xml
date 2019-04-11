@@ -17,7 +17,7 @@
       <pubDate>Tue, 19 Mar 2019 11:23:07 -0400</pubDate>
       
       <guid>https://magarenzo.github.io/about/</guid>
-      <description>#highlight { color: DeepPink; }  Me, my education and skills.
+      <description>#highlight { color: cyan; }  Me, my education and skills.
 My name is Michael A. Agarenzo and I am a Software Engineer at Overseas Military Sales Group.
 I am a Computer Science graduate as of May 2018 and have been in my current position since April of that same year.
 Some of my hobbies include:
@@ -32,7 +32,7 @@ Some of my hobbies include:
       <pubDate>Tue, 19 Mar 2019 13:46:54 -0400</pubDate>
       
       <guid>https://magarenzo.github.io/work/</guid>
-      <description>#highlight { color: DeepPink; }  My projects and work experience.
+      <description>#highlight { color: cyan; }  My projects and work experience.
 Projects My Website
 Source code for this static website.
 CSS, HTML, JavaScript, Markdown
@@ -49,7 +49,7 @@ Suppose that you have to present your final project in an hour, but you left a f
       <pubDate>Tue, 19 Mar 2019 14:10:14 -0400</pubDate>
       
       <guid>https://magarenzo.github.io/more/</guid>
-      <description>#highlight { color: DeepPink; }  My volunteering &amp;amp; leadership experience, and my involvement with Ultimate frisbee.
+      <description>#highlight { color: cyan; }  My volunteering &amp;amp; leadership experience, and my involvement with Ultimate frisbee.
 Volunteering Webmaster
 DiscNY
 October 2016-Present, New York
