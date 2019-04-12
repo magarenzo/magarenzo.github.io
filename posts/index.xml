@@ -6,39 +6,10 @@
     <description>Recent content in Posts on magarenzo.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2019 14:36:33 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 21 Mar 2019 20:28:55 -0400</lastBuildDate>
     
 	<atom:link href="https://magarenzo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Monitoring Resources with Grafana</title>
-      <link>https://magarenzo.github.io/posts/monitoring-resources-with-grafana/</link>
-      <pubDate>Sun, 07 Apr 2019 14:36:33 -0400</pubDate>
-      
-      <guid>https://magarenzo.github.io/posts/monitoring-resources-with-grafana/</guid>
-      <description>Grafana Version: 6.0.2
-Linux Version: RHEL 6
-Grafana is &amp;ldquo;the leading open source software for time series analytics&amp;rdquo;. It should be taken under great consideration if you are looking to:
- monitor a wide range of resources and their statistics
- set up real-time alerts and notifications
- create dashboards which can be put in kiosk view for constant live monitoring
-  This post will take you through the basic steps of installing Grafana, setting up data sources, creating dashboards, and configuring notification channels and alerts.</description>
-    </item>
-    
-    <item>
-      <title>Migrating MySQL Database and Users</title>
-      <link>https://magarenzo.github.io/posts/migrating-mysql-database-and-users/</link>
-      <pubDate>Wed, 27 Mar 2019 12:28:55 -0400</pubDate>
-      
-      <guid>https://magarenzo.github.io/posts/migrating-mysql-database-and-users/</guid>
-      <description>Linux Versions:
- RHEL 6
- Ubuntu 14
-  MySQL Version: 5.7
-I recently migrated a MySQL database between servers, and with that, all of the existing users with their passwords and grants.
-Being that I had to span multiple resources to gather all of the information I needed, I figured it would be helpful if all of these resources could be in the same place so that future users can have a simpler time looking to accomplish the same thing.</description>
-    </item>
     
     <item>
       <title>Welcome!</title>
