@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Michael A. Agarenzo on magarenzo.github.io</title>
-    <link>https://magarenzo.github.io/</link>
-    <description>Recent content in Michael A. Agarenzo on magarenzo.github.io</description>
+    <title>Michael A. Agarenzo on magarenzo.com</title>
+    <link>http://magarenzo.com/</link>
+    <description>Recent content in Michael A. Agarenzo on magarenzo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 11:23:07 -0400</lastBuildDate>
     
-	<atom:link href="https://magarenzo.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://magarenzo.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://magarenzo.github.io/about/</link>
+      <link>http://magarenzo.com/about/</link>
       <pubDate>Tue, 19 Mar 2019 11:23:07 -0400</pubDate>
       
-      <guid>https://magarenzo.github.io/about/</guid>
+      <guid>http://magarenzo.com/about/</guid>
       <description>#highlight { color: DeepPink; }  Me, my education and skills.
 My name is Michael A. Agarenzo and I am a Software Engineer at Overseas Military Sales Group.
 I am a Computer Science graduate as of May 2018 and have been in my current position since April of that same year.
@@ -28,14 +28,14 @@ Some of my hobbies include:
     
     <item>
       <title>Work</title>
-      <link>https://magarenzo.github.io/work/</link>
+      <link>http://magarenzo.com/work/</link>
       <pubDate>Tue, 19 Mar 2019 13:46:54 -0400</pubDate>
       
-      <guid>https://magarenzo.github.io/work/</guid>
+      <guid>http://magarenzo.com/work/</guid>
       <description>#highlight { color: DeepPink; }  My projects and work experience.
 Projects My Website
 Source code for this static website.
-CSS, HTML, JavaScript, Markdown
+Hugo, Markdown
 DroidTooth File Transfer
 Senior seminar project.
 CSS, HTML, Java, Javascript
@@ -45,10 +45,10 @@ Suppose that you have to present your final project in an hour, but you left a f
     
     <item>
       <title>More</title>
-      <link>https://magarenzo.github.io/more/</link>
+      <link>http://magarenzo.com/more/</link>
       <pubDate>Tue, 19 Mar 2019 14:10:14 -0400</pubDate>
       
-      <guid>https://magarenzo.github.io/more/</guid>
+      <guid>http://magarenzo.com/more/</guid>
       <description>#highlight { color: DeepPink; }  My volunteering &amp;amp; leadership experience, and my involvement with Ultimate frisbee.
 Volunteering Webmaster
 DiscNY
@@ -63,21 +63,21 @@ Volunteer Spotlight
     
     <item>
       <title>Contact</title>
-      <link>https://magarenzo.github.io/contact/</link>
+      <link>http://magarenzo.com/contact/</link>
       <pubDate>Tue, 19 Mar 2019 14:07:04 -0400</pubDate>
       
-      <guid>https://magarenzo.github.io/contact/</guid>
+      <guid>http://magarenzo.com/contact/</guid>
       <description>Your NameEmail AddressAn email address is required.MessageYou will be redirected to another site to prove you are human. Please follow the instructions there to ensure that your message gets sent!</description>
     </item>
     
     <item>
       <title>Welcome!</title>
-      <link>https://magarenzo.github.io/posts/welcome/</link>
+      <link>http://magarenzo.com/posts/welcome/</link>
       <pubDate>Thu, 21 Mar 2019 20:28:55 -0400</pubDate>
       
-      <guid>https://magarenzo.github.io/posts/welcome/</guid>
-      <description>This is the beginnings of my website&amp;rsquo;s migration back to Hugo to start up my blog again. Hugo is &amp;ldquo;the world&amp;rsquo;s fastest framework for building websites&amp;rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.
-If you don&amp;rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.</description>
+      <guid>http://magarenzo.com/posts/welcome/</guid>
+      <description>If you don&amp;rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.
+This is the beginnings of my website&amp;rsquo;s migration back to Hugo to start up my blog again. Hugo is &amp;ldquo;the world&amp;rsquo;s fastest framework for building websites&amp;rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.</description>
     </item>
     
   </channel>
