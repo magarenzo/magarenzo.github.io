@@ -1,5 +1,5 @@
 # magarenzo.github.io
-Source for my current static website hosted at [magarenzo.github.io](https://magarenzo.github.io)
+Source for my current static website hosted at [magarenzo.com](http://magarenzo.com)
 
 ---
 
