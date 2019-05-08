@@ -18,7 +18,7 @@
       
       <guid>https://magarenzo.com/about/</guid>
       <description>#highlight { color: DeepPink; }  Me, my education and skills.
-My name is Michael A. Agarenzo and I am a Platform Engineer at Varick Media Management.
+My name is Michael A. Agarenzo and I am a Platform Engineer at Varick.
 I graduated from Adelphi University (Garden City, NY) in May 2018 with a B.S. in Computer Science and a Concentration in Information Security.
 Some of my hobbies include:
  Reading (currently - The Dresden Files)
@@ -77,6 +77,7 @@ Volunteer Spotlight
       
       <guid>https://magarenzo.com/posts/welcome/</guid>
       <description>If you don&amp;rsquo;t know yet, my name is Michael A. Agarenzo, and I am a Software Engineer.
+Update: May 6, 2019 - I am now a Platform Engineer at Varick!
 This is the beginnings of my website&amp;rsquo;s migration back to Hugo to start up my blog again. Hugo is &amp;ldquo;the world&amp;rsquo;s fastest framework for building websites&amp;rdquo;, which is great because I often (mercilessly) rebuild pages over and over again, even after the tiniest of changes, to confirm that I like the way they look.</description>
     </item>
     
