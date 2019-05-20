@@ -24,22 +24,8 @@
   </url>
   
   <url>
-    <loc>https://magarenzo.com/posts/</loc>
-    <lastmod>2019-03-21T20:28:55-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://magarenzo.com/contact/</loc>
     <lastmod>2019-03-19T14:07:04-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://magarenzo.com/posts/welcome/</loc>
-    <lastmod>2019-03-21T20:28:55-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
