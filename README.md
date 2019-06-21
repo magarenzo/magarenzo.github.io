@@ -12,3 +12,7 @@ Source for my current static website hosted at [magarenzo.com](https://magarenzo
 * [`jQuery`](https://jquery.com/)
 
 * [`mmenu`](http://mmenu.frebsite.nl/)
+
+## Owner
+
+Michael A. Agarenzo
