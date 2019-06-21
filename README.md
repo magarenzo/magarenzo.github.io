@@ -5,4 +5,10 @@ Source for my current static website hosted at [magarenzo.com](https://magarenzo
 
 <h3>Created With:</h3>
 
-* [`Hugo`](https://gohugo.io/)
+* [`Bootstrap`](https://getbootstrap.com/)
+
+* [`Formspree`](https://formspree.io/)
+
+* [`jQuery`](https://jquery.com/)
+
+* [`mmenu`](http://mmenu.frebsite.nl/)
