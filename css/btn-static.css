@@ -1,9 +1,0 @@
-.btn:not(:disabled):not(.disabled) {
-  cursor: default !important;
-}
-.btn-static {
-  color: white;
-  background-color: #007bff;
-  border: 1px solid black;
-  cursor: default;
-}
