@@ -75,7 +75,7 @@
   border-right: 20px solid transparent;
   border-bottom: 20px solid #007BFF;
 }
-#bio, #skills, #education, #experience, #projects, #leadership, #volunteer, #birdz {
+#intro, #skills, #education, #experience, #projects, #leadership, #volunteer, #birdz {
   padding-bottom: 1em;
 }
 @media (max-width: 960px) {
