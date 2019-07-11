@@ -49,10 +49,6 @@
   html, body {
     overflow-x: hidden;
   }
-  .scroll-down, .scroll-down-2 {
-    visibility: hidden;
-    pointer-events: none;
-  }
   .menu-link {
     position: absolute;
   }
