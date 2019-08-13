@@ -9,35 +9,30 @@
   <link rel="icon" href="/imgs/professional-headshot.png" />
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-<!-- mmenu CSS -->
-  <link rel="stylesheet" href="/css/mmenu.css" />
 <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
-  <nav id="menu">
+  <div id="menu">
     <ul>
-      <li><a class="option" href="/#intro">Intro</a></li>
-      <li><a class="option" href="/#education">Education</a></li>
-      <li><a class="option" href="/#skills">Skills</a></li>
-      <li><a class="option" href="/#experience">Experience</a></li>
-      <li><a class="option" href="/#projects">Projects</a></li>
-      <li><a class="option" href="/#leadership">Leadership</a></li>
-      <li><a class="option" href="/#volunteer">Volunteering</a></li>
-      <li><a class="option" href="/#ultimate">Ultimate</a></li>
+      <li><a id="intro-link" href="#" class="page" onclick="changePage(event, 'intro')" style="background-color: #ffffff;">Intro</a></li>
+      <li><a id="education-link" href="#" class="page" onclick="changePage(event, 'education')">Education</a></li>
+      <li><a id="skills-link" href="#" class="page" onclick="changePage(event, 'skills')">Skills</a></li>
+      <li><a id="experience-link" href="#" class="page" onclick="changePage(event, 'experience')">Experience</a></li>
+      <li><a id="projects-link" href="#" class="page" onclick="changePage(event, 'projects')">Projects</a></li>
+      <li><a id="leadership-link" href="#" class="page" onclick="changePage(event, 'leadership')">Leadership</a></li>
+      <li><a id="volunteer-link" href="#" class="page" onclick="changePage(event, 'volunteer')">Volunteering</a></li>
+      <li><a id="ultimate-link" href="#" class="page" onclick="changePage(event, 'ultimate')">Ultimate</a></li>
     </ul>
-  </nav>
+  </div>
   <div class="wrapper">
-    <div class="menu-link">
-      <h5><a href="#menu">&#9776; Menu</a></h5>
-    </div>
     <div class="content">
-      <div id="intro">
+      <div id="intro" class="section">
         <img id="headshot" src="/imgs/professional-headshot.png" alt="Professional Headshot of Michael A. Agarenzo" align="right" width="25%" />
         <h1>Hi, I'm <strong>Michael A. Agarenzo</strong>.</h1>
         <br />
-        <p><strong>Platform Engineer</strong> at <a href="https://varick.co">Varick</a>.</p>
+        <p><strong>Software Engineer</strong>.</p>
         <p><strong>Computer Science graduate</strong> from <a href="https://adelphi.edu">Adelphi</a>.</p>
         <p>Some of my hobbies are:</p>
         <ul>
@@ -46,17 +41,8 @@
           <li>Gaming (currently - <em>NBA 2K19</em>, <em>Apex Legends</em>)</li>
           <li>Keeping up with the NBA and the Marvel Cinematic Universe</li>
         </ul>
-        <p><a href="mailto:magarenzo@gmail.com" target="_blank"><img alt="Email" src="/imgs/email.png" width="25" height="25" /> magarenzo@gmail.com</a></p>
-        <p>
-          <a class="social" href="https://github.com/magarenzo" target="_blank"><img alt="GitHub" src="/imgs/github.png" width="25" height="25" /></a>
-          <a class="social" href="https://linkedin.com/in/magarenzo" target="_blank"><img alt="LinkedIn" src="/imgs/linkedin.png" width="25" height="25" /></a>
-          <a class="social" href="https://stackoverflow.com/users/6209979/michael-a-agarenzo" target="_blank"><img alt="Stack Overflow" src="/imgs/stack-overflow.png" width="25" height="25" /></a>
-          <a class="social" href="https://www.youtube.com/channel/UCTcL0wtFNsR0Q9P5g_fi-0A" target="_blank"><img alt="YouTube" src="/imgs/youtube.png" width="25" height="25" /></a>
-        </p>
       </div>
-      <div id="education">
-        <h1>Education</h1>
-        <hr />
+      <div id="education" class="section" style="display:none;">
         <h5>College</h5>
         <p><a href="https://adelphi.edu" target="_blank">Adelphi University</a></p>
         <h5>Degree</h5>
@@ -66,9 +52,7 @@
         <h5>Graduation Date</h5>
         <p>May 2018</p>
       </div>
-      <div id="skills">
-        <h1>Skills</h1>
-        <hr />
+      <div id="skills" class="section" style="display:none;">
         <table class="table table-responsive table-striped">
           <tr>
             <th>Operating Systems</th>
@@ -100,10 +84,8 @@
         </ul>
         <p>Also familiar with Athena, Budgets, CloudFormation, CodeBuild, CodePipeline, ElastiCache, RedShift, SNS, and Systems Manager.</p>
       </div>
-      <div id="experience">
-        <h1>Experience</h1>
-        <hr />
-        <p><strong>Platform Engineer</strong><br />Varick<br />May 2019-Present<br />New York, NY</p>
+      <div id="experience" class="section" style="display: none;">
+        <p><strong>Platform Engineer</strong><br />Varick<br />May-July 2019<br />New York, NY</p>
         <p><strong>Software Engineer</strong><br />Overseas Military Sales Group<br />April 2018-May 2019<br />Woodbury, NY</p>
         <h3>2018</h3>
         <p><strong>Web Assistant</strong><br />Web Communications Team (Adelphi University)<br />September 2017-April 2018<br />Garden City, NY<br /><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the Month: January 2018</a></p>
@@ -115,11 +97,8 @@
         <p><strong>Cybersecurity System Analyst Intern</strong><br />Con Edison<br />June-August 2016<br />Mott Haven, NY</p>
         <p><strong>Coding Mentor Intern</strong><br />kidOYO<br />February-April 2016<br />Garden City, NY</p>
       </div>
-      <div id="projects">
-        <h1>Projects</h1>
-        <hr />
-        <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File Transfer</a><br />Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <strong>Java</strong>.</p>
-        <p><a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>, <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>, <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical Documentation</a></p>
+      <div id="projects" class="section" style="display: none;">
+        <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File Transfer</a><br />Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>, <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>, <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical Documentation</a>. <strong>Java</strong>.</p>
         <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump Table</a><br />Drop table and dump data from external database to local for any amount of user-specified tables. <strong>Shell</strong>.</p>
         <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub Webhooks Test</a><br />Test communicating with GitHub's webhooks. <strong>ngrok, Node.js, Ruby</strong>.</p>
         <p><a href="https://github.com/magarenzo/grading-system" target="_blank">Grading System</a><br />Use a test menu to demo a grading system. <strong>Java, JavaFX</strong>.</p>
@@ -128,12 +107,9 @@
         <p><img src="/imgs/nba-wingspan-hypothetical.gif" alt="GIF for NBA Wingspan Hypothetical" width="100%" /></p>
         <p><a href="https://github.com/magarenzo/poker-hand-simulation" target="_blank">Poker Hand Simulation</a><br />Simulates poker hands and tracks simple pairings. <strong>R</strong>.</p>
         <p><a href="https://github.com/magarenzo/technical-topics" target="_blank">Technical Topics</a><br />Implementations of common data structures, algorithms, and problems. <strong>Java, PHP, Python</strong>.</p>
-        <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and Lacrosse Study</a><br />Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse. <strong>R</strong>.</p>
-        <p><a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research Paper</a></p>
+        <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and Lacrosse Study</a><br />Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse. <a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research Paper</a>. <strong>R</strong>.</p>
       </div>
-      <div id="leadership">
-        <h1>Leadership</h1>
-        <hr />
+      <div id="leadership" class="section" style="display: none;">
         <p><strong>Captain, Secretary</strong><br />Ultimate Frisbee Team<br />May 2015-May 2017, Adelphi University</p>
         <p>&bull; Created, planned, explained and led what was done at practices and competitions</p>
         <p>&bull; Kept records such as attendance at events and minutes at meetings, disseminating information to members thereafter</p>
@@ -145,9 +121,7 @@
         <p><strong>Recording Secretary</strong><br />Math and Computer Science Club<br />February-December 2016, Adelphi University</p>
         <p>&bull; Recorded and organized minutes and any other information regarding meetings, club membership, events, et cetera, filing them both physically and electronically for recall and public viewing</p>
       </div>
-      <div id="volunteer">
-        <h1>Volunteering</h1>
-        <hr />
+      <div id="volunteer" class="section" style="display: none;">
         <p><strong>Webmaster</strong><br /><a href="https://discny.org/" target="_blank">DiscNY</a><br />October 2016-Present<br /><a href="https://discny.org/p/volunteer-spotlight-mike-agarenzo" target="_blank">Volunteer Spotlight</a></p>
         <p>&bull; Maintain website content, creating and editing images, pages and posts.</p>
         <p>&bull; Create and set up events and their registration settings.</p>
@@ -161,9 +135,7 @@
         <p>&bull; Collected non-perishable food items from all participating teams in Adelphi Ultimate's yearly home tournament</p>
         <p>&bull; All proceeds were donated to St. Thomas the Apostle, a local church in West Hempstead, NY</p>
       </div>
-      <div id="ultimate">
-        <h1>Ultimate</h1>
-        <hr />
+      <div id="ultimate" class="section" style="display: none;">
         <p><a href="https://discny.org/" target="_blank">DiscNY</a> is a 501(c)(3) nonprofit organization and <a href="http://www.usaultimate.org" target="_blank">USAU</a> affiliate based in Manhattan that I am an active member of and volunteer for, including work I do as their webmaster. Its focus is on long-term growth and sustainability for the sport of ultimate in the metropolitan New York area.</p>
         <p><a href="http://liultimate.com/" target="_blank">LI Ultimate</a> is an affiliate of DiscNY that I am an active member of. They aim to expand ultimate on Long Island through organized play, youth development, and a more competitive ultimate scene.</p>
         <h3>My Teams</h3>
@@ -180,15 +152,23 @@
         <p><img class="team" src="/imgs/adelphi-team-photo.png" alt="Adelphi Ultimate Team Photo" width="100%" /></p>
       </div>
     </div>
+    <div id="footer">
+      <hr />
+      <p><a href="mailto:magarenzo@gmail.com" target="_blank"><img alt="Email" src="/imgs/email.png" width="25" height="25" /> magarenzo@gmail.com</a></p>
+      <p>
+        <a class="social" href="https://github.com/magarenzo" target="_blank"><img alt="GitHub" src="/imgs/github.png" width="25" height="25" /></a>
+        <a class="social" href="https://linkedin.com/in/magarenzo" target="_blank"><img alt="LinkedIn" src="/imgs/linkedin.png" width="25" height="25" /></a>
+        <a class="social" href="https://stackoverflow.com/users/6209979/michael-a-agarenzo" target="_blank"><img alt="Stack Overflow" src="/imgs/stack-overflow.png" width="25" height="25" /></a>
+        <a class="social" href="https://www.youtube.com/channel/UCTcL0wtFNsR0Q9P5g_fi-0A" target="_blank"><img alt="YouTube" src="/imgs/youtube.png" width="25" height="25" /></a>
+      </p>
+    </div>
   </div>
 <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- mmenu JS -->
-  <script src="/js/mmenu.js"></script>
-  <script src="/js/mmenu-activate.js"></script>
-  <script src="/js/mmenu-close.js"></script>
+<!-- Custom JS -->
+  <script src="/js/script.js"></script>
 </body>
 </html>

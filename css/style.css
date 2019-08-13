@@ -1,3 +1,23 @@
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8c92ac;
+}
+#menu li {
+  float: left;
+}
+#menu li a {
+  display: block;
+  color: #007BFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#menu li a:hover {
+  background-color: #ffffff;
+}
 .social + .social {
   margin-left: 1em;
 }
@@ -24,19 +44,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0056b2;
 }
-#menu {
-  color: #007BFF;
-}
 .wrapper {
   max-width: 960px;
   margin: auto;
   position: relative;
   padding-left: 1em;
   padding-right: 1em;
-}
-.menu-link {
-  left: 0;
-  position: fixed;
 }
 .content {
   padding-top: 2em;
@@ -48,8 +61,5 @@
 @media (max-width: 960px) {
   html, body {
     overflow-x: hidden;
-  }
-  .menu-link {
-    position: absolute;
   }
 }
