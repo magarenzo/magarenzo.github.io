@@ -1,5 +1,9 @@
 function changePage(event, page) {
 
+  if (document.getElementById("wrapper").style.display == "none") {
+    document.getElementById("wrapper").style.display = "block";
+  }
+
   var sections = document.getElementsByClassName("section");
   for (var i = 0; i < sections.length; i++) {
     sections[i].style.display = "none";
@@ -27,8 +31,10 @@ function toggleMenu() {
   var style = document.getElementById("menu").style.display;
   if (!style || style == "none") {
     document.getElementById("menu").style.display = "block";
+    document.getElementById("wrapper").style.display = "none";
   } else {
     document.getElementById("menu").style.display = "none";
+    document.getElementById("wrapper").style.display = "block";
   }
 
 }

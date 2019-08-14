@@ -55,14 +55,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0056b2;
 }
-.wrapper {
+#wrapper {
   max-width: 960px;
   margin: auto;
   position: relative;
   padding-left: 1em;
   padding-right: 1em;
 }
-.content {
+#content {
   padding-top: 2em;
   padding-bottom: 1em;
 }
