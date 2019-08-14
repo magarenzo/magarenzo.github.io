@@ -14,26 +14,29 @@
 </head>
 
 <body>
+  <div id="mobile-menu">
+    <p><a onclick="toggleMenu()">&#9776;</a></p>
+  </div>
   <div id="menu">
     <ul>
-      <li><a id="intro-link" href="#" class="page" onclick="changePage(event, 'intro')" style="background-color: #ffffff;">Intro</a></li>
-      <li><a id="education-link" href="#" class="page" onclick="changePage(event, 'education')">Education</a></li>
-      <li><a id="skills-link" href="#" class="page" onclick="changePage(event, 'skills')">Skills</a></li>
-      <li><a id="experience-link" href="#" class="page" onclick="changePage(event, 'experience')">Experience</a></li>
-      <li><a id="projects-link" href="#" class="page" onclick="changePage(event, 'projects')">Projects</a></li>
-      <li><a id="leadership-link" href="#" class="page" onclick="changePage(event, 'leadership')">Leadership</a></li>
-      <li><a id="volunteer-link" href="#" class="page" onclick="changePage(event, 'volunteer')">Volunteering</a></li>
-      <li><a id="ultimate-link" href="#" class="page" onclick="changePage(event, 'ultimate')">Ultimate</a></li>
+      <li><a id="intro-link" class="page" onclick="changePage(event, 'intro')" style="background-color: #ffffff; color: #007BFF;">Intro</a></li>
+      <li><a id="education-link" class="page" onclick="changePage(event, 'education')">Education</a></li>
+      <li><a id="skills-link" class="page" onclick="changePage(event, 'skills')">Skills</a></li>
+      <li><a id="experience-link" class="page" onclick="changePage(event, 'experience')">Experience</a></li>
+      <li><a id="projects-link" class="page" onclick="changePage(event, 'projects')">Projects</a></li>
+      <li><a id="leadership-link" class="page" onclick="changePage(event, 'leadership')">Leadership</a></li>
+      <li><a id="volunteer-link" class="page" onclick="changePage(event, 'volunteer')">Volunteering</a></li>
+      <li><a id="ultimate-link" class="page" onclick="changePage(event, 'ultimate')">Ultimate</a></li>
     </ul>
   </div>
   <div class="wrapper">
     <div class="content">
       <div id="intro" class="section">
-        <img id="headshot" src="/imgs/professional-headshot.png" alt="Professional Headshot of Michael A. Agarenzo" align="right" width="25%" />
+        <img class="image-right" src="/imgs/professional-headshot.png" alt="Professional Headshot of Michael A. Agarenzo" align="right" width="25%" />
         <h1>Hi, I'm <strong>Michael A. Agarenzo</strong>.</h1>
         <br />
-        <p><strong>Software Engineer</strong>.</p>
-        <p><strong>Computer Science graduate</strong> from <a href="https://adelphi.edu">Adelphi</a>.</p>
+        <p><strong>Implementation Software Support Engineer</strong> at <a href="https://www.uipath.com/" target="_blank">UiPath</a>.</p>
+        <p><strong>Computer Science graduate</strong> from <a href="https://adelphi.edu">Adelphi University</a>.</p>
         <p>Some of my hobbies are:</p>
         <ul>
           <li>Reading Fantasy novels (currently - <em>The Dresden Files</em>)</li>
@@ -42,7 +45,8 @@
           <li>Keeping up with the NBA and the Marvel Cinematic Universe</li>
         </ul>
       </div>
-      <div id="education" class="section" style="display:none;">
+      <div id="education" class="section">
+        <img class="image-right" src="/imgs/adelphi-logo.png" alt="Official Logo for Adelphi University" align="right" width="25%" />
         <h5>College</h5>
         <p><a href="https://adelphi.edu" target="_blank">Adelphi University</a></p>
         <h5>Degree</h5>
@@ -52,7 +56,7 @@
         <h5>Graduation Date</h5>
         <p>May 2018</p>
       </div>
-      <div id="skills" class="section" style="display:none;">
+      <div id="skills" class="section">
         <table class="table table-responsive table-striped">
           <tr>
             <th>Operating Systems</th>
@@ -84,20 +88,22 @@
         </ul>
         <p>Also familiar with Athena, Budgets, CloudFormation, CodeBuild, CodePipeline, ElastiCache, RedShift, SNS, and Systems Manager.</p>
       </div>
-      <div id="experience" class="section" style="display: none;">
+      <div id="experience" class="section">
+        <img class="image-right" src="/imgs/uipath-logo.png" alt="Official Logo for UiPath" align="right" width="25%" />
+        <p><strong>Implementation Software Support Engineer</strong><br /><a href="https://www.uipath.com/" target="_blank">UiPath</a><br />August 2019-Present<br />New York, NY</p>
         <p><strong>Platform Engineer</strong><br />Varick<br />May-July 2019<br />New York, NY</p>
         <p><strong>Software Engineer</strong><br />Overseas Military Sales Group<br />April 2018-May 2019<br />Woodbury, NY</p>
         <h3>2018</h3>
-        <p><strong>Web Assistant</strong><br />Web Communications Team (Adelphi University)<br />September 2017-April 2018<br />Garden City, NY<br /><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the Month: January 2018</a></p>
+        <p><strong>Web Assistant</strong><br />Web Communications Team (<a href="https://adelphi.edu">Adelphi University</a>)<br />September 2017-April 2018<br />Garden City, NY<br /><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the Month: January 2018</a></p>
         <h3>2017</h3>
         <p><strong>System Technician Intern</strong><br />Electro Industries/GaugeTech<br />June-September 2017<br />Westbury, NY</p>
         <p><strong>Technology Sales Associate</strong><br />Staples<br />January-June 2017<br />Oceanside, NY</p>
         <h3>2016</h3>
-        <p><strong>Library Systems Assistant</strong><br />Library Systems Support (Adelphi University)<br />February-December 2016<br />Garden City, NY</p>
+        <p><strong>Library Systems Assistant</strong><br />Library Systems Support (<a href="https://adelphi.edu">Adelphi University</a>)<br />February-December 2016<br />Garden City, NY</p>
         <p><strong>Cybersecurity System Analyst Intern</strong><br />Con Edison<br />June-August 2016<br />Mott Haven, NY</p>
         <p><strong>Coding Mentor Intern</strong><br />kidOYO<br />February-April 2016<br />Garden City, NY</p>
       </div>
-      <div id="projects" class="section" style="display: none;">
+      <div id="projects" class="section">
         <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File Transfer</a><br />Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>, <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>, <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical Documentation</a>. <strong>Java</strong>.</p>
         <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump Table</a><br />Drop table and dump data from external database to local for any amount of user-specified tables. <strong>Shell</strong>.</p>
         <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub Webhooks Test</a><br />Test communicating with GitHub's webhooks. <strong>ngrok, Node.js, Ruby</strong>.</p>
@@ -109,7 +115,7 @@
         <p><a href="https://github.com/magarenzo/technical-topics" target="_blank">Technical Topics</a><br />Implementations of common data structures, algorithms, and problems. <strong>Java, PHP, Python</strong>.</p>
         <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and Lacrosse Study</a><br />Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse. <a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research Paper</a>. <strong>R</strong>.</p>
       </div>
-      <div id="leadership" class="section" style="display: none;">
+      <div id="leadership" class="section">
         <p><strong>Captain, Secretary</strong><br />Ultimate Frisbee Team<br />May 2015-May 2017, Adelphi University</p>
         <p>&bull; Created, planned, explained and led what was done at practices and competitions</p>
         <p>&bull; Kept records such as attendance at events and minutes at meetings, disseminating information to members thereafter</p>
@@ -121,7 +127,8 @@
         <p><strong>Recording Secretary</strong><br />Math and Computer Science Club<br />February-December 2016, Adelphi University</p>
         <p>&bull; Recorded and organized minutes and any other information regarding meetings, club membership, events, et cetera, filing them both physically and electronically for recall and public viewing</p>
       </div>
-      <div id="volunteer" class="section" style="display: none;">
+      <div id="volunteer" class="section">
+        <img class="image-right" src="/imgs/discny-logo.jpg" alt="Official Logo for DiscNY" align="right" width="25%" />
         <p><strong>Webmaster</strong><br /><a href="https://discny.org/" target="_blank">DiscNY</a><br />October 2016-Present<br /><a href="https://discny.org/p/volunteer-spotlight-mike-agarenzo" target="_blank">Volunteer Spotlight</a></p>
         <p>&bull; Maintain website content, creating and editing images, pages and posts.</p>
         <p>&bull; Create and set up events and their registration settings.</p>
@@ -135,7 +142,7 @@
         <p>&bull; Collected non-perishable food items from all participating teams in Adelphi Ultimate's yearly home tournament</p>
         <p>&bull; All proceeds were donated to St. Thomas the Apostle, a local church in West Hempstead, NY</p>
       </div>
-      <div id="ultimate" class="section" style="display: none;">
+      <div id="ultimate" class="section">
         <p><a href="https://discny.org/" target="_blank">DiscNY</a> is a 501(c)(3) nonprofit organization and <a href="http://www.usaultimate.org" target="_blank">USAU</a> affiliate based in Manhattan that I am an active member of and volunteer for, including work I do as their webmaster. Its focus is on long-term growth and sustainability for the sport of ultimate in the metropolitan New York area.</p>
         <p><a href="http://liultimate.com/" target="_blank">LI Ultimate</a> is an affiliate of DiscNY that I am an active member of. They aim to expand ultimate on Long Island through organized play, youth development, and a more competitive ultimate scene.</p>
         <h3>My Teams</h3>

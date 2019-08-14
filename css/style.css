@@ -1,27 +1,38 @@
+.section {
+  display: none;
+}
+#intro {
+  display: block;
+}
+#mobile-menu {
+  display: none;
+}
 #menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #8c92ac;
+  background-color: #333333;
 }
 #menu li {
   float: left;
 }
 #menu li a {
   display: block;
-  color: #007BFF;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 #menu li a:hover {
   background-color: #ffffff;
+  color: #007BFF;
+  cursor: pointer;
 }
 .social + .social {
   margin-left: 1em;
 }
-#headshot {
+.image-right {
   padding-right: 1em;
 }
 #current, #pos2017, #pos2016, #large, #tiny {
@@ -61,5 +72,14 @@
 @media (max-width: 960px) {
   html, body {
     overflow-x: hidden;
+  }
+  #menu {
+    display: none;
+  }
+  #menu li {
+    float: initial;
+  }
+  #mobile-menu {
+    display: block;
   }
 }
