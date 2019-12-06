@@ -15,18 +15,18 @@
 
 <body>
   <div id="mobile-menu" style="color: #007BFF;">
-    <p><a onclick="toggleMenu()"><h5>&#9776; Menu</h5></a></p>
+    <p><a onclick="toggleMenu();"><h5>&#9776; Menu</h5></a></p>
   </div>
   <div id="menu">
     <ul>
-      <li><a id="intro-link" class="page" onclick="changePage(event, 'intro')" style="background-color: #ffffff; color: #007BFF;">Intro</a></li>
-      <li><a id="education-link" class="page" onclick="changePage(event, 'education')">Education</a></li>
-      <li><a id="skills-link" class="page" onclick="changePage(event, 'skills')">Skills</a></li>
-      <li><a id="experience-link" class="page" onclick="changePage(event, 'experience')">Experience</a></li>
-      <li><a id="projects-link" class="page" onclick="changePage(event, 'projects')">Projects</a></li>
-      <li><a id="leadership-link" class="page" onclick="changePage(event, 'leadership')">Leadership</a></li>
-      <li><a id="volunteer-link" class="page" onclick="changePage(event, 'volunteer')">Volunteering</a></li>
-      <li><a id="ultimate-link" class="page" onclick="changePage(event, 'ultimate')">Ultimate</a></li>
+      <li><a id="intro-link" class="page" onclick="changePage(event, 'intro');" style="background-color: #ffffff; color: #007BFF;">Intro</a></li>
+      <li><a id="education-link" class="page" onclick="changePage(event, 'education');">Education</a></li>
+      <li><a id="skills-link" class="page" onclick="changePage(event, 'skills');">Skills</a></li>
+      <li><a id="experience-link" class="page" onclick="changePage(event, 'experience');">Experience</a></li>
+      <li><a id="projects-link" class="page" onclick="changePage(event, 'projects');">Projects</a></li>
+      <li><a id="leadership-link" class="page" onclick="changePage(event, 'leadership');">Leadership</a></li>
+      <li><a id="volunteer-link" class="page" onclick="changePage(event, 'volunteer');">Volunteering</a></li>
+      <li><a id="ultimate-link" class="page" onclick="changePage(event, 'ultimate');">Ultimate</a></li>
     </ul>
   </div>
   <div id="wrapper">
@@ -88,42 +88,74 @@
         </ul>
         <p>Also familiar with Athena, Budgets, CloudFormation, CodeBuild, CodePipeline, ElastiCache, RedShift, SNS, and Systems Manager.</p>
         <h5>UiPath Certificates</h5>
-        <object data="/pdfs/certificates.pdf#toolbar=0" type="application/pdf" width="100%" height="600px" style="border: 2px solid black;">
-          <p>If you cannot see the certificates, click <a href="/pdfs/certificates.pdf">here</a> to download the PDF.</p>
-        </object>
+        <p>Click <a href="/pdfs/certificates/certificates.pdf" target="_blank">here</a> to view my UiPath certifications.</p>
       </div>
       <div id="experience" class="section">
         <h1>Experience</h1>
         <br />
         <img class="image-right" src="/imgs/uipath-logo-official.png" alt="Official Logo for UiPath" align="right" width="25%" />
         <p><strong>Premium Support Engineer</strong><br /><a href="https://www.uipath.com/" target="_blank">UiPath</a><br />August 2019-Present<br />New York, NY</p>
-        <h3>2018-2019</h3>
-        <p><strong>Platform Engineer</strong><br />Varick<br />May-July 2019<br />New York, NY</p>
-        <p><strong>Software Engineer</strong><br />Overseas Military Sales Group<br />April 2018-May 2019<br />Woodbury, NY</p>
-        <h3>2017-2018</h3>        
-        <p><strong>Web Assistant</strong><br />Web Communications Team (<a href="https://adelphi.edu">Adelphi University</a>)<br />September 2017-April 2018<br />Garden City, NY<br /><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the Month: January 2018</a></p>
-        <p><strong>System Technician Intern</strong><br />Electro Industries/GaugeTech<br />June-September 2017<br />Westbury, NY</p>
-        <p><strong>Technology Sales Associate</strong><br />Staples<br />January-June 2017<br />Oceanside, NY</p>
-        <h3>2016</h3>
-        <p><strong>Library Systems Assistant</strong><br />Library Systems Support (<a href="https://adelphi.edu">Adelphi University</a>)<br />February-December 2016<br />Garden City, NY</p>
-        <p><strong>Cybersecurity System Analyst Intern</strong><br />Con Edison<br />June-August 2016<br />Mott Haven, NY</p>
-        <p><strong>Coding Mentor Intern</strong><br />kidOYO<br />February-April 2016<br />Garden City, NY</p>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('2018');">2019-2018</button></p>
+        <div id="2018" style="display: none;">
+          <p><strong>Platform Engineer</strong><br />Varick<br />May-July 2019<br />New York, NY</p>
+          <p><strong>Software Engineer</strong><br />Overseas Military Sales Group<br />April 2018-May 2019<br />Woodbury, NY</p>
+        </div>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('2017');">2018-2017</button></p>
+        <div id="2017" style="display: none;">       
+          <p><strong>Web Assistant</strong><br />Web Communications Team (<a href="https://adelphi.edu">Adelphi University</a>)<br />September 2017-April 2018<br />Garden City, NY<br /><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the Month: January 2018</a></p>
+          <p><strong>System Technician Intern</strong><br />Electro Industries/GaugeTech<br />June-September 2017<br />Westbury, NY</p>
+          <p><strong>Technology Sales Associate</strong><br />Staples<br />January-June 2017<br />Oceanside, NY</p>
+        </div>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('2016');">2016</button></p>
+        <div id="2016" style="display: none;">
+          <p><strong>Library Systems Assistant</strong><br />Library Systems Support (<a href="https://adelphi.edu">Adelphi University</a>)<br />February-December 2016<br />Garden City, NY</p>
+          <p><strong>Cybersecurity System Analyst Intern</strong><br />Con Edison<br />June-August 2016<br />Mott Haven, NY</p>
+          <p><strong>Coding Mentor Intern</strong><br />kidOYO<br />February-April 2016<br />Garden City, NY</p>
+        </div>
       </div>
       <div id="projects" class="section">
         <h1>Projects</h1>
         <br />
-        <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File Transfer</a><br />Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <strong>Java</strong>.<br /><a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>, <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>, <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical Documentation</a>.</p>
-        <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump Table</a><br />Drop table and dump data from external database to local for any amount of user-specified tables. <strong>Shell</strong>.</p>
-        <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub Webhooks Test</a><br />Test communicating with GitHub's webhooks. <strong>ngrok, Node.js, Ruby</strong>.</p>
-        <p><a href="https://github.com/magarenzo/grading-system" target="_blank">Grading System</a><br />Use a test menu to demo a grading system. <strong>Java, JavaFX</strong>.</p>
-        <p><a href="https://github.com/magarenzo/magarenzo.github.io" target="_blank">magarenzo.com</a><br />Source for my static site magarenzo.com. <strong>Bootstrap, CSS, HTML, JavaScript, jQuery</strong>.</p>
-        <p><a href="https://github.com/magarenzo/nba-wingspan-hypothetical" target="_blank">NBA Wingspan Hypothetical</a><br />Reduce your wingspan, earn hypothetical money, and compare yourself to an NBA superstar. <strong>Flask, Python</strong>.</p>
-        <p><img src="/imgs/nba-wingspan-hypothetical.gif" alt="GIF for NBA Wingspan Hypothetical" width="100%" /></p>
-        <p><a href="https://github.com/magarenzo/poker-hand-simulation" target="_blank">Poker Hand Simulation</a><br />Simulates poker hands and tracks simple pairings. <strong>R</strong>.</p>
-        <p><a href="https://github.com/magarenzo/rpa-challenge" target="_blank">RPA Challenge</a><br />The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on <a href="http://rpachallenge.com/" target="_blank">rpachallenge.com</a>. <strong>UiPath Studio, Visual Basic</strong>.</p>
-        <p><img src="/imgs/rpa-challenge.gif" alt="GIF for RPA Challenge" width="100%" /></p>
-        <p><a href="https://github.com/magarenzo/technical-topics" target="_blank">Technical Topics</a><br />Implementations of common data structures, algorithms, and problems. <strong>Java, PHP, Python</strong>.</p>
-        <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and Lacrosse Study</a><br />Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse. <strong>R</strong>.<br /><a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research Paper</a>.</p>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File Transfer</a><br />Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <strong>Java</strong>.<br /><a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>, <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>, <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical Documentation</a>.</p>
+            </div>
+            <div class="carousel-item">
+                <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump Table</a><br />Drop table and dump data from external database to local for any amount of user-specified tables. <strong>Shell</strong>.</p>
+            </div>
+            <div class="carousel-item">
+                <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub Webhooks Test</a><br />Test communicating with GitHub's webhooks. <strong>ngrok, Node.js, Ruby</strong>.</p>
+            </div>
+            <div class="carousel-item">
+              <p><a href="https://github.com/magarenzo/grading-system" target="_blank">Grading System</a><br />Use a test menu to demo a grading system. <strong>Java, JavaFX</strong>.</p>
+            </div>
+            <div class="carousel-item">
+              <p><a href="https://github.com/magarenzo/magarenzo.github.io" target="_blank">magarenzo.com</a><br />Source for my static site magarenzo.com. <strong>Bootstrap, CSS, HTML, JavaScript, jQuery</strong>.</p>
+            </div>
+            <div class="carousel-item">
+              <p><a href="https://github.com/magarenzo/nba-wingspan-hypothetical" target="_blank">NBA Wingspan Hypothetical</a><br />Reduce your wingspan, earn hypothetical money, and compare yourself to an NBA superstar. <strong>Flask, Python</strong>.</p>
+              <p><img src="/imgs/nba-wingspan-hypothetical.gif" alt="GIF for NBA Wingspan Hypothetical" width="100%" style="border: 2px solid black;" /></p>
+            </div>
+            <div class="carousel-item">
+              <p><a href="https://github.com/magarenzo/poker-hand-simulation" target="_blank">Poker Hand Simulation</a><br />Simulates poker hands and tracks simple pairings. <strong>R</strong>.</p>
+            </div>
+            <div class="carousel-item">
+              <p><a href="https://github.com/magarenzo/rpa-challenge" target="_blank">RPA Challenge</a><br />The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on <a href="http://rpachallenge.com/" target="_blank">rpachallenge.com</a>. <strong>UiPath Studio, Visual Basic</strong>.</p>
+              <p><img src="/imgs/rpa-challenge.gif" alt="GIF for RPA Challenge" width="100%" style="border: 2px solid black;" /></p>
+            </div>
+            <div class="carousel-item">
+                <p><a href="https://github.com/magarenzo/technical-topics" target="_blank">Technical Topics</a><br />Implementations of common data structures, algorithms, and problems. <strong>Java, PHP, Python</strong>.</p>
+            </div>
+            <div class="carousel-item">
+                <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and Lacrosse Study</a><br />Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse. <strong>R</strong>.<br /><a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research Paper</a>.</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          <button type="button" class="btn btn-primary" onclick="$('.carousel').carousel('prev');">Previous</button>
+          <button type="button" class="btn btn-primary" onclick="$('.carousel').carousel('next');">Next</button>
+        </p>
       </div>
       <div id="leadership" class="section">
         <h1>Leadership</h1>
@@ -165,17 +197,26 @@
         <p><a href="https://discny.org/" target="_blank">DiscNY</a> is a 501(c)(3) nonprofit organization and <a href="http://www.usaultimate.org" target="_blank">USAU</a> affiliate based in Manhattan that I am an active member of and volunteer for, including work I do as their webmaster. Its focus is on long-term growth and sustainability for the sport of ultimate in the metropolitan New York area.</p>
         <p><a href="http://liultimate.com/" target="_blank">LI Ultimate</a> is an affiliate of DiscNY that I am an active member and board member of. They aim to expand ultimate on Long Island through organized play, youth development, and a more competitive ultimate scene.</p>
         <h3>My Teams</h3>
-        <p><strong>Shade</strong><br />Men's Club Team<br />Summer 2019, NYC</p>
-        <p><img class="team" src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%" /></p><br />
-        <br />
-        <p><strong>Blueprint</strong><br />Men's Club Team<br />Summer 2018, NYC</p>
-        <p><img class="team" src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%" /></p><br />
-        <br />
-        <p><strong>Birds</strong><br />Mixed Club Team<br />Summer 2017, Long Island</p>
-        <p><img class="team" src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%" /></p>
-        <br />
-        <p><strong>Adelphi Ultimate</strong><br />Mixed College Team<br />2014-2018, Adelphi University</p>
-        <p><img class="team" src="/imgs/adelphi-team-photo.png" alt="Adelphi Ultimate Team Photo" width="100%" /></p>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('shade');">Shade</button></p>
+        <div id="shade" style="display: none;">
+          <p>Men's Club Team<br />Summer 2019, NYC</p>
+          <p><img class="team" src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%" /></p><br />
+        </div>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('blueprint');">Blueprint</button></p>
+        <div id="blueprint" style="display: none;">
+          <p>Men's Club Team<br />Summer 2018, NYC</p>
+          <p><img class="team" src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%" /></p><br />
+        </div>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('birds');">Birds</button></p>
+        <div id="birds" style="display: none;">
+          <p>Mixed Club Team<br />Summer 2017, Long Island</p>
+          <p><img class="team" src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%" /></p>
+        </div>
+        <p><button type="button" class="btn btn-primary" onclick="showDiv('adelphi');">Adelphi Ultimate</button></p>
+        <div id="adelphi" style="display: none;">
+          <p>Mixed College Team<br />2014-2018, Adelphi University</p>
+          <p><img class="team" src="/imgs/adelphi-team-photo.png" alt="Adelphi Ultimate Team Photo" width="100%" /></p>
+        </div>
       </div>
     </div>
     <div id="footer">
