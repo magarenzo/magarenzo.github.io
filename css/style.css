@@ -1,6 +1,9 @@
 .section {
   display: none;
 }
+.page-number {
+  font-style: italic;
+}
 #intro {
   display: block;
 }
