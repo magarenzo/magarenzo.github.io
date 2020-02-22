@@ -75,6 +75,9 @@
   #menu li {
     float: initial;
   }
+  #menu li a {
+    text-align: left;
+  }
   #mobile-menu {
     display: block;
   }
