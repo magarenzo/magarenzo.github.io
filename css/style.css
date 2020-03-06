@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #007BFF;
 }
 #menu li {
   float: left;
@@ -80,5 +80,8 @@
   }
   #mobile-menu {
     display: block;
+  }
+  #headshot {
+    width: 37.5%;
   }
 }
