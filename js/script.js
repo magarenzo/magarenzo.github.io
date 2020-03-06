@@ -12,7 +12,7 @@ function changePage(event, page) {
 
   var pages = document.getElementsByClassName("page");
   for (var i = 0; i < pages.length; i++) {
-    pages[i].style.backgroundColor = "#333333";
+    pages[i].style.backgroundColor = "#007BFF";
     pages[i].style.color = "#ffffff";
   }
   
