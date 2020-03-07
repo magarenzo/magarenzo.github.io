@@ -1,79 +1,92 @@
 .section {
-  display: none;
-}
-.page-number {
-  font-style: italic;
-}
-#home {
-  display: block;
-}
-#mobile-menu {
-  display: none;
-}
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #007BFF;
-}
-#menu li {
-  float: left;
-}
-#menu li a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-#menu li a:hover {
-  cursor: pointer;
-}
-.social + .social {
-  margin-left: 1em;
-}
-.image-right {
-  padding-right: 1em;
-}
-#current, #pos2017, #pos2016, #large, #tiny {
-  padding-bottom: 1em;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  box-shadow: inset 0 0 5px #CCC;
-}
-::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 5px;
-}
-#wrapper {
-  max-width: 960px;
-  margin: auto;
-  position: relative;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-#content {
-  padding-top: 2em;
-}
-@media (max-width: 960px) {
-  html, body {
-    overflow-x: hidden;
-  }
-  #menu {
     display: none;
-  }
-  #menu li {
-    float: initial;
-  }
-  #menu li a {
-    text-align: left;
-  }
-  #mobile-menu {
+}
+
+.page-number {
+    font-style: italic;
+}
+
+#home {
     display: block;
-  }
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007BFF;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    cursor: pointer;
+}
+
+.social+.social {
+    margin-left: 1em;
+}
+
+.image-right {
+    padding-right: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px #CCC;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#content {
+    padding-top: 2em;
+}
+
+@media (max-width: 960px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    #menu {
+        display: none;
+    }
+    #menu li {
+        float: initial;
+    }
+    #menu li a {
+        text-align: left;
+    }
+    #mobile-menu {
+        display: block;
+    }
 }
