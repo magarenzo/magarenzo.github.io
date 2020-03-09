@@ -1,3 +1,6 @@
+h1 {
+    color: #007BFF;
+}
 .section {
     display: none;
 }
@@ -89,6 +92,6 @@
         display: block;
     }
     #headshot {
-        width: 35%;
+        display: none;
     }
 }
