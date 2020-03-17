@@ -1,4 +1,5 @@
-h1 {
+h1,
+h2 {
     color: #007BFF;
 }
 .section {
@@ -7,6 +8,10 @@ h1 {
 
 .page-number {
     font-style: italic;
+}
+
+.home-link:hover {
+    cursor: pointer;
 }
 
 #home {
@@ -90,8 +95,5 @@ h1 {
     }
     #mobile-menu {
         display: block;
-    }
-    #headshot {
-        display: none;
     }
 }
