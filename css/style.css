@@ -7,7 +7,7 @@ h2 {
     display: none;
 }
 
-.home-link:hover {
+.link-on-home:hover {
     cursor: pointer;
 }
 
@@ -19,12 +19,16 @@ h2 {
     display: none;
 }
 
+#menu {
+    display: table;
+    margin: 0 auto;
+}
+
 #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #007BFF;
 }
 
 #menu li {
