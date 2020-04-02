@@ -17,6 +17,11 @@ h2 {
 
 #mobile-menu {
     display: none;
+    text-align: center;
+}
+
+.mobile-hr {
+    display: none;
 }
 
 #menu {
@@ -97,12 +102,12 @@ h2 {
         float: initial;
     }
     #menu li a {
-        text-align: left;
+        text-align: center;
     }
     #mobile-menu {
         display: block;
     }
-    #footer {
-        text-align: left;
+    .mobile-hr {
+        display: block;
     }
 }
