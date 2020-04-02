@@ -29,6 +29,7 @@ h2 {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    text-align: center;
 }
 
 #menu li {
@@ -80,6 +81,10 @@ h2 {
     padding-top: 2em;
 }
 
+#footer {
+    text-align: center;
+}
+
 @media (max-width: 960px) {
     html,
     body {
@@ -96,5 +101,8 @@ h2 {
     }
     #mobile-menu {
         display: block;
+    }
+    #footer {
+        text-align: left;
     }
 }
