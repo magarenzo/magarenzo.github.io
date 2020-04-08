@@ -1,6 +1,19 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
 h1,
 h2 {
-    color: #007BFF;
+    color: #00AEFF;
+}
+
+hr {
+    border-color: white;
+}
+
+a {
+    color: #00AEFF;
 }
 
 .section {
@@ -43,7 +56,7 @@ h2 {
 
 #menu li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -66,7 +79,7 @@ h2 {
 }
 
 ::-webkit-scrollbar-track {
-    background: #007BFF;
+    background: #00AEFF;
 }
 
 ::-webkit-scrollbar-thumb {

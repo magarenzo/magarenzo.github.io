@@ -12,11 +12,11 @@ function changePage(event, page) {
 
     var pages = document.getElementsByClassName("page");
     for (var i = 0; i < pages.length; i++) {
-        pages[i].style.color = "black";
+        pages[i].style.color = "white";
     }
 
     var link = document.getElementById(page + "-link");
-    link.style.color = "#007BFF";
+    link.style.color = "#00AEFF";
 
     if (screen.width <= 960) {
         document.getElementById("menu").style.display = "none";
