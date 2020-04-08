@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Michael A. Agarenzo">
     <meta property="og:image" content="/imgs/professional-headshot-square.jpg">
     <title>magarenzo.com</title>
     <link rel="icon" href="/imgs/professional-headshot.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -24,19 +26,23 @@
         <hr class="mobile-hr">
         <ul>
             <li>
-                <a id="home-link" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img alt="Home" src="/imgs/icons/house.png" width="25" height="25"> Home</a>
+                <a id="home-link" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img
+                        alt="Home" src="/imgs/icons/house.png" width="25" height="25"> Home</a>
             </li>
             <hr class="mobile-hr">
             <li>
-                <a id="experience-link" class="page" onclick="changePage(event, 'experience');"><img alt="Resume" src="/imgs/icons/document.png" width="25" height="25"> Experience</a>
+                <a id="experience-link" class="page" onclick="changePage(event, 'experience');"><img alt="Resume"
+                        src="/imgs/icons/document.png" width="25" height="25"> Experience</a>
             </li>
             <hr class="mobile-hr">
             <li>
-                <a id="projects-link" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/imgs/icons/computer.png" width="25" height="25"> Projects</a>
+                <a id="projects-link" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop"
+                        src="/imgs/icons/computer.png" width="25" height="25"> Projects</a>
             </li>
             <hr class="mobile-hr">
             <li>
-                <a id="more-link" class="page" onclick="changePage(event, 'more');"><img alt="Hammer" src="imgs/icons/hammer.png" width="25" height="25"> More</a>
+                <a id="more-link" class="page" onclick="changePage(event, 'more');"><img alt="Hammer"
+                        src="imgs/icons/hammer.png" width="25" height="25"> More</a>
             </li>
         </ul>
         <hr class="mobile-hr">
@@ -47,106 +53,126 @@
 
             <div id="home" class="section">
                 <h1>magarenzo.com</h1><br>
-                <p>Hi, I'm <strong>Michael</strong>, an <strong>Implementation Software Engineer</strong> at UiPath &#129302; and a
-                    <strong>Computer Science graduate</strong> of Adelphi University</p>
-                <p>Check out <a class="link-on-home" onclick="changePage(event, 'experience');" style="color: #17a2b8;">experience</a> for where I've worked, my skills & more, <a class="link-on-home" onclick="changePage(event, 'projects');" style="color: #17a2b8;">projects</a>                    to catch up on my latest programming endeavors, and <a class="link-on-home" onclick="changePage(event, 'more');" style="color: #17a2b8;">more</a> for some fun extras &#128640;
-                </p>
+                <div class="block">
+                    <p>Hi, I'm <strong>Michael</strong>, an <strong>Implementation Software Engineer</strong> at UiPath
+                        &#129302; and a
+                        <strong>Computer Science graduate</strong> of Adelphi University</p>
+                    <p>Check out <a class="link-on-home" onclick="changePage(event, 'experience');"
+                            style="color: #17a2b8;">experience</a> for where I've worked, my skills & more, <a
+                            class="link-on-home" onclick="changePage(event, 'projects');"
+                            style="color: #17a2b8;">projects</a> to catch up on my latest programming endeavors, and <a
+                            class="link-on-home" onclick="changePage(event, 'more');" style="color: #17a2b8;">more</a>
+                        for some fun extras &#128640;</p>
+                </div>
             </div>
 
             <div id="experience" class="section">
                 <h1>Experience</h1><br>
-                <img class="image-right" src="/imgs/uipath-logo-official.png" alt="Official Logo for UiPath" align="right" width="25%">
-                <p><strong>Implementation Software Engineer</strong><br>UiPath<br>August 2019 to Present<br>New York, NY
-                </p>
-                <p><button type="button" class="btn btn-info" onclick="showDiv('past-experience', false);">2019 to
-                        2016</button>
-                </p>
-                <div id="past-experience" style="display: none;">
-                    <p><strong>Platform Engineer</strong><br>Varick<br>May to July 2019<br>New York, NY</p>
-                    <p><strong>Software Engineer</strong><br>Overseas Military Sales Group<br>April 2018 to May 2019
-                        <br>Woodbury, NY
+                <div class="block">
+                    <img class="image-right" src="/imgs/uipath-logo-official.png" alt="Official Logo for UiPath"
+                        align="right" width="25%">
+                    <p><strong>Implementation Software Engineer</strong><br>UiPath<br>August 2019 to Present<br>New
+                        York, NY
                     </p>
-                    <p><strong>Web Assistant</strong><br>Adelphi University<br>September 2017 to April 2018<br>Garden City, NY
-                        <br><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of the
-                            Month:
-                            January
-                            2018</a></p>
-                    <p><strong>System Technician Intern</strong><br>Electro Industries/GaugeTech<br>June to September 2017
-                        <br>Westbury, NY</p>
-                    <p><strong>Technology Sales Associate</strong><br>Staples<br>January to June 2017<br>Oceanside, NY
+                    <p><button type="button" class="btn btn-info" onclick="showDiv('past-experience', false);">2019 to
+                            2016</button>
                     </p>
-                    <p><strong>Library Systems Assistant</strong><br>Adelphi University<br>February to December 2016
-                        <br>Garden City, NY
-                    </p>
-                    <p><strong>Cybersecurity System Analyst Intern</strong><br>Con Edison<br>June to August 2016<br>Mott Haven, NY
-                    </p>
-                    <p><strong>Coding Mentor Intern</strong><br>kidOYO<br>February to April 2016<br>Garden City, NY</p>
+                    <div id="past-experience" style="display: none;">
+                        <p><strong>Platform Engineer</strong><br>Varick<br>May to July 2019<br>New York, NY</p>
+                        <p><strong>Software Engineer</strong><br>Overseas Military Sales Group<br>April 2018 to May 2019
+                            <br>Woodbury, NY
+                        </p>
+                        <p><strong>Web Assistant</strong><br>Adelphi University<br>September 2017 to April
+                            2018<br>Garden City, NY
+                            <br><a href="http://news.adelphi.edu/au_news/agarenzo/" target="_blank">IT Student Worker of
+                                the
+                                Month:
+                                January
+                                2018</a></p>
+                        <p><strong>System Technician Intern</strong><br>Electro Industries/GaugeTech<br>June to
+                            September 2017
+                            <br>Westbury, NY</p>
+                        <p><strong>Technology Sales Associate</strong><br>Staples<br>January to June 2017<br>Oceanside,
+                            NY
+                        </p>
+                        <p><strong>Library Systems Assistant</strong><br>Adelphi University<br>February to December 2016
+                            <br>Garden City, NY
+                        </p>
+                        <p><strong>Cybersecurity System Analyst Intern</strong><br>Con Edison<br>June to August
+                            2016<br>Mott Haven, NY
+                        </p>
+                        <p><strong>Coding Mentor Intern</strong><br>kidOYO<br>February to April 2016<br>Garden City, NY
+                        </p>
+                    </div>
                 </div><br>
-                <hr>
                 <h2>Education</h2><br>
-                <img class="image-right" src="/imgs/adelphi-logo.png" alt="Official Logo for Adelphi University" align="right" width="25%">
-                <h4>College</h4>
-                <p>Adelphi University</p>
-                <h4>Degree</h4>
-                <p>B.S. in Computer Science</p>
-                <h4>Concentration</h4>
-                <p>Information Security</p>
-                <h4>Graduation Date</h4>
-                <p>May 2018</p><br>
-                <hr>
+                <div class="block">
+                    <img class="image-right" src="/imgs/adelphi-logo.png" alt="Official Logo for Adelphi University"
+                        align="right" width="25%">
+                    <h4>College</h4>
+                    <p>Adelphi University</p>
+                    <h4>Degree</h4>
+                    <p>B.S. in Computer Science</p>
+                    <h4>Concentration</h4>
+                    <p>Information Security</p>
+                    <h4>Graduation Date</h4>
+                    <p>May 2018</p>
+                </div><br>
 
                 <h2>Certifications</h2><br>
-                <h4>Miscellaneous</h4>
-                <ul>
-                    <li>
-                        <a href="/pdfs/certifications/AI-Demystified.pdf" target="_blank">AI Demystified</a>
-                    </li>
-                </ul>
-                <h4>UiPath</h4>
-                <ul>
-                    <li>Model Based Approach for Document Understanding</li>
-                    <li>
-                        <a href="/pdfs/certifications/Insights-Training.pdf" target="_blank">Insights Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/RPA-Developer-Advanced-Training.pdf" target="_blank">RPA
-                            Developer Advanced Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Infrastructure-Training.pdf" target="_blank">Infrastructure
-                            Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Licensing-Training.pdf" target="_blank">Licensing Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Security-Training.pdf" target="_blank">Security Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Solution-Architect-Training.pdf" target="_blank">Solution
-                            Architect Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Advanced-Training.pdf" target="_blank">Advanced Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Foundation-Training.pdf" target="_blank">Foundation
-                            Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/Orchestrator-Training.pdf" target="_blank">Orchestrator
-                            Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/SAP-Automation-Training.pdf" target="_blank">SAP Automation
-                            Training</a>
-                    </li>
-                    <li>
-                        <a href="/pdfs/certifications/RPA-Starter-Training.pdf" target="_blank">RPA Starter
-                            Training</a>
-                    </li>
-                </ul>
-                <hr>
+                <div class="block">
+                    <h4>Miscellaneous</h4>
+                    <ul>
+                        <li>
+                            <a href="/pdfs/certifications/AI-Demystified.pdf" target="_blank">AI Demystified</a>
+                        </li>
+                    </ul>
+                    <h4>UiPath</h4>
+                    <ul>
+                        <li>Model Based Approach for Document Understanding</li>
+                        <li>
+                            <a href="/pdfs/certifications/Insights-Training.pdf" target="_blank">Insights Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/RPA-Developer-Advanced-Training.pdf" target="_blank">RPA
+                                Developer Advanced Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Infrastructure-Training.pdf" target="_blank">Infrastructure
+                                Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Licensing-Training.pdf" target="_blank">Licensing Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Security-Training.pdf" target="_blank">Security Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Solution-Architect-Training.pdf" target="_blank">Solution
+                                Architect Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Advanced-Training.pdf" target="_blank">Advanced Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Foundation-Training.pdf" target="_blank">Foundation
+                                Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/Orchestrator-Training.pdf" target="_blank">Orchestrator
+                                Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/SAP-Automation-Training.pdf" target="_blank">SAP Automation
+                                Training</a>
+                        </li>
+                        <li>
+                            <a href="/pdfs/certifications/RPA-Starter-Training.pdf" target="_blank">RPA Starter
+                                Training</a>
+                        </li>
+                    </ul>
+                </div><br>
+
                 <h2>Tech Stack</h2><br>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover table-dark">
@@ -161,11 +187,14 @@
                             </tr>
                             <tr>
                                 <td><strong>Cloud / OS / Virtualization</strong></td>
-                                <td>Amazon Linux, AWS, Azure, CentOS, Docker, Hyper-V, macOS, Ubuntu, VMware, Windows</td>
+                                <td>Amazon Linux, AWS, Azure, CentOS, Docker, Hyper-V, macOS, Ubuntu, VMware, Windows
+                                </td>
                             </tr>
                             <tr>
                                 <td><strong>Robotic Process Automation</strong></td>
-                                <td>Document Understanding, OCR, UiPath AI Fabric, UiPath Insights, UiPath Orchestrator, UiPath Process Mining, UiPath Robots, UiPath Studio, UiPath StudioX, UiPath Task Capture</td>
+                                <td>Document Understanding, OCR, UiPath AI Fabric, UiPath Insights, UiPath Orchestrator,
+                                    UiPath Process Mining, UiPath Robots, UiPath Studio, UiPath StudioX, UiPath Task
+                                    Capture</td>
                             </tr>
                             <tr>
                                 <td><strong>Miscellaneous</strong></td>
@@ -180,7 +209,9 @@
                         <tbody>
                             <tr>
                                 <td><strong>API Gateway</strong></td>
-                                <td>Creating and publishing REST APIs. Listening for POST requests, invoking Lambda functions, and sending back a response. Locking down endpoints using HTTP authentication based on the Basic schema.</td>
+                                <td>Creating and publishing REST APIs. Listening for POST requests, invoking Lambda
+                                    functions, and sending back a response. Locking down endpoints using HTTP
+                                    authentication based on the Basic schema.</td>
                             </tr>
                             <tr>
                                 <td><strong>Athena</strong></td>
@@ -189,15 +220,18 @@
                             </tr>
                             <tr>
                                 <td><strong>Billing and Cost Management</strong></td>
-                                <td>Navigating the cost explorer. Setting up cost and usage reports. Creating cost allocation tags.</td>
+                                <td>Navigating the cost explorer. Setting up cost and usage reports. Creating cost
+                                    allocation tags.</td>
                             </tr>
                             <tr>
                                 <td><strong>CloudWatch</strong></td>
-                                <td>Creating alarms. Creating rules with Lambda targets on trigger. Streaming logs to log groups. Monitoring metrics.</td>
+                                <td>Creating alarms. Creating rules with Lambda targets on trigger. Streaming logs to
+                                    log groups. Monitoring metrics.</td>
                             </tr>
                             <tr>
                                 <td><strong>ECR</strong></td>
-                                <td>Pushing and pulling repositories. Including repositories in automatic builds using Docker-Compose.
+                                <td>Pushing and pulling repositories. Including repositories in automatic builds using
+                                    Docker-Compose.
                                 </td>
                             </tr>
                             <tr>
@@ -207,12 +241,14 @@
                             </tr>
                             <tr>
                                 <td><strong>KMS</strong></td>
-                                <td>Creating keys and encrypting and decrypting environment variables in Lambda functions.
+                                <td>Creating keys and encrypting and decrypting environment variables in Lambda
+                                    functions.
                                 </td>
                             </tr>
                             <tr>
                                 <td><strong>Lambda</strong></td>
-                                <td>Creating Node.js and Python functions. Combining them in workflows with other services.
+                                <td>Creating Node.js and Python functions. Combining them in workflows with other
+                                    services.
                                 </td>
                             </tr>
                             <tr>
@@ -230,205 +266,274 @@
                         </tbody>
                     </table>
                 </div><br>
-                <p>Familiar with <strong>Athena, Budgets, CloudFormation, CloudBuild, CodePipeline, ElastiCache,
-                        RedShift, SNS, Systems Manager</strong></p>
+                <div class="block">
+                    <p>Familiar with <strong>Athena, Budgets, CloudFormation, CloudBuild, CodePipeline, ElastiCache,
+                            RedShift, SNS, Systems Manager</strong></p>
+                </div>
             </div>
 
             <div id="projects" class="section">
                 <h1>Projects</h1><br>
-                <p><a href="https://github.com/magarenzo/rpa-challenge" target="_blank">RPA
-                        Challenge</a><br>The goal of this challenge is to create a workflow that will input data from a spreadsheet into the form fields on rpachallenge.com.
-                    <strong>UiPath Studio, VB</strong>.</p>
-                <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File
-                        Transfer</a><br>Listens for Bluetooth connection from nearby Android Server and responds to received protocols. <strong>Java</strong>. <a href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>,
-                    <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision
-                        Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf" target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf" target="_blank">Resources</a>,
-                    <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical
-                        Documentation</a>.</p>
-                <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump
-                        Table</a><br>Drop table and dump data from external database to local for any amount of user-specified tables.
-                    <strong>Bash</strong>.</p>
-                <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub
-                        Webhooks
-                        Test</a><br>Test communicating with GitHub's webhooks. <strong>JS, ngrok, Node.js,
-                        Ruby</strong>.</p>
-                <p><a href="https://github.com/magarenzo/grading-system" target="_blank">Grading
-                        System</a><br>Use a test menu to demo a grading system. <strong>Java,
-                        JavaFX</strong>.</p>
-                <p><a href="https://github.com/magarenzo/magarenzo.github.io" target="_blank">magarenzo.com</a><br>Source for my static site magarenzo.com.
-                    <strong>Bootstrap, CSS, HTML, JavaScript, jQuery</strong>.</p>
-                <p><a href="https://github.com/magarenzo/poker-hand-simulation" target="_blank">Poker Hand
-                        Simulation</a><br>Simulates poker hands and tracks simple pairings.
-                    <strong>R</strong>.</p>
-                <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and
-                        Lacrosse Study</a><br>Limiting Factors to Participation in USA Ultimate in Comparison to US Lacrosse.
-                    <strong>R</strong>. <a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf" target="_blank">Presentation</a>, <a href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research
-                        Paper</a>.</p><br>
-                <p>Check out all of my projects <a href="https://github.com/magarenzo?tab=repositories" target="_blank">here</a> on my GitHub profile.</p>
+                <div class="block">
+                    <p><a href="https://github.com/magarenzo/rpa-challenge" target="_blank">RPA
+                            Challenge</a><br>The goal of this challenge is to create a workflow that will input data
+                        from a
+                        spreadsheet into the form fields on rpachallenge.com.
+                        <strong>UiPath Studio, VB</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/droidtooth-file-transfer" target="_blank">DroidTooth File
+                            Transfer</a><br>Listens for Bluetooth connection from nearby Android Server and responds to
+                        received protocols. <strong>Java</strong>. <a
+                            href="/pdfs/DroidTooth-File-Transfer/data-sheet.pdf" target="_blank">Data Sheet</a>,
+                        <a href="/pdfs/DroidTooth-File-Transfer/decision-log.pdf" target="_blank">Decision
+                            Log</a>, <a href="/pdfs/DroidTooth-File-Transfer/requirements.pdf"
+                            target="_blank">Requirements</a>, <a href="/pdfs/DroidTooth-File-Transfer/resources.pdf"
+                            target="_blank">Resources</a>,
+                        <a href="/pdfs/DroidTooth-File-Transfer/technical-documentation.pdf" target="_blank">Technical
+                            Documentation</a>.</p>
+                    <p><a href="https://github.com/magarenzo/drop-dump-table" target="_blank">Drop, Dump
+                            Table</a><br>Drop table and dump data from external database to local for any amount of
+                        user-specified tables.
+                        <strong>Bash</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/github-webhooks-test" target="_blank">GitHub
+                            Webhooks
+                            Test</a><br>Test communicating with GitHub's webhooks. <strong>JS, ngrok, Node.js,
+                            Ruby</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/grading-system" target="_blank">Grading
+                            System</a><br>Use a test menu to demo a grading system. <strong>Java,
+                            JavaFX</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/magarenzo.github.io"
+                            target="_blank">magarenzo.com</a><br>Source for my static site magarenzo.com.
+                        <strong>Bootstrap, CSS, HTML, JavaScript, jQuery</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/poker-hand-simulation" target="_blank">Poker Hand
+                            Simulation</a><br>Simulates poker hands and tracks simple pairings.
+                        <strong>R</strong>.</p>
+                    <p><a href="https://github.com/magarenzo/ultimate-and-lacrosse-study" target="_blank">Ultimate and
+                            Lacrosse Study</a><br>Limiting Factors to Participation in USA Ultimate in Comparison to US
+                        Lacrosse.
+                        <strong>R</strong>. <a href="/pdfs/Ultimate-and-Lacrosse-Study/presentation.pdf"
+                            target="_blank">Presentation</a>, <a
+                            href="/pdfs/Ultimate-and-Lacrosse-Study/research-paper.pdf" target="_blank">Research
+                            Paper</a>.</p>
+                </div><br>
+                <div class="block">
+                    <p>Check out all of my projects <a href="https://github.com/magarenzo?tab=repositories"
+                            target="_blank">here</a> on my GitHub profile.</p>
+                </div>
             </div>
 
             <div id="more" class="section">
                 <h1>Volunteering</h1><br>
-                <img class="image-right" src="/imgs/liu-logo.png" alt="Official Logo for Long Island Ultimate" align="right" width="25%">
-                <p><strong>Board Member</strong><br>Long Island Ultimate<br>December 2019 to Present<br></p>
-                <ul>
-                    <li>
-                        <p>Manage website.</p>
-                    </li>
-                    <li>
-                        <p>Partake in monthly board meetings and daily messaging, providing insight regarding the organization's plans and actions.</p>
-                    </li>
-                    <li>
-                        <p>Partake in a yearly planning meeting to scope out the year ahead and discuss major topics.
-                        </p>
-                    </li>
-                </ul><br>
-                <img class="image-right" src="/imgs/discny-logo.png" alt="Official Logo for DiscNY" align="right" width="25%">
-                <p><strong>Webmaster</strong><br>DiscNY<br>October 2016 to Present<br><a href="https://discny.org/p/volunteer-spotlight-mike-agarenzo" target="_blank">Volunteer
-                        Spotlight</a>
-                </p>
-                <ul>
-                    <li>
-                        <p>Maintain website content, creating and editing images, pages and posts.</p>
-                    </li>
-                    <li>
-                        <p>Create and set up events and registration settings.</p>
-                    </li>
-                    <li>
-                        <p>Set up youth site and migrated relevant content over.</p>
-                    </li>
-                    <li>
-                        <p>Report bugs and make feature requests for Ultimate Central, an event and member management platform for ultimate organizations.</p>
-                    </li>
-                    <li>
-                        <p>Partake in daily email communications.</p>
-                    </li>
-                </ul><br>
-                <p><button type="button" class="btn btn-info" onclick="showDiv('past-volunteering', false);">2019 to
-                        2017</button>
-                </p>
-                <div id="past-volunteering" style="display: none;">
-                    <img class="image-right" src="/imgs/making-strides-logo.png" alt="Official Logo for American Cancer Society Making Strides Against Breast Cancer" align="right" width="25%">
-                    <p><strong>Participant in Making Strides of Long Island</strong><br>American Cancer Society
-                        <br>October 2019
-                        <br>Jones Beach</p>
+                <div class="block">
+                    <img class="image-right" src="/imgs/liu-logo.png" alt="Official Logo for Long Island Ultimate"
+                        align="right" width="25%">
+                    <p><strong>Board Member</strong><br>Long Island Ultimate<br>December 2019 to Present<br></p>
                     <ul>
                         <li>
-                            <p>Participated in Long Island's Making Strides event.</p>
-                        </li>
-                    </ul><br>
-                    <img class="image-right" src="/imgs/relay-for-life-logo.png" alt="Official Logo for American Cancer Society Relay For Life" align="right" width="25%">
-                    <p><strong>Participant in and Fundraiser for Relay For Life</strong><br>American Cancer Society
-                        <br>April 2015 to May 2018<br>Adelphi University</p>
-                    <ul>
-                        <li>
-                            <p>Participated yearly in and raised money for Adelphi University's Relay For Life event.
-                            </p>
+                            <p>Manage website.</p>
                         </li>
                         <li>
-                            <p>Fundraised throughout each year by getting individuals to sign up for the event and donate to the organization.
+                            <p>Partake in monthly board meetings and daily messaging, providing insight regarding the
+                                organization's plans and actions.</p>
+                        </li>
+                        <li>
+                            <p>Partake in a yearly planning meeting to scope out the year ahead and discuss major
+                                topics.
                             </p>
                         </li>
                     </ul><br>
-                    <p><strong>Organizer for Adelphi Ultimate Food Drive</strong><br>St. Thomas the Apostle<br>April 2017
+                    <img class="image-right" src="/imgs/discny-logo.png" alt="Official Logo for DiscNY" align="right"
+                        width="25%">
+                    <p><strong>Webmaster</strong><br>DiscNY<br>October 2016 to Present<br><a
+                            href="https://discny.org/p/volunteer-spotlight-mike-agarenzo" target="_blank">Volunteer
+                            Spotlight</a>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Maintain website content, creating and editing images, pages and posts.</p>
+                        </li>
+                        <li>
+                            <p>Create and set up events and registration settings.</p>
+                        </li>
+                        <li>
+                            <p>Set up youth site and migrated relevant content over.</p>
+                        </li>
+                        <li>
+                            <p>Report bugs and make feature requests for Ultimate Central, an event and member
+                                management
+                                platform for ultimate organizations.</p>
+                        </li>
+                        <li>
+                            <p>Partake in daily email communications.</p>
+                        </li>
+                    </ul><br>
+                    <p><button type="button" class="btn btn-info" onclick="showDiv('past-volunteering', false);">2019 to
+                            2017</button>
+                    </p>
+                    <div id="past-volunteering" style="display: none;">
+                        <img class="image-right" src="/imgs/making-strides-logo.png"
+                            alt="Official Logo for American Cancer Society Making Strides Against Breast Cancer"
+                            align="right" width="25%">
+                        <p><strong>Participant in Making Strides of Long Island</strong><br>American Cancer Society
+                            <br>October 2019
+                            <br>Jones Beach</p>
+                        <ul>
+                            <li>
+                                <p>Participated in Long Island's Making Strides event.</p>
+                            </li>
+                        </ul><br>
+                        <img class="image-right" src="/imgs/relay-for-life-logo.png"
+                            alt="Official Logo for American Cancer Society Relay For Life" align="right" width="25%">
+                        <p><strong>Participant in and Fundraiser for Relay For Life</strong><br>American Cancer Society
+                            <br>April 2015 to May 2018<br>Adelphi University</p>
+                        <ul>
+                            <li>
+                                <p>Participated yearly in and raised money for Adelphi University's Relay For Life
+                                    event.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Fundraised throughout each year by getting individuals to sign up for the event and
+                                    donate to the organization.
+                                </p>
+                            </li>
+                        </ul><br>
+                        <p><strong>Organizer for Adelphi Ultimate Food Drive</strong><br>St. Thomas the Apostle<br>April
+                            2017
+                            <br>Adelphi University</p>
+                        <ul>
+                            <li>
+                                <p>Collected non-perishable food items from all participating teams in Adelphi
+                                    Ultimate's
+                                    yearly home tournament.</p>
+                            </li>
+                            <li>
+                                <p>All proceeds were donated to St. Thomas the Apostle, a local church in West
+                                    Hempstead,
+                                    NY.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><br>
+
+                <h2>Leadership</h2><br>
+                <div class="block">
+                    <p><strong>Captain, Secretary</strong><br>Ultimate Frisbee Team<br>May 2015 to May 2017<br>Adelphi
+                        University
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Created, planned, explained and led what was done at practices and competitions.</p>
+                        </li>
+                        <li>
+                            <p>Kept records such as attendance at events and minutes at meetings, disseminating
+                                information
+                                to members thereafter.</p>
+                        </li>
+                        <li>
+                            <p>Managed all registration and insurance forms of members, ensuring timely distribution,
+                                collection and submission.</p>
+                        </li>
+                        <li>
+                            <p>Managed and promoted frequent and timely communication among members.</p>
+                        </li>
+                    </ul><br>
+                    <p><strong>Treasurer and Secretary</strong><br>Cybersecurity Club<br>May 2016 to March
+                        2017<br>Adelphi
+                        University
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Researched cybersecurity topics of interest to be presented, discussed and performed at
+                                weekly meetings.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Managed and requested funds.</p>
+                        </li>
+                    </ul><br>
+                    <p><strong>Recording Secretary</strong><br>Math and Computer Science Club<br>February to December
+                        2016
                         <br>Adelphi University</p>
                     <ul>
                         <li>
-                            <p>Collected non-perishable food items from all participating teams in Adelphi Ultimate's yearly home tournament.</p>
-                        </li>
-                        <li>
-                            <p>All proceeds were donated to St. Thomas the Apostle, a local church in West Hempstead, NY.
+                            <p>Recorded and organized minutes and any other information regarding meetings, club
+                                membership,
+                                events, etc., filing them both physically and electronically for recall and public
+                                viewing.
                             </p>
                         </li>
                     </ul>
                 </div><br>
-                <hr>
-
-                <h2>Leadership</h2><br>
-                <p><strong>Captain, Secretary</strong><br>Ultimate Frisbee Team<br>May 2015 to May 2017<br>Adelphi University
-                </p>
-                <ul>
-                    <li>
-                        <p>Created, planned, explained and led what was done at practices and competitions.</p>
-                    </li>
-                    <li>
-                        <p>Kept records such as attendance at events and minutes at meetings, disseminating information to members thereafter.</p>
-                    </li>
-                    <li>
-                        <p>Managed all registration and insurance forms of members, ensuring timely distribution, collection and submission.</p>
-                    </li>
-                    <li>
-                        <p>Managed and promoted frequent and timely communication among members.</p>
-                    </li>
-                </ul><br>
-                <p><strong>Treasurer and Secretary</strong><br>Cybersecurity Club<br>May 2016 to March 2017<br>Adelphi University
-                </p>
-                <ul>
-                    <li>
-                        <p>Researched cybersecurity topics of interest to be presented, discussed and performed at weekly meetings.
-                        </p>
-                    </li>
-                    <li>
-                        <p>Managed and requested funds.</p>
-                    </li>
-                </ul><br>
-                <p><strong>Recording Secretary</strong><br>Math and Computer Science Club<br>February to December 2016
-                    <br>Adelphi University</p>
-                <ul>
-                    <li>
-                        <p>Recorded and organized minutes and any other information regarding meetings, club membership, events, etc., filing them both physically and electronically for recall and public viewing.
-                        </p>
-                    </li>
-                </ul><br>
-                <hr>
 
                 <h2>Ultimate</h2><br>
-                <p>DiscNY is a 501(c)(3) nonprofit organization and USAU (USA Ultimate) affiliate based in NYC that I am an active member of and volunteer for, including work I do as their webmaster. Our focus is on long-term growth and sustainability for
-                    the sport of ultimate in the state of New York.</p>
-                <p>Long Island Ultimate is a 501(c)(3) nonprofit organization and DiscNY affiliate I am an active member, volunteer, and board member of. We aim to expand ultimate on Long Island through organized play, youth development, and a more competitive
-                    ultimate scene.</p>
-                <h4>My Teams</h4><br>
-                <div id="carousel-ultimate" class="carousel slide" data-ride="carousel-ultimate">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p><strong>Shade</strong><br>Men's Club Team<br>Summer 2019<br>NYC</p>
-                            <p><img src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%" style="border: 2px solid black;"></p>
-                        </div>
-                        <div class="carousel-item">
-                            <p><strong>Blueprint</strong><br>Men's Club Team<br>Summer 2018<br>Brooklyn</p>
-                            <p><img src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%" style="border: 2px solid black;"></p>
-                        </div>
-                        <div class="carousel-item">
-                            <p><strong>Birds</strong><br>Mixed Club Team<br>Summer 2017<br>Long Island</p>
-                            <p><img src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%" style="border: 2px solid black;"></p>
-                        </div>
-                        <div class="carousel-item">
-                            <p><strong>Adelphi Ultimate</strong><br>Mixed College Team<br>2014 to 2018<br>Adelphi University
-                            </p>
-                            <p><img src="/imgs/adelphi-team-photo.jpg" alt="Adelphi Ultimate Team Photo" width="100%" style="border: 2px solid black;"></p>
+                <div class="block">
+                    <p>DiscNY is a 501(c)(3) nonprofit organization and USAU (USA Ultimate) affiliate based in NYC that
+                        I am
+                        an active member of and volunteer for, including work I do as their webmaster. Our focus is on
+                        long-term growth and sustainability for
+                        the sport of ultimate in the state of New York.</p>
+                    <p>Long Island Ultimate is a 501(c)(3) nonprofit organization and DiscNY affiliate I am an active
+                        member, volunteer, and board member of. We aim to expand ultimate on Long Island through
+                        organized
+                        play, youth development, and a more competitive
+                        ultimate scene.</p>
+                    <h4>My Teams</h4><br>
+                    <div id="carousel-ultimate" class="carousel slide" data-ride="carousel-ultimate">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p><strong>Shade</strong><br>Men's Club Team<br>Summer 2019<br>NYC</p>
+                                <p><img src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%"
+                                        style="border: 2px solid black;"></p>
+                            </div>
+                            <div class="carousel-item">
+                                <p><strong>Blueprint</strong><br>Men's Club Team<br>Summer 2018<br>Brooklyn</p>
+                                <p><img src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%"
+                                        style="border: 2px solid black;"></p>
+                            </div>
+                            <div class="carousel-item">
+                                <p><strong>Birds</strong><br>Mixed Club Team<br>Summer 2017<br>Long Island</p>
+                                <p><img src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%"
+                                        style="border: 2px solid black;"></p>
+                            </div>
+                            <div class="carousel-item">
+                                <p><strong>Adelphi Ultimate</strong><br>Mixed College Team<br>2014 to 2018<br>Adelphi
+                                    University
+                                </p>
+                                <p><img src="/imgs/adelphi-team-photo.jpg" alt="Adelphi Ultimate Team Photo"
+                                        width="100%" style="border: 2px solid black;"></p>
+                            </div>
                         </div>
                     </div>
+                    <p>
+                        <button type="button" class="btn btn-info"
+                            onclick="$('#carousel-ultimate').carousel('prev');">Previous</button>
+                        <button type="button" class="btn btn-info"
+                            onclick="$('#carousel-ultimate').carousel('next');">Next</button>
+                    </p>
                 </div>
-                <p>
-                    <button type="button" class="btn btn-info" onclick="$('#carousel-ultimate').carousel('prev');">Previous</button>
-                    <button type="button" class="btn btn-info" onclick="$('#carousel-ultimate').carousel('next');">Next</button>
-                </p>
             </div>
 
             <div id="footer">
                 <br>
-                <hr>
                 <p>
-                    <a class="social" href="mailto:magarenzo@gmail.com" target="_blank"><img alt="Email" src="/imgs/icons/mail.png" width="25" height="25"></a>
-                    <a class="social" href="https://github.com/magarenzo" target="_blank"><img alt="GitHub" src="/imgs/icons/github.png" width="25" height="25"></a>
-                    <a class="social" href="https://linkedin.com/in/magarenzo" target="_blank"><img alt="LinkedIn" src="/imgs/icons/linkedin.png" width="25" height="25"></a>
+                    <a class="social" href="mailto:magarenzo@gmail.com" target="_blank"><img alt="Email"
+                            src="/imgs/icons/mail.png" width="25" height="25"></a>
+                    <a class="social" href="https://github.com/magarenzo" target="_blank"><img alt="GitHub"
+                            src="/imgs/icons/github.png" width="25" height="25"></a>
+                    <a class="social" href="https://linkedin.com/in/magarenzo" target="_blank"><img alt="LinkedIn"
+                            src="/imgs/icons/linkedin.png" width="25" height="25"></a>
                 </p>
             </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
         <script src="/js/script.js"></script>
 </body>
 
