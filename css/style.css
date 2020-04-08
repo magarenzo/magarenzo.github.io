@@ -5,7 +5,7 @@ body {
 
 h1,
 h2 {
-    color: #00AEFF;
+    color: #17a2b8;
 }
 
 hr {
@@ -13,7 +13,7 @@ hr {
 }
 
 a {
-    color: #00AEFF;
+    color: #17a2b8;
 }
 
 .section {
@@ -79,7 +79,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-    background: #00AEFF;
+    background: #17a2b8;
 }
 
 ::-webkit-scrollbar-thumb {

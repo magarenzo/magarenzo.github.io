@@ -16,7 +16,7 @@ function changePage(event, page) {
     }
 
     var link = document.getElementById(page + "-link");
-    link.style.color = "#00AEFF";
+    link.style.color = "#17a2b8";
 
     if (screen.width <= 960) {
         document.getElementById("menu").style.display = "none";
