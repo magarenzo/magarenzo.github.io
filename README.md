@@ -20,8 +20,6 @@ I use [http-server](https://www.npmjs.com/package/http-server) via [npm](https:/
 
 * Desktop - Changing window size while using mobile menu breaks menu in different ways
 
-* Overall - Implement dark color mode pallete
-
 ## Owner
 
 Michael A. Agarenzo
