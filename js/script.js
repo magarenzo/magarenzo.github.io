@@ -15,7 +15,7 @@ function changePage(event, page) {
         pages[i].style.color = "white";
     }
 
-    var link = document.getElementById(page + "-link");
+    var link = document.getElementById("link-" + page);
     link.style.color = "#17a2b8";
 
     if (screen.width <= 960) {

@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<!-- </head> <body> <div "mobile-menu"> -->
+<!-- </head> <body> <div "menu-mobile"> -->
 
 <body>
-    <div id="mobile-menu" style="color: #17a2b8;">
+    <div id="menu-mobile" style="color: #17a2b8;">
         <p>
             <a onclick="toggleMenu();">
                 <h5>&#9776; Menu</h5>
@@ -25,41 +25,46 @@
         </p>
     </div>
 
-    <!-- </div "mobile-menu"> <div "menu"> -->
+    <!-- </div "menu-mobile"> <div "menu"> -->
 
     <div id="menu">
-        <hr class="mobile-hr">
+        <div id="mobile-block">
+            <p>&nbsp;</p>
+        </div>
         <ul>
             <li>
-                <a id="home-link" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img alt="Home" src="/imgs/icons/house.png" width="25" height="25"> Home</a>
+                <a id="link-home" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img alt="Home" src="/imgs/icons/house.png" width="25" height="25"> Home</a>
             </li>
-            <hr class="mobile-hr">
+            <hr class="hr-mobile">
             <li>
-                <a id="experience-link" class="page" onclick="changePage(event, 'experience');"><img alt="Resume" src="/imgs/icons/document.png" width="25" height="25"> Experience</a>
+                <a id="link-experience" class="page" onclick="changePage(event, 'experience');"><img alt="Resume" src="/imgs/icons/document.png" width="25" height="25"> Experience</a>
             </li>
-            <hr class="mobile-hr">
+            <hr class="hr-mobile">
             <li>
-                <a id="projects-link" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/imgs/icons/computer.png" width="25" height="25"> Projects</a>
+                <a id="link-projects" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/imgs/icons/computer.png" width="25" height="25"> Projects</a>
             </li>
-            <hr class="mobile-hr">
+            <hr class="hr-mobile">
             <li>
-                <a id="more-link" class="page" onclick="changePage(event, 'more');"><img alt="Hammer" src="imgs/icons/hammer.png" width="25" height="25"> More</a>
+                <a id="link-more" class="page" onclick="changePage(event, 'more');"><img alt="Hammer" src="imgs/icons/hammer.png" width="25" height="25"> More</a>
             </li>
         </ul>
-        <hr class="mobile-hr">
     </div>
 
     <!-- </div "menu"> <div "wrapper"> -->
 
     <div id="wrapper">
-        <hr>
 
         <!-- <div "content"> -->
 
         <div id="content">
 
+            <!-- <div "mobile-block" -->
 
-            <!-- <div "home">  -->
+            <div id="mobile-block">
+                <p>&nbsp;</p>
+            </div>
+
+            <!-- </div> <div "home">  -->
 
             <div id="home" class="section">
                 <h1>magarenzo.com</h1><br>
@@ -68,7 +73,7 @@
                         <strong>Computer Science graduate</strong> of Adelphi University</p>
                 </div><br>
                 <div class="block">
-                    <p>Check out <a class="link-on-home" onclick="changePage(event, 'experience');" style="color: #17a2b8;">experience</a> for where I've worked, my skills & more, <a class="link-on-home" onclick="changePage(event, 'projects');" style="color: #17a2b8;">projects</a>                        to catch up on my latest programming endeavors, and <a class="link-on-home" onclick="changePage(event, 'more');" style="color: #17a2b8;">more</a> for some fun extras &#128640;</p>
+                    <p>Check out <a class="link-homepage" onclick="changePage(event, 'experience');" style="color: #17a2b8;">experience</a> for where I've worked, my skills & more, <a class="link-homepage" onclick="changePage(event, 'projects');" style="color: #17a2b8;">projects</a>                        to catch up on my latest programming endeavors, and <a class="link-homepage" onclick="changePage(event, 'more');" style="color: #17a2b8;">more</a> for some fun extras &#128640;</p>
                 </div>
             </div>
 
@@ -433,20 +438,20 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <p><strong>Shade</strong><br>Men's Club Team<br>Summer 2019<br>NYC</p>
-                                <p><img src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%" style="border: 2px solid black;"></p>
+                                <p><img class="image-border" src="/imgs/shade-team-photo.jpg" alt="Shade Team Photo" width="100%"></p>
                             </div>
                             <div class="carousel-item">
                                 <p><strong>Blueprint</strong><br>Men's Club Team<br>Summer 2018<br>Brooklyn</p>
-                                <p><img src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%" style="border: 2px solid black;"></p>
+                                <p><img class="image-border" src="/imgs/blueprint-team-photo.jpg" alt="Blueprint Team Photo" width="100%"></p>
                             </div>
                             <div class="carousel-item">
                                 <p><strong>Birds</strong><br>Mixed Club Team<br>Summer 2017<br>Long Island</p>
-                                <p><img src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%" style="border: 2px solid black;"></p>
+                                <p><img class="image-border" src="/imgs/birds-team-photo.png" alt="Birds Team Photo" width="100%"></p>
                             </div>
                             <div class="carousel-item">
                                 <p><strong>Adelphi Ultimate</strong><br>Mixed College Team<br>2014 to 2018<br>Adelphi University
                                 </p>
-                                <p><img src="/imgs/adelphi-team-photo.jpg" alt="Adelphi Ultimate Team Photo" width="100%" style="border: 2px solid black;"></p>
+                                <p><img class="image-border" src="/imgs/adelphi-team-photo.jpg" alt="Adelphi Ultimate Team Photo" width="100%"></p>
                             </div>
                         </div>
                     </div>

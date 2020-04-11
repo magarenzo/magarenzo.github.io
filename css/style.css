@@ -26,7 +26,7 @@ a {
     padding: 1em;
 }
 
-.link-on-home:hover {
+.link-homepage:hover {
     cursor: pointer;
 }
 
@@ -34,12 +34,19 @@ a {
     display: block;
 }
 
-#mobile-menu {
+#menu-mobile {
     display: none;
-    text-align: center;
+    position: fixed;
+    z-index: 100;
+    background-color: #121212;
+    width: 100%;
 }
 
-.mobile-hr {
+#mobile-block {
+    display: none;
+}
+
+.hr-mobile {
     display: none;
 }
 
@@ -78,6 +85,10 @@ a {
 
 .image-right {
     padding-right: 1em;
+}
+
+.image-border {
+    border: 1px solid white;
 }
 
 ::-webkit-scrollbar {
@@ -123,10 +134,13 @@ a {
     #menu li a {
         text-align: center;
     }
-    #mobile-menu {
+    #menu-mobile {
         display: block;
     }
-    .mobile-hr {
+    #mobile-block {
+        display: block;
+    }
+    .hr-mobile {
         display: block;
     }
 }
