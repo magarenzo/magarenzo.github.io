@@ -34,22 +34,6 @@ a {
     display: block;
 }
 
-#menu-mobile {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    background-color: #121212;
-    width: 100%;
-}
-
-#mobile-block {
-    display: none;
-}
-
-.hr-mobile {
-    display: none;
-}
-
 #menu {
     display: table;
     margin: 0 auto;
@@ -100,7 +84,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #212529;
     border-radius: 5px;
 }
 
@@ -118,29 +102,4 @@ a {
 
 #footer {
     text-align: center;
-}
-
-@media (max-width: 960px) {
-    html,
-    body {
-        overflow-x: hidden;
-    }
-    #menu {
-        display: none;
-    }
-    #menu li {
-        float: initial;
-    }
-    #menu li a {
-        text-align: center;
-    }
-    #menu-mobile {
-        display: block;
-    }
-    #mobile-block {
-        display: block;
-    }
-    .hr-mobile {
-        display: block;
-    }
 }

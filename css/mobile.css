@@ -1,0 +1,40 @@
+#menu-mobile {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background-color: #121212;
+    width: 100%;
+}
+
+#block-mobile {
+    display: none;
+}
+
+.hr-mobile {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    #menu {
+        display: none;
+    }
+    #menu li {
+        float: initial;
+    }
+    #menu li a {
+        text-align: center;
+    }
+    #menu-mobile {
+        display: block;
+    }
+    #block-mobile {
+        display: block;
+    }
+    .hr-mobile {
+        display: block;
+    }
+}
