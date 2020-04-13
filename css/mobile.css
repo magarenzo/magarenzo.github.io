@@ -6,6 +6,14 @@
     width: 100%;
 }
 
+#block-menu {
+    display: block;
+    position: fixed;
+    background-color: #121212;
+    z-index: 98;
+    width: 100%;
+}
+
 #block-mobile {
     display: none;
 }
@@ -30,6 +38,9 @@
     }
     #menu-mobile {
         display: block;
+    }
+    #block-menu {
+        display: none;
     }
     #block-mobile {
         display: block;

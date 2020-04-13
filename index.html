@@ -17,16 +17,18 @@
 
 <!-- </head> <body> <div "menu-mobile"> -->
 
-<body>
+<body onload="setDivHeight('block-menu', 'menu')">
     <div id="menu-mobile" style="color: #17a2b8;">
-        <p>
-            <a onclick="toggleMenu();">
-                <h5>&#9776; Menu</h5>
-            </a>
-        </p>
+        <h4><a onclick="toggleMenu();">&#9776; Menu</a></h4>
     </div>
 
-    <!-- </div "menu-mobile"> <div "menu"> -->
+    <!-- </div "menu-mobile"> <div "block-menu"> -->
+
+    <div id="block-menu">
+        <p>&nbsp;</p>
+    </div>
+
+    <!-- </div "block-menu"> <div "menu"> -->
 
     <div id="menu">
         <div id="block-mobile">
@@ -58,12 +60,7 @@
         <!-- <div "content"> -->
 
         <div id="content">
-
-            <!-- <div "block-mobile" -->
-
-            <div id="block-mobile">
-                <p>&nbsp;</p>
-            </div>
+            <p>&nbsp;</p>
 
             <!-- </div> <div "home">  -->
 
@@ -482,6 +479,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="/js/script.js"></script>
         <script src="/js/changePage.js"></script>
+        <script src="/js/setDivHeight.js"></script>
         <script src="/js/showDiv.js"></script>
         <script src="/js/toggleMenu.js"></script>
 </body>
