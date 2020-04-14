@@ -1,5 +1,5 @@
 /**
- * Set carousel interval
+ * Set carousel interval to 30 seconds
  */
 
 $(".carousel").carousel({

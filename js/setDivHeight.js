@@ -1,9 +1,9 @@
 /**
  * Set div height to divToCopy's height
- * @param {String} div 
- * @param {String} divToCopy 
+ * @param {String} id 
+ * @param {String} idToCopy 
  */
 
-function setDivHeight(div, divToCopy) {
-    document.getElementById(div).style.height = document.getElementById(divToCopy).clientHeight + "px";
+function setDivHeight(id, idToCopy) {
+    document.getElementById(id).style.height = document.getElementById(idToCopy).clientHeight + "px";
 }
