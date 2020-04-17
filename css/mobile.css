@@ -22,10 +22,6 @@
     display: none;
 }
 
-#image-change-page {
-    width: 25%;
-}
-
 @media (max-width: 960px) {
     html,
     body {
@@ -51,8 +47,5 @@
     }
     .hr-mobile {
         display: block;
-    }
-    #image-change-page {
-        width: 50%;
     }
 }
