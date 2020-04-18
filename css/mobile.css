@@ -48,4 +48,8 @@
     .hr-mobile {
         display: block;
     }
+    #footer {
+        text-align: left;
+        padding-left: 1em;
+    }
 }
