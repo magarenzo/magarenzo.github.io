@@ -2,14 +2,14 @@
     display: none;
     position: fixed;
     z-index: 100;
-    background-color: #121212;
+    background-color: #212529;
     width: 100%;
 }
 
 #block-menu {
     display: block;
     position: fixed;
-    background-color: #121212;
+    background-color: #212529;
     z-index: 98;
     width: 100%;
 }
@@ -29,6 +29,7 @@
     }
     #menu {
         display: none;
+        background-color: #121212;
     }
     #menu li {
         float: initial;

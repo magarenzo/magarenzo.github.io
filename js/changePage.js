@@ -6,6 +6,12 @@
 
 function changePage(event, page) {
 
+    var isMobile = window.matchMedia("only screen and (max-width: 960px)").matches;
+
+    if (isMobile) {
+        document.getElementById("menu-mobile").style.display = "block";
+    }
+
     if (document.getElementById("wrapper").style.display == "none") {
         document.getElementById("wrapper").style.display = "block";
     }
