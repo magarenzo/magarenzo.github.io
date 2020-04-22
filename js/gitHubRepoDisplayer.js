@@ -3,7 +3,7 @@
  * @param {String} id
  */
 
-function projectCarousel(id) {
+function gitHubRepoDisplayer(id) {
 
     const profileName = "magarenzo";
     const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old"];
