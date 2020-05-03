@@ -22,10 +22,6 @@
     display: none;
 }
 
-#copyright {
-    display: block;
-}
-
 @media (max-width: 960px) {
     html,
     body {
@@ -56,8 +52,5 @@
     #footer {
         text-align: left;
         padding-left: 1em;
-    }
-    #copyright {
-        display: none;
     }
 }
