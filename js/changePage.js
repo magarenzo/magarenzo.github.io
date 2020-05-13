@@ -32,7 +32,9 @@ function changePage(event, page) {
 
     if (page == "home") {
         window.history.pushState("", "", "/");
-        window.location.reload();
+        if (!document.referrer) {
+            window.location.reload();
+        }
     } else {
         window.history.pushState("", "", page)
     }
