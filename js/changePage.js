@@ -37,7 +37,7 @@ function changePage(event, page) {
             window.location.reload();
         }
     } else {
-        window.history.pushState("", "", page + "/")
+        window.history.pushState("", "", "/" + page + "/")
     }
 
     if (screen.width <= 960) {
