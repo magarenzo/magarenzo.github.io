@@ -4,6 +4,6 @@
 
 function redirectPage() {
 
-    location.replace("")
+    location.replace("/")
 
 }
