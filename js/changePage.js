@@ -30,6 +30,12 @@ function changePage(event, page) {
     var link = document.getElementById("link-" + page);
     link.style.color = "#17a2b8";
 
+    if (page == "home") {
+        window.history.pushState("", "", "/");
+    } else {
+        window.history.pushState("", "", page)
+    }
+
     if (screen.width <= 960) {
         document.getElementById("menu").style.display = "none";
     }
