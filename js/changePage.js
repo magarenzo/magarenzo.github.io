@@ -32,8 +32,7 @@ function changePage(event, page) {
 
     if (page == "home") {
         window.history.pushState("", "", "/");
-        var referrer = document.referrer;
-        if (referrer.match("/^(experience|projects|more)$/")) {
+        if (!document.referrer.match("/^(experience|projects|more)$/")) {
             window.location.reload();
         }
     } else {
