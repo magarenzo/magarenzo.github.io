@@ -32,7 +32,8 @@ function changePage(event, page) {
 
     if (page == "home") {
         window.history.pushState("", "", "/");
-        if (document.referrer.match("/^(experience|projects|more)$/")) {
+        var pages = ["experience", "projects", "more"];
+        if (pages.some(el => document.referrer.includes(el))) {
             window.location.reload();
         }
     } else {
