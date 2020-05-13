@@ -32,6 +32,7 @@ function changePage(event, page) {
 
     if (page == "home") {
         window.history.pushState("", "", "/");
+        document.referrer = "";
     } else {
         window.history.pushState("", "", page)
     }
