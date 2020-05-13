@@ -2,8 +2,8 @@
  * Redirect current page to homepage
  */
 
-function redirectPage(page) {
+function redirectPage() {
 
-    location.replace("/")
+    location.replace("")
 
 }
