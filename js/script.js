@@ -13,5 +13,4 @@ if (document.referrer.includes("experience")) {
     changePage(event, "projects");
 } else if (document.referrer.includes("more")) {
     changePage(event, "more");
-
 }
