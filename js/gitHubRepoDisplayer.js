@@ -6,7 +6,7 @@
 function gitHubRepoDisplayer(id) {
 
     const profileName = "magarenzo";
-    const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old"];
+    const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes"];
     const div = document.getElementById(id);
 
     if (div) {
