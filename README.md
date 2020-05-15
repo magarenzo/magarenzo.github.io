@@ -4,13 +4,13 @@ Source for my current static website displayed at [magarenzo.com](https://magare
 
 ## Dependencies
 
-* [`Bootstrap`](https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/)
 
-* [`changePage.js`](https://github.com/magarenzo/changePage.js)
+* [changePage.js](https://github.com/magarenzo/changePage.js)
 
-* [`gitHubRepoDisplayer.js`](https://github.com/magarenzo/gitHubRepoDisplayer.js)
+* [gitHubRepoDisplayer.js](https://github.com/magarenzo/gitHubRepoDisplayer.js)
 
-* [`jQuery`](https://jquery.com/)
+* [jQuery](https://jquery.com/)
 
 ## Development
 
