@@ -40,6 +40,8 @@ function changePage(event, page) {
         window.history.pushState("", "", "/" + page + "/")
     }
 
+    window.scrollTo(0, 0);
+
     if (screen.width <= 960) {
         document.getElementById("menu").style.display = "none";
     }
