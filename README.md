@@ -2,9 +2,13 @@
 
 Source for my current static website displayed at [magarenzo.com](https://magarenzo.com)
 
-## Created With
+## Dependencies
 
 * [`Bootstrap`](https://getbootstrap.com/)
+
+* [`changePage.js`](https://github.com/magarenzo/changePage.js)
+
+* [`gitHubRepoDisplayer.js`](https://github.com/magarenzo/gitHubRepoDisplayer.js)
 
 * [`jQuery`](https://jquery.com/)
 
