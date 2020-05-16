@@ -39,6 +39,7 @@
     }
     #menu-mobile {
         display: block;
+        padding-left: 1em;
     }
     #block-menu {
         display: none;
