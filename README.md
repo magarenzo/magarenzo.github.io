@@ -6,7 +6,7 @@ Source for my current static website displayed at [magarenzo.com](https://magare
 
 * [Bootstrap](https://getbootstrap.com/)
 
-* [changePage.js](https://github.com/magarenzo/changePage.js)
+* [ChangePageJS](https://github.com/magarenzo/ChangePageJS)
 
 * [jQuery](https://jquery.com/)
 
