@@ -4,8 +4,6 @@ Source for my current static website displayed at [magarenzo.com](https://magare
 
 ## Dependencies
 
-* [Bootstrap](https://getbootstrap.com/)
-
 * [ChangePageJS](https://github.com/magarenzo/ChangePageJS)
 
 * [jQuery](https://jquery.com/)
