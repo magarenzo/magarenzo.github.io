@@ -6,8 +6,6 @@ Source for my current static website displayed at [magarenzo.com](https://magare
 
 * [ChangePageJS](https://github.com/magarenzo/ChangePageJS)
 
-* [jQuery](https://jquery.com/)
-
 * [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
 
 ## Development
