@@ -3,7 +3,7 @@
  * @param {String} id
  */
 
-function gitHubRepoDisplayer(id) {
+function repoDisplayer(id) {
 
     const profileName = "magarenzo";
     const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes"];
