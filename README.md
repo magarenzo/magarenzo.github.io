@@ -8,9 +8,9 @@ Source for my current static website displayed at [magarenzo.com](https://magare
 
 * [changePage.js](https://github.com/magarenzo/changePage.js)
 
-* [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
-
 * [jQuery](https://jquery.com/)
+
+* [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
 
 ## Development
 
