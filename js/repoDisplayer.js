@@ -15,9 +15,7 @@ function repoDisplayer(id) {
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
 
             if (response.status != 200) {
-
                 div.innerHTML += errorString;
-
             }
 
             return response.json();
@@ -48,9 +46,7 @@ function repoDisplayer(id) {
             }
 
         }).catch(function() {
-
             div.innerHTML += errorString;
-
         });
 
     }
