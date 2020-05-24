@@ -8,12 +8,19 @@ function repoDisplayer(id) {
     const profileName = "magarenzo";
     const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes"];
     const div = document.getElementById(id);
+    const errorString = "<p>Check out all of projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
 
     if (div) {
 
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
 
-            return response.json()
+            if (response.status != 200) {
+
+                div.innerHTML += errorString;
+
+            }
+
+            return response.json();
 
         }).then((jsonObject) => {
 
@@ -39,6 +46,10 @@ function repoDisplayer(id) {
                 }
 
             }
+
+        }).catch(function() {
+
+            div.innerHTML += errorString;
 
         });
 
