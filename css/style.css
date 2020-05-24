@@ -112,12 +112,20 @@ td {
     cursor: pointer;
 }
 
+#menu-block {
+    left: 0;
+}
+
 #page-404 {
     text-align: center;
 }
 
 .page-text {
     vertical-align: top;
+}
+
+.page-text:hover {
+    color: #17a2b8;
 }
 
 .social+.social {
