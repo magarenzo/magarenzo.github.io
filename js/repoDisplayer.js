@@ -32,7 +32,7 @@ function repoDisplayer(id) {
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
                         var language = JSON.stringify(jsonObject[key].language).split('"').join("");
 
-                        div.innerHTML += "<p><a href='" + url + "' target='_blank'>" + name + "</a><br><em>" + description + "</em>. <strong>" + language + "</strong>.</p>";
+                        div.innerHTML += "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>" + description + ", <strong>" + language + "</strong></p>";
 
                     }
 

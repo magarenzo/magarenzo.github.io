@@ -7,5 +7,6 @@
 function setDivHeight(id, idToCopy) {
 
     document.getElementById(id).style.height = document.getElementById(idToCopy).clientHeight + "px";
+    document.getElementById(id).style.top = 0;
 
 }

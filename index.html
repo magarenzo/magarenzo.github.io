@@ -10,45 +10,44 @@
     <meta property="og:image" content="/images/headshot-square.jpg">
     <title>magarenzo.com</title>
     <link rel="icon" href="/images/headshot-circle.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/mobile.css">
 </head>
 
 <!-- </head> <body> <div "menu-mobile"> -->
 
-<body onload="setDivHeight('block-menu', 'menu'); repoDisplayer('projects-fill');">
-    <div id="menu-mobile" style="color: #17a2b8;">
+<body onload="setDivHeight('menu-block', 'menu'); repoDisplayer('projects-fill');">
+    <div id="menu-mobile">
         <h4><a onclick="toggleMenu();">&#9776; Menu</a></h4>
     </div>
 
-    <!-- </div "menu-mobile"> <div "block-menu"> -->
+    <!-- </div "menu-mobile"> <div "menu-block"> -->
 
-    <div id="block-menu">
+    <div id="menu-block">
         <p>&nbsp;</p>
     </div>
 
-    <!-- </div "block-menu"> <div "menu"> -->
+    <!-- </div "menu-block"> <div "menu"> -->
 
     <div id="menu">
-        <div id="block-mobile">
+        <div id="mobile-block">
             <p>&nbsp;</p>
         </div>
         <ul>
             <li>
-                <a id="link-home" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img alt="Home" src="/images/icon-house.png" width="25" height="25"> Home</a>
+                <a id="link-home" class="page" onclick="changePage(event, 'home');" style="color: #17a2b8;"><img alt="Home" src="/images/icon-house.png" width="25" height="25"><span class="page-text"> Home</span></a>
             </li>
             <li>&nbsp;</li>
             <li>
-                <a id="link-experience" class="page" onclick="changePage(event, 'experience');"><img alt="Resume" src="/images/icon-document.png" width="25" height="25"> Experience</a>
+                <a id="link-experience" class="page" onclick="changePage(event, 'experience');"><img alt="Resume" src="/images/icon-document.png" width="25" height="25"><span class="page-text"> Experience</span></a>
             </li>
             <li>&nbsp;</li>
             <li>
-                <a id="link-projects" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/images/icon-computer.png" width="25" height="25"> Projects</a>
+                <a id="link-projects" class="page" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/images/icon-computer.png" width="25" height="25"><span class="page-text"> Projects</span></a>
             </li>
             <li>&nbsp;</li>
             <li>
-                <a id="link-more" class="page" onclick="changePage(event, 'more');"><img alt="Hammer" src="/images/icon-hammer.png" width="25" height="25"> More</a>
+                <a id="link-more" class="page" onclick="changePage(event, 'more');"><img alt="Hammer" src="/images/icon-hammer.png" width="25" height="25"><span class="page-text"> More</span></a>
             </li>
         </ul>
     </div>
@@ -61,7 +60,7 @@
 
         <div id="content">
             <p>&nbsp;</p>
-            <img src="/images/headshot-circle.png" alt="Professional headshot of Michael A. Agarenzo" width="50" height="50" style="float: left; margin-right: 1em;">
+            <img id="header-image" src="/images/headshot-circle.png" alt="Professional headshot of Michael A. Agarenzo" width="50" height="50">
 
             <!-- </div> <div "home">  -->
 
@@ -72,7 +71,8 @@
                         <strong>Computer Science graduate</strong> of Adelphi University</p>
                 </div><br>
                 <div class="block">
-                    <p>Check out <a class="link-homepage" onclick="changePage(event, 'experience');" style="color: #17a2b8;">experience</a> for where I've worked and my skills, <a class="link-homepage" onclick="changePage(event, 'projects');" style="color: #17a2b8;">projects</a>                        to catch up on my latest programming endeavors, and <a class="link-homepage" onclick="changePage(event, 'more');" style="color: #17a2b8;">more</a> for some fun extras &#128640;</p>
+                    <p>Check out <a class="link-homepage" onclick="changePage(event, 'experience');">experience</a> for where I've worked and my skills, <a class="link-homepage" onclick="changePage(event, 'projects');">projects</a> to catch up on my latest
+                        programming endeavors, and <a class="link-homepage" onclick="changePage(event, 'more');">more</a> for some fun extras &#128640;</p>
                 </div>
             </div>
 
@@ -172,90 +172,86 @@
                     </ul>
                 </div><br>
                 <h2>Tech Stack</h2><br>
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover table-dark">
-                        <tbody>
-                            <tr>
-                                <td><strong>Programming</strong></td>
-                                <td>Bash, Git, Java, JavaScript, Maven, MySQL, PHP, Python, R, SQL, Visual Basic</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Web Development</strong></td>
-                                <td>Apache, Bootstrap, CSS, HTML, jQuery, NGINX, Node.js, WildFly</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Cloud, OS, Virtualization</strong></td>
-                                <td>Amazon Linux, AWS, Azure, CentOS, Docker, Hyper-V, macOS, Ubuntu, VMware, Windows
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Robotic Process Automation</strong></td>
-                                <td>Computer Vision, Document Understanding, OCR, UiPath: AI Fabric, Insights, Orchestrator, Process Mining, Process Understanding, Robots, Studio, StudioX, Studio Pro, Task Capture, Task Mining, Test Suite
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><br>
+                <table class="block-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Programming</strong></td>
+                            <td>Bash, Git, Java, JavaScript, Maven, MySQL, PHP, Python, R, SQL, Visual Basic</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Web Development</strong></td>
+                            <td>Apache, Bootstrap, CSS, HTML, jQuery, NGINX, Node.js, WildFly</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cloud, OS, Virtualization</strong></td>
+                            <td>Amazon Linux, AWS, Azure, CentOS, Docker, Hyper-V, macOS, Ubuntu, VMware, Windows
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Robotic Process Automation</strong></td>
+                            <td>Computer Vision, Document Understanding, OCR, UiPath: AI Fabric, Insights, Orchestrator, Process Mining, Process Understanding, Robots, Studio, StudioX, Studio Pro, Task Capture, Task Mining, Test Suite
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br>
                 <h2>AWS</h2><br>
-                <div id="AWS" class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover table-dark">
-                        <tbody>
-                            <tr>
-                                <td><strong>API Gateway</strong></td>
-                                <td>Creating and publishing REST APIs. Listening for POST requests, invoking Lambda functions, and sending back a response. Locking down endpoints using HTTP authentication based on the Basic schema.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Athena</strong></td>
-                                <td>Creating databases. Creating tables using S3 buckets as a source. Querying tables.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Billing and Cost Management</strong></td>
-                                <td>Navigating the cost explorer. Setting up cost and usage reports. Creating cost allocation tags.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>CloudWatch</strong></td>
-                                <td>Creating alarms. Creating rules with Lambda targets on trigger. Streaming logs to log groups. Monitoring metrics.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>ECR</strong></td>
-                                <td>Pushing and pulling repositories. Including repositories in automatic builds using Docker-Compose.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>IAM</strong></td>
-                                <td>Creating users and policies in conjuncture with groups. Creating and applying roles.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>KMS</strong></td>
-                                <td>Creating keys and encrypting and decrypting environment variables in Lambda functions.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Lambda</strong></td>
-                                <td>Creating Node.js and Python functions. Combining them in workflows with other services.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>RDS</strong></td>
-                                <td>Working with clusters, instances, and snapshots.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Route 53</strong></td>
-                                <td>Working with hosted zones and different types of record sets.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>S3</strong></td>
-                                <td>Creating buckets and limiting permissions and other settings.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Familiarity</strong></td>
-                                <td>Athena, Budgets, CloudFormation, CloudBuild, CodePipeline, ElastiCache, RedShift, SNS, Systems Manager</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table class="block-table">
+                    <tbody>
+                        <tr>
+                            <td><strong>API Gateway</strong></td>
+                            <td>Creating and publishing REST APIs. Listening for POST requests, invoking Lambda functions, and sending back a response. Locking down endpoints using HTTP authentication based on the Basic schema.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Athena</strong></td>
+                            <td>Creating databases. Creating tables using S3 buckets as a source. Querying tables.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Billing and Cost Management</strong></td>
+                            <td>Navigating the cost explorer. Setting up cost and usage reports. Creating cost allocation tags.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CloudWatch</strong></td>
+                            <td>Creating alarms. Creating rules with Lambda targets on trigger. Streaming logs to log groups. Monitoring metrics.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ECR</strong></td>
+                            <td>Pushing and pulling repositories. Including repositories in automatic builds using Docker-Compose.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>IAM</strong></td>
+                            <td>Creating users and policies in conjuncture with groups. Creating and applying roles.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>KMS</strong></td>
+                            <td>Creating keys and encrypting and decrypting environment variables in Lambda functions.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lambda</strong></td>
+                            <td>Creating Node.js and Python functions. Combining them in workflows with other services.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>RDS</strong></td>
+                            <td>Working with clusters, instances, and snapshots.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Route 53</strong></td>
+                            <td>Working with hosted zones and different types of record sets.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>S3</strong></td>
+                            <td>Creating buckets and limiting permissions and other settings.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Familiarity</strong></td>
+                            <td>Athena, Budgets, CloudFormation, CloudBuild, CodePipeline, ElastiCache, RedShift, SNS, Systems Manager</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <!-- </div "experience"> <div "projects"> -->
@@ -274,13 +270,13 @@
                     <p><strong>Board Member</strong><br>Long Island Ultimate<br>December 2019 to Present<br></p>
                     <ul>
                         <li>
-                            <p>Manage website.</p>
+                            <p>Manage website</p>
                         </li>
                         <li>
-                            <p>Partake in monthly board meetings and daily messaging, providing insight regarding the organization's plans and actions.</p>
+                            <p>Partake in monthly board meetings and daily messaging, providing insight regarding the organization's plans and actions</p>
                         </li>
                         <li>
-                            <p>Partake in a yearly planning meeting to scope out the year ahead and discuss major topics.
+                            <p>Partake in a yearly planning meeting to scope out the year ahead and discuss major topics
                             </p>
                         </li>
                     </ul><br>
@@ -290,19 +286,19 @@
                     </p>
                     <ul>
                         <li>
-                            <p>Maintain website content, creating and editing images, pages and posts.</p>
+                            <p>Maintain website content, creating and editing images, pages and posts</p>
                         </li>
                         <li>
-                            <p>Create and set up events and registration settings.</p>
+                            <p>Create and set up events and registration settings</p>
                         </li>
                         <li>
-                            <p>Set up youth site and migrated relevant content over.</p>
+                            <p>Set up youth site and migrated relevant content over</p>
                         </li>
                         <li>
-                            <p>Report bugs and make feature requests for Ultimate Central, an event and member management platform for ultimate organizations.</p>
+                            <p>Report bugs and make feature requests for Ultimate Central, an event and member management platform for ultimate organizations</p>
                         </li>
                         <li>
-                            <p>Partake in daily email communications.</p>
+                            <p>Partake in daily email communications</p>
                         </li>
                     </ul><br>
                     <p><button type="button" class="btn btn-info" onclick="showDiv('past-volunteering', false);">2019 to
@@ -312,20 +308,16 @@
                         <p><strong>Participant in Making Strides of Long Island</strong><br>American Cancer Society
                             <br>October 2019
                             <br>Jones Beach</p>
-                        <ul>
-                            <li>
-                                <p>Participated in Long Island's Making Strides event.</p>
-                            </li>
-                        </ul><br>
+                        <p>Participated in Long Island's Making Strides event</p><br>
                         <p><strong>Participant in and Fundraiser for Relay For Life</strong><br>American Cancer Society
                             <br>April 2015 to May 2018<br>Adelphi University</p>
                         <ul>
                             <li>
-                                <p>Participated yearly in and raised money for Adelphi University's Relay For Life event.
+                                <p>Participated yearly in and raised money for Adelphi University's Relay For Life event
                                 </p>
                             </li>
                             <li>
-                                <p>Fundraised throughout each year by getting individuals to sign up for the event and donate to the organization.
+                                <p>Fundraised throughout each year by getting individuals to sign up for the event and donate to the organization
                                 </p>
                             </li>
                         </ul><br>
@@ -333,10 +325,10 @@
                             <br>Adelphi University</p>
                         <ul>
                             <li>
-                                <p>Collected non-perishable food items from all participating teams in Adelphi Ultimate's yearly home tournament.</p>
+                                <p>Collected non-perishable food items from all participating teams in Adelphi Ultimate's yearly home tournament</p>
                             </li>
                             <li>
-                                <p>All proceeds were donated to St. Thomas the Apostle, a local church in West Hempstead, NY.
+                                <p>All proceeds were donated to St. Thomas the Apostle, a local church in West Hempstead, NY
                                 </p>
                             </li>
                         </ul>
@@ -348,16 +340,16 @@
                     </p>
                     <ul>
                         <li>
-                            <p>Created, planned, explained and led what was done at practices and competitions.</p>
+                            <p>Created, planned, explained and led what was done at practices and competitions</p>
                         </li>
                         <li>
-                            <p>Kept records such as attendance at events and minutes at meetings, disseminating information to members thereafter.</p>
+                            <p>Kept records such as attendance at events and minutes at meetings, disseminating information to members thereafter</p>
                         </li>
                         <li>
-                            <p>Managed all registration and insurance forms of members, ensuring timely distribution, collection and submission.</p>
+                            <p>Managed all registration and insurance forms of members, ensuring timely distribution, collection and submission</p>
                         </li>
                         <li>
-                            <p>Managed and promoted frequent and timely communication among members.</p>
+                            <p>Managed and promoted frequent and timely communication among members</p>
                         </li>
                     </ul><br>
                     <p><strong>Treasurer and Secretary</strong><br>Cybersecurity Club<br>May 2016 to March 2017
@@ -365,28 +357,24 @@
                     </p>
                     <ul>
                         <li>
-                            <p>Researched cybersecurity topics of interest to be presented, discussed and performed at weekly meetings.
+                            <p>Researched cybersecurity topics of interest to be presented, discussed and performed at weekly meetings
                             </p>
                         </li>
                         <li>
-                            <p>Managed and requested funds.</p>
+                            <p>Managed and requested funds</p>
                         </li>
                     </ul><br>
                     <p><strong>Recording Secretary</strong><br>Math and Computer Science Club<br>February to December 2016
                         <br>Adelphi University</p>
-                    <ul>
-                        <li>
-                            <p>Recorded and organized minutes and any other information regarding meetings, club membership, events, etc., filing them both physically and electronically for recall and public viewing.
-                            </p>
-                        </li>
-                    </ul>
+                    <p>Recorded and organized minutes and any other information regarding meetings, club membership, events, etc., filing them both physically and electronically for recall and public viewing
+                    </p>
                 </div><br>
                 <h2>Ultimate</h2><br>
                 <div class="block">
                     <p>DiscNY is a 501(c)(3) nonprofit organization and USAU (USA Ultimate) affiliate based in NYC that I am an active member of and volunteer for, including work I do as their webmaster. Our focus is on long-term growth and sustainability
-                        for the sport of ultimate in the state of New York.</p>
+                        for the sport of ultimate in the state of New York</p>
                     <p>Long Island Ultimate is a 501(c)(3) nonprofit organization and DiscNY affiliate I am an active member, volunteer, and board member of. We aim to expand ultimate on Long Island through organized play, youth development, and a more competitive
-                        ultimate scene.</p>
+                        ultimate scene</p>
                     <h4>Teams</h4>
                     <p><img class="image-border" src="/images/team-shade.jpg" alt="Shade Team Photo" width="100%"></p>
                     <p><strong>Shade</strong><br>Men's Club Team<br>Summer 2019<br>NYC</p>
@@ -404,7 +392,7 @@
             </div>
 
             <br>
-            <p style="text-align: center;">&copy; 2017 Michael A. Agarenzo</p><br><br><br>
+            <p>&copy; 2017-2020 Michael A. Agarenzo</p>
 
             <!-- </div "more"> </div "content"> <div "footer"> -->
 

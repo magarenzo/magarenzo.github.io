@@ -1,6 +1,9 @@
 body {
     background-color: #121212;
     color: white;
+    font-family: Verdana, "Geneva", sans-serif;
+    margin-bottom: 100px;
+    clear: both;
 }
 
 h1,
@@ -16,6 +19,36 @@ a {
     color: #17a2b8;
 }
 
+a:hover {
+    color: white;
+}
+
+button {
+    background-color: #17a2b8;
+    color: white;
+    border: 1px solid white;
+    width: 90px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: #17a2b8;
+    cursor: pointer;
+    border: 1px solid #17a2b8;
+}
+
+td {
+    padding: .5em;
+}
+
+#header-image {
+    float: left;
+    margin-right: 1em;
+}
+
 .section {
     display: none;
 }
@@ -26,8 +59,19 @@ a {
     padding: 1em;
 }
 
+.block-table,
+td {
+    background-color: #212529;
+    border: 1px solid white;
+}
+
+.link-homepage {
+    color: #17a2b8;
+}
+
 .link-homepage:hover {
     cursor: pointer;
+    color: white;
 }
 
 #home {
@@ -41,6 +85,7 @@ a {
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
+    top: 0;
 }
 
 #menu ul {
@@ -65,6 +110,14 @@ a {
 
 #menu li a:hover {
     cursor: pointer;
+}
+
+#page-404 {
+    text-align: center;
+}
+
+.page-text {
+    vertical-align: top;
 }
 
 .social+.social {

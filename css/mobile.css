@@ -2,11 +2,14 @@
     display: none;
     position: fixed;
     z-index: 100;
+    color: #17a2b8;
     background-color: #212529;
     width: 100%;
+    top: 0;
+    left: 0;
 }
 
-#block-menu {
+#menu-block {
     display: block;
     position: fixed;
     background-color: #212529;
@@ -14,7 +17,7 @@
     width: 100%;
 }
 
-#block-mobile {
+#mobile-block {
     display: none;
 }
 
@@ -41,10 +44,10 @@
         display: block;
         padding-left: 1em;
     }
-    #block-menu {
+    #menu-block {
         display: none;
     }
-    #block-mobile {
+    #mobile-block {
         display: block;
     }
     .hr-mobile {
