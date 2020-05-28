@@ -6,7 +6,7 @@
 function repoDisplayer(id) {
 
     const profileName = "magarenzo";
-    const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes"];
+    const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes", "PDFs"];
     const div = document.getElementById(id);
     const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
 
