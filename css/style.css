@@ -8,7 +8,7 @@ body {
 
 h1,
 h2 {
-    color: #17a2b8;
+    color: #1be9d2;
 }
 
 hr {
@@ -16,7 +16,7 @@ hr {
 }
 
 a {
-    color: #17a2b8;
+    color: #1be9d2;
 }
 
 a:hover {
@@ -24,7 +24,7 @@ a:hover {
 }
 
 button {
-    background-color: #17a2b8;
+    background-color: #1be9d2;
     color: white;
     border: 1px solid white;
     width: 90px;
@@ -35,9 +35,9 @@ button {
 
 button:hover {
     background-color: white;
-    color: #17a2b8;
+    color: #1be9d2;
     cursor: pointer;
-    border: 1px solid #17a2b8;
+    border: 1px solid #1be9d2;
 }
 
 td {
@@ -65,7 +65,7 @@ td {
 }
 
 .link-homepage {
-    color: #17a2b8;
+    color: #1be9d2;
 }
 
 .link-homepage:hover {
@@ -120,7 +120,7 @@ td {
 }
 
 .page-text:hover {
-    color: #17a2b8;
+    color: #1be9d2;
 }
 
 .social+.social {
@@ -140,7 +140,7 @@ td {
 }
 
 ::-webkit-scrollbar-track {
-    background: #17a2b8;
+    background: #1be9d2;
 }
 
 ::-webkit-scrollbar-thumb {

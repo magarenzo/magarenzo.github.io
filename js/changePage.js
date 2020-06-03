@@ -28,7 +28,7 @@ function changePage(event, page) {
     }
 
     var link = document.getElementById("link-" + page);
-    link.style.color = "#17a2b8";
+    link.style.color = "#1be9d2";
 
     if (page == "home") {
         window.history.pushState("", "", "/");
