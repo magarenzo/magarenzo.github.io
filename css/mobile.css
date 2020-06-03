@@ -21,6 +21,10 @@
     display: none;
 }
 
+#mobile-header {
+    display: none;
+}
+
 .hr-mobile {
     display: none;
 }
@@ -48,6 +52,9 @@
         display: none;
     }
     #mobile-block {
+        display: block;
+    }
+    #mobile-header {
         display: block;
     }
     .hr-mobile {

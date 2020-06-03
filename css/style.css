@@ -1,9 +1,16 @@
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 body {
     background-color: #121212;
     color: white;
     font-family: Verdana, "Geneva", sans-serif;
     margin-bottom: 100px;
     clear: both;
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 h1,
@@ -58,10 +65,12 @@ td {
     background-color: #212529;
     border: 1px solid white;
     padding: 1em;
+    box-shadow: 10px 10px 5px #212529;
 }
 
 .block-table {
     background-color: #212529;
+    box-shadow: 10px 10px 5px #212529;
 }
 
 .link-homepage {
