@@ -75,6 +75,8 @@ td {
 .block-table {
     background-color: #212529;
     box-shadow: 10px 10px 5px #212529;
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 .link-homepage {
