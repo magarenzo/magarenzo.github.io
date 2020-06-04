@@ -1,6 +1,10 @@
 @keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 body {
@@ -9,8 +13,6 @@ body {
     font-family: Verdana, "Geneva", sans-serif;
     margin-bottom: 100px;
     clear: both;
-    animation-name: fade-in;
-    animation-duration: 2s;
 }
 
 h1,
@@ -66,6 +68,8 @@ td {
     border: 1px solid white;
     padding: 1em;
     box-shadow: 10px 10px 5px #212529;
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 
 .block-table {
