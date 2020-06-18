@@ -6,7 +6,15 @@
 function repoDisplayer(id) {
 
     const profileName = "magarenzo";
-    const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old", "Smarts-vs-Reflexes"];
+    const includedProjects = [
+        "NBA-Wingspan-Hypothetical",
+        "Stock-Market-Simulator",
+        "Smarts-vs-Reflexes",
+        "magarenzo.github.io",
+        "DroidTooth-File-Transfer",
+        "RepoDisplayerJS",
+        "ChangePageJS"
+    ];
     const div = document.getElementById(id);
     const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
 
@@ -31,7 +39,7 @@ function repoDisplayer(id) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    if (!skippedProjects.includes(name)) {
+                    if (includedProjects.includes(name)) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
