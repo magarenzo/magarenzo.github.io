@@ -88,6 +88,11 @@ td {
     color: white;
 }
 
+.closed {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
 #home {
     display: block;
 }
