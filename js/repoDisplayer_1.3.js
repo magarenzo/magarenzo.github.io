@@ -6,14 +6,40 @@
 function repoDisplayer(id) {
 
     const profileName = "magarenzo";
-    const excludedProjects = [
-        "Stack-Palindrome",
-        "Simple-RSA-Encryptions",
-        "magarenzo.github.io-Blog",
-        "magarenzo.github.io-Old",
-    ];
     const div = document.getElementById(id);
-    const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    if (id == "projects-main") {
+        var includedProjects = [
+            "magarenzo.github.io",
+            "Stock-Market-Simulator",
+            "Strava-Scraper",
+            "NBA-Wingspan-Hypothetical",
+            "Smarts-vs-Reflexes",
+            "Birds-Twitter-Bot",
+            "Minimalist-GroupMe-Bot",
+            "Resume-Template",
+            "GitHub-Webhooks-Test",
+            "Drop-and-Dump-Table",
+            "LinkedInExperienceDisplayerJS",
+            "RepoDisplayerJS",
+            "ChangePageJS"
+        ];
+        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    } else if (id == "projects-assignments") {
+        var includedProjects = [
+            "Stack-Palindrome",
+            "Simple-RSA-Encryptions",
+            "Poker-Hand-Simulation",
+            "METAR-Bot",
+            "Incident-System",
+            "Zipcode-Query",
+            "Grading-System",
+            "Simple-Shift-Cipher",
+            "DroidTooth-File-Transfer",
+            "Ultimate-and-Lacrosse-Study",
+            "Different-and-Unordered-Combinations"
+        ];
+        var errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    }
 
     if (div) {
 
@@ -36,7 +62,7 @@ function repoDisplayer(id) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    if (!excludedProjects.includes(name)) {
+                    if (includedProjects.includes(name)) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
