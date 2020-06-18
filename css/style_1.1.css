@@ -67,14 +67,14 @@ td {
     background-color: #212529;
     border: 1px solid white;
     padding: 1em;
-    box-shadow: 10px 10px 5px #212529;
+    box-shadow: 10px 10px 5px #1be9d2;
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .block-table {
     background-color: #212529;
-    box-shadow: 10px 10px 5px #212529;
+    box-shadow: 10px 10px 5px #1be9d2;
     animation-name: fade-in;
     animation-duration: 2s;
 }
