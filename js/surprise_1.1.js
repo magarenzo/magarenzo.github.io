@@ -12,6 +12,7 @@ function loadPage(pwd) {
         },
         error: function(xhr, ajaxOptions, thrownError) {
             parent.location.hash = hash;
+            $("#password").attr("placeholder", "wrong password");
             $("#password").val("");
         }
     });
