@@ -5,10 +5,27 @@
 
 function repoDisplayer(id) {
 
-    const profileName = "magarenzo";
     const div = document.getElementById(id);
+    var profileName = "magarenzo";
     if (id == "projects-main") {
-        var includedProjects = [
+        var excludedProjects = [
+            "Stack-Palindrome",
+            "Simple-RSA-Encryptions",
+            "Poker-Hand-Simulation",
+            "METAR-Bot",
+            "Incident-System",
+            "Zipcode-Query",
+            "Grading-System",
+            "Simple-Shift-Cipher",
+            "DroidTooth-File-Transfer",
+            "Ultimate-and-Lacrosse-Study",
+            "Different-and-Unordered-Combinations",
+            "magarenzo.github.io-Blog",
+            "magarenzo.github.io-Old"
+        ];
+        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    } else if (id == "projects-assignments") {
+        var excludedProjects = [
             "magarenzo.github.io",
             "Stock-Market-Simulator",
             "Strava-Scraper",
@@ -21,24 +38,15 @@ function repoDisplayer(id) {
             "Drop-and-Dump-Table",
             "LinkedInExperienceDisplayerJS",
             "RepoDisplayerJS",
-            "ChangePageJS"
+            "ChangePageJS",
+            "magarenzo.github.io-Blog",
+            "magarenzo.github.io-Old"
         ];
-        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
-    } else if (id == "projects-assignments") {
-        var includedProjects = [
-            "Stack-Palindrome",
-            "Simple-RSA-Encryptions",
-            "Poker-Hand-Simulation",
-            "METAR-Bot",
-            "Incident-System",
-            "Zipcode-Query",
-            "Grading-System",
-            "Simple-Shift-Cipher",
-            "DroidTooth-File-Transfer",
-            "Ultimate-and-Lacrosse-Study",
-            "Different-and-Unordered-Combinations"
-        ];
-        var errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+        errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    } else if (id == "projects-other") {
+        profileName = "sygwave";
+        var excludedProjects = [];
+        var errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub profile</p>";
     }
 
     if (div) {
@@ -62,7 +70,7 @@ function repoDisplayer(id) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    if (includedProjects.includes(name)) {
+                    if (!excludedProjects.includes(name)) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
