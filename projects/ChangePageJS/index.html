@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>magarenzo.com</title>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="/images/headshot-square.jpg">
+    <meta name="description" content="Hi, I'm Michael, an Implementation Software Engineer at UiPath with 2+ years of experience in software engineering roles in the New York City Metropolitan Area, as well as a Computer Science graduate of Adelphi University">
+    <meta name="keywords" content="magarenzo.com, magarenzo.github.io, magarenzo, Michael A. Agarenzo, Michael Agarenzo, Mike A. Agarenzo, Mike Agarenzo, Agarenzo">
+    <meta name="author" content="Michael A. Agarenzo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="/images/headshot-circle.png">
+</head>
+
+<body>
+    <p><a onclick="changePage(event, 'about');">About Me</a></p>
+    <p><a onclick="changePage(event, 'skills');">Skills</a></p>
+    <p><a onclick="changePage(event, 'projects');">Projects</a></p>
+
+    <div id="about" class="section">
+        <h1>About Me</h1>
+        <p>I like to code</p>
+    </div>
+
+    <div id="skills" class="section">
+        <h1>Skills</h1>
+        <p>JavaScript, HTML</p>
+    </div>
+
+    <div id="projects" class="section">
+        <h1>Projects</h1>
+        <p>This one, duh</p>
+    </div>
+
+    <script>
+        function changePage(event, page) {
+            var sections = document.getElementsByClassName("section");
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(page).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
+
+<style>
+    a {
+        color: blue;
+    }
+    
+    .section {
+        display: none;
+    }
+    
+    #about {
+        display: block;
+    }
+</style>
