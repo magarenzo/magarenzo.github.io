@@ -24,6 +24,10 @@ function repoDisplayer(id) {
             "magarenzo.github.io-Old"
         ];
         var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    } else if (id == "projects-sygwave") {
+        profileName = "sygwave";
+        var excludedProjects = [];
+        var errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub profile</p>";
     } else if (id == "projects-assignments") {
         var excludedProjects = [
             "magarenzo.github.io",
@@ -43,10 +47,6 @@ function repoDisplayer(id) {
             "magarenzo.github.io-Old"
         ];
         errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
-    } else if (id == "projects-other") {
-        profileName = "sygwave";
-        var excludedProjects = [];
-        var errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub profile</p>";
     }
 
     if (div) {
