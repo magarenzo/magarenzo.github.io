@@ -15,3 +15,5 @@ I use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](htt
 ## Owner
 
 Michael A. Agarenzo
+
+<a href="https://www.buymeacoffee.com/magarenzo" target="_blank"><img src="https://magarenzo.com/images/icon-buy-me-a-coffee.webp" alt="Buy Me A Coffee" width="200" height="50"></a>
