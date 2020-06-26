@@ -6,45 +6,36 @@
 function repoDisplayer(id) {
 
     const div = document.getElementById(id);
-    var profileName = "magarenzo";
+    const profileName = "magarenzo";
     if (id == "projects-main") {
-        var excludedProjects = [
-            "Stack-Palindrome",
-            "Simple-RSA-Encryptions",
-            "Poker-Hand-Simulation",
-            "METAR-Bot",
-            "Incident-System",
-            "Zipcode-Query",
-            "Grading-System",
-            "Simple-Shift-Cipher",
-            "DroidTooth-File-Transfer",
-            "Ultimate-and-Lacrosse-Study",
-            "Different-and-Unordered-Combinations",
-            "magarenzo.github.io-Blog",
-            "magarenzo.github.io-Old"
-        ];
-        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
-    } else if (id == "projects-sygwave") {
-        profileName = "sygwave";
-        var excludedProjects = [];
-        var errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub profile</p>";
-    } else if (id == "projects-assignments") {
-        var excludedProjects = [
-            "magarenzo.github.io",
-            "Stock-Market-Simulator",
-            "Strava-Scraper",
-            "NBA-Wingspan-Hypothetical",
-            "Smarts-vs-Reflexes",
+        var includedProjects = [
             "Birds-Twitter-Bot",
-            "Minimalist-GroupMe-Bot",
-            "Resume-Template",
-            "GitHub-Webhooks-Test",
+            "ChangePageJS",
             "Drop-and-Dump-Table",
             "LinkedInExperienceDisplayerJS",
+            "magarenzo.github.io",
+            "Minimalist-GroupMe-Bot",
+            "NBA-Wingspan-Hypothetical",
             "RepoDisplayerJS",
-            "ChangePageJS",
-            "magarenzo.github.io-Blog",
-            "magarenzo.github.io-Old"
+            "Resume-Template",
+            "Smarts-vs-Reflexes",
+            "Stock-Market-Simulator",
+            "Strava-Scraper"
+        ];
+        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    } else if (id == "projects-assignments") {
+        var includedProjects = [
+            "Different-and-Unordered-Combinations",
+            "DroidTooth-File-Transfer",
+            "Grading-System",
+            "Incident-System",
+            "METAR-Bot",
+            "Poker-Hand-Simulation",
+            "Simple-RSA-Encryptions",
+            "Simple-Shift-Cipher",
+            "Stack-Palindrome",
+            "Ultimate-and-Lacrosse-Study",
+            "Zipcode-Query"
         ];
         errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
     }
@@ -70,7 +61,7 @@ function repoDisplayer(id) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    if (!excludedProjects.includes(name)) {
+                    if (includedProjects.includes(name)) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
