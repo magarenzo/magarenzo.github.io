@@ -15,17 +15,19 @@
 <body onload="repoDisplayer('projects')">
     <h1>RepoDisplayerJS</h1>
     <p><iframe src="https://ghbtns.com/github-btn.html?user=magarenzo&repo=RepoDisplayerJS&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>
-    <p>
-        <a href="https://www.buymeacoffee.com/magarenzo" target="_blank"><img src="/images/icon-buy-me-a-coffee.webp" alt="Buy Me A Coffee" width="200" height="50"></a>
-    </p>
     <hr>
 
     <div id="projects"></div>
 
+    <hr>
+    <p>
+        <a href="https://www.buymeacoffee.com/magarenzo" target="_blank"><img src="/images/icon-buy-me-a-coffee.webp" alt="Buy Me A Coffee" width="200" height="50"></a>
+    </p>
+
     <script>
         function repoDisplayer(id) {
             const profileName = "magarenzo";
-            const skippedProjects = ["magarenzo.github.io-Blog", "magarenzo.github.io-Old"];
+            const includedProjects = ["magarenzo.github.io", "RepoDisplayerJS"];
             const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
             const div = document.getElementById(id);
             if (div) {
@@ -41,7 +43,7 @@
                             jsonObject[key].description &&
                             jsonObject[key].language) {
                             var name = JSON.stringify(jsonObject[key].name).split('"').join("");
-                            if (!skippedProjects.includes(name)) {
+                            if (includedProjects.includes(name)) {
                                 var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                                 var description = JSON.stringify(jsonObject[key].description).split('"').join("");
                                 var language = JSON.stringify(jsonObject[key].language).split('"').join("");
@@ -50,6 +52,7 @@
                             }
                         }
                     }
+                    div.innerHTML = div.innerHTML.slice(0, -4);
                 }).catch(function() {
                     div.innerHTML += errorString;
                 });
