@@ -7,39 +7,21 @@ function repoDisplayer(id) {
 
     const div = document.getElementById(id);
     const profileName = "magarenzo";
-    if (id == "projects-main") {
-        var includedProjects = [
-            "Birds-Twitter-Bot",
-            "ChangePageJS",
-            "Drop-and-Dump-Table",
-            "GitHub-Webhooks-Test",
-            "LinkedInExperienceDisplayerJS",
-            "magarenzo.github.io",
-            "Minimalist-GroupMe-Bot",
-            "NBA-Wingspan-Hypothetical",
-            "RepoDisplayerJS",
-            "Resume-Template",
-            "Smarts-vs-Reflexes",
-            "Stock-Market-Simulator",
-            "Strava-Scraper"
-        ];
-        var errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
-    } else if (id == "projects-assignments") {
-        var includedProjects = [
-            "Different-and-Unordered-Combinations",
-            "DroidTooth-File-Transfer",
-            "Grading-System",
-            "Incident-System",
-            "METAR-Bot",
-            "Poker-Hand-Simulation",
-            "Simple-RSA-Encryptions",
-            "Simple-Shift-Cipher",
-            "Stack-Palindrome",
-            "Ultimate-and-Lacrosse-Study",
-            "Zipcode-Query"
-        ];
-        errorString = "<p>Check out all of my assignments <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
-    }
+    const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    const excludedProjects = [
+        "magarenzo.github.io-Old",
+        "Different-and-Unordered-Combinations",
+        "Ultimate-and-Lacrosse-Study",
+        "Grading-System",
+        "Incident-System",
+        "METAR-Bot",
+        "Simple-RSA-Encryptions",
+        "Stack-Palindrome",
+        "GitHub-Webhooks-Test",
+        "Minimalist-GroupMe-Bot",
+        "Birds-Twitter-Bot",
+        "magarenzo.github.io-Blog"
+    ];
 
     if (div) {
 
@@ -62,7 +44,7 @@ function repoDisplayer(id) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
-                    if (includedProjects.includes(name)) {
+                    if (!excludedProjects.includes(name)) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
