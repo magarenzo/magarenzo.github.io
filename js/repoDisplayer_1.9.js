@@ -9,7 +9,7 @@ function repoDisplayer(id) {
     const profileName = "magarenzo";
     const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
     const excludedProjects = [
-        "magarenzo.github.io-Old",
+        "magarenzo.github.io",
         "Different-and-Unordered-Combinations",
         "Ultimate-and-Lacrosse-Study",
         "Grading-System",
@@ -20,7 +20,7 @@ function repoDisplayer(id) {
         "GitHub-Webhooks-Test",
         "Minimalist-GroupMe-Bot",
         "Birds-Twitter-Bot",
-        "magarenzo.github.io-Blog"
+        "Resume-Template"
     ];
 
     if (div) {
