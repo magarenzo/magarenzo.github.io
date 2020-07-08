@@ -90,9 +90,9 @@
                 <p>...but that's just leading up to the wedding! We also have the rest of our lives together, and <strong>I CANNOT WAIT!</strong> I hope you feel the same way &#128158;</p>
                 <p>By the way:</p>
                 <ul>
-                    <li>Engaged for <strong><span id="engaged"></span></strong> days!</li>
-                    <li>Saying "I <span id="love">love</span> you" for <strong><span id="loved"></span></strong> days!</li>
                     <li>Dating for <strong><span id="dating"></span></strong> days!</li>
+                    <li>Saying "I <span id="love">love</span> you" for <strong><span id="loved"></span></strong> days!</li>
+                    <li>Engaged for <strong><span id="engaged"></span></strong> days!</li>
                     <li>Getting married in <strong><span id="wedding"></span></strong> days!</li>
                 </ul>
             </div><br><br>
@@ -123,22 +123,22 @@
     <script type="text/javascript" src="/js/showDiv_1.0.js"></script>
     <script>
         var time = new Date().getTime();
-        var product = 3600 * 24;
-        var datingDate = new Date("2014, 11, 1");
-        var datingSeconds = (time - datingDate.getTime()) / 1000;
-        var datingDays = Math.floor(datingSeconds / product);
+        var product = 1000 * 3600 * 24;
+        var datingTime = new Date(2014, 10, 01).getTime();
+        var datingDiff = (time - datingTime);
+        var datingDays = Math.floor(datingDiff / product);
         document.getElementById("dating").innerHTML = datingDays;
-        var engagedDate = new Date("2019, 11, 2");
-        var engagedSeconds = (time - engagedDate.getTime()) / 1000;
-        var engagedDays = Math.floor(engagedSeconds / product);
-        document.getElementById("engaged").innerHTML = engagedDays;
-        var lovedDate = new Date("2014, 11, 23");
-        var lovedSeconds = (time - lovedDate.getTime()) / 1000;
-        var lovedDays = Math.floor(lovedSeconds / product);
+        var lovedTime = new Date(2014, 10, 23).getTime();
+        var lovedDiff = (time - lovedTime)
+        var lovedDays = Math.floor(lovedDiff / product);
         document.getElementById("loved").innerHTML = lovedDays;
-        var weddingDate = new Date("2021, 7, 4");
-        var weddingSeconds = (weddingDate.getTime() - time) / 1000;
-        var weddingDays = Math.floor(weddingSeconds / product);
+        var engagedTime = new Date(2019, 10, 02).getTime();
+        var engagedDiff = (time - engagedTime);
+        var engagedDays = Math.floor(engagedDiff / product);
+        document.getElementById("engaged").innerHTML = engagedDays;
+        var weddingTime = new Date(2021, 06, 04).getTime();
+        var weddingDiff = (weddingTime - time);
+        var weddingDays = Math.floor(weddingDiff / product);
         document.getElementById("wedding").innerHTML = weddingDays;
     </script>
 </body>
