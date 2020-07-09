@@ -36,8 +36,10 @@ function changePage(event, page) {
         if (pages.some(el => document.referrer.includes(el))) {
             window.location.reload();
         }
+        document.title = "magarenzo.com"
     } else {
         window.history.pushState("", "", "/" + page + "/");
+        document.title = page.charAt(0).toUpperCase() + page.slice(1) + " | magarenzo.com";
     }
 
     window.scrollTo(0, 0);
