@@ -1,9 +1,14 @@
+:root {
+    --highlight: #1be9d2;
+    --top: #212529;
+}
+
 #menu-mobile {
     display: none;
     position: fixed;
     z-index: 100;
-    color: #1be9d2;
-    background-color: #212529;
+    color: var(--highlight);
+    background-color: var(--top);
     width: 100%;
     top: 0;
     left: 0;
@@ -12,7 +17,7 @@
 #menu-block {
     display: block;
     position: fixed;
-    background-color: #212529;
+    background-color: var(--top);
     z-index: 98;
     width: 100%;
 }
@@ -23,7 +28,7 @@
 
 #mobile-header {
     display: none;
-    color: #1be9d2;
+    color: var(--highlight);
 }
 
 .hr-mobile {

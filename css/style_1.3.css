@@ -1,3 +1,8 @@
+:root {
+    --highlight: #1be9d2;
+    --top: #212529;
+}
+
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -17,7 +22,7 @@ body {
 
 h1,
 h2 {
-    color: #1be9d2;
+    color: var(--highlight);
 }
 
 hr {
@@ -25,7 +30,7 @@ hr {
 }
 
 a {
-    color: #1be9d2;
+    color: var(--highlight);
 }
 
 a:hover {
@@ -33,7 +38,7 @@ a:hover {
 }
 
 button {
-    background-color: #1be9d2;
+    background-color: var(--highlight);
     color: white;
     border: 1px solid white;
     width: 90px;
@@ -44,9 +49,9 @@ button {
 
 button:hover {
     background-color: white;
-    color: #1be9d2;
+    color: var(--highlight);
     cursor: pointer;
-    border: 1px solid #1be9d2;
+    border: 1px solid var(--highlight);
 }
 
 td {
@@ -64,23 +69,23 @@ td {
 }
 
 .block {
-    background-color: #212529;
+    background-color: var(--top);
     border: 1px solid white;
     padding: 1em;
-    box-shadow: 10px 10px 5px #1be9d2;
+    box-shadow: 10px 10px 5px var(--highlight);
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .block-table {
-    background-color: #212529;
-    box-shadow: 10px 10px 5px #1be9d2;
+    background-color: var(--top);
+    box-shadow: 10px 10px 5px var(--highlight);
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .link-homepage {
-    color: #1be9d2;
+    color: var(--highlight);
 }
 
 .link-homepage:hover {
@@ -99,7 +104,7 @@ td {
 
 #menu {
     position: fixed;
-    background-color: #212529;
+    background-color: var(--top);
     z-index: 99;
     text-align: center;
     left: 50%;
@@ -140,7 +145,7 @@ td {
 }
 
 .page-text:hover {
-    color: #1be9d2;
+    color: var(--highlight);
 }
 
 .social+.social {
@@ -160,11 +165,11 @@ td {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1be9d2;
+    background: var(--highlight);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #212529;
+    background: var(--top);
     border-radius: 5px;
 }
 
@@ -186,5 +191,5 @@ td {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #212529;
+    background-color: var(--top);
 }
