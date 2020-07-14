@@ -1,14 +1,14 @@
 :root {
-    --highlight: #e43f5a;
-    --top: #162447;
+    --primary: #162447;
+    --secondary: #e43f5a;
 }
 
 #menu-mobile {
     display: none;
     position: fixed;
     z-index: 100;
-    color: var(--highlight);
-    background-color: var(--top);
+    color: var(--secondary);
+    background-color: var(--primary);
     width: 100%;
     top: 0;
     left: 0;
@@ -17,7 +17,7 @@
 #menu-block {
     display: block;
     position: fixed;
-    background-color: var(--top);
+    background-color: var(--primary);
     z-index: 98;
     width: 100%;
 }
@@ -28,7 +28,7 @@
 
 #mobile-header {
     display: none;
-    color: var(--highlight);
+    color: var(--secondary);
 }
 
 .hr-mobile {

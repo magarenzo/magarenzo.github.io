@@ -1,6 +1,6 @@
 :root {
-    --highlight: #e43f5a;
-    --top: #162447;
+    --primary: #162447;
+    --secondary: #e43f5a;
 }
 
 @keyframes fade-in {
@@ -22,7 +22,7 @@ body {
 
 h1,
 h2 {
-    color: var(--highlight);
+    color: var(--secondary);
 }
 
 hr {
@@ -30,7 +30,7 @@ hr {
 }
 
 a {
-    color: var(--highlight);
+    color: var(--secondary);
 }
 
 a:hover {
@@ -38,7 +38,7 @@ a:hover {
 }
 
 button {
-    background-color: var(--highlight);
+    background-color: var(--secondary);
     color: white;
     border: 1px solid white;
     width: 90px;
@@ -49,9 +49,9 @@ button {
 
 button:hover {
     background-color: white;
-    color: var(--highlight);
+    color: var(--secondary);
     cursor: pointer;
-    border: 1px solid var(--highlight);
+    border: 1px solid var(--secondary);
 }
 
 td {
@@ -69,23 +69,23 @@ td {
 }
 
 .block {
-    background-color: var(--top);
+    background-color: var(--primary);
     border: 1px solid white;
     padding: 1em;
-    box-shadow: 10px 10px 5px var(--highlight);
+    box-shadow: 10px 10px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .block-table {
-    background-color: var(--top);
-    box-shadow: 10px 10px 5px var(--highlight);
+    background-color: var(--primary);
+    box-shadow: 10px 10px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .link-homepage {
-    color: var(--highlight);
+    color: var(--secondary);
 }
 
 .link-homepage:hover {
@@ -104,7 +104,7 @@ td {
 
 #menu {
     position: fixed;
-    background-color: var(--top);
+    background-color: var(--primary);
     z-index: 99;
     text-align: center;
     left: 50%;
@@ -145,7 +145,7 @@ td {
 }
 
 .page-text:hover {
-    color: var(--highlight);
+    color: var(--secondary);
 }
 
 .social+.social {
@@ -165,11 +165,11 @@ td {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--highlight);
+    background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--top);
+    background: var(--primary);
     border-radius: 5px;
 }
 
@@ -191,5 +191,5 @@ td {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--top);
+    background-color: var(--primary);
 }
