@@ -72,14 +72,14 @@ td {
     background-color: var(--primary);
     border: 1px solid white;
     padding: 1em;
-    box-shadow: 10px 10px 5px var(--secondary);
+    box-shadow: 5px 5px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
 }
 
 .block-table {
     background-color: var(--primary);
-    box-shadow: 10px 10px 5px var(--secondary);
+    box-shadow: 5px 5px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
 }
