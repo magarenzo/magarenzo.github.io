@@ -20,7 +20,10 @@ function repoDisplayer(id) {
         "GitHub-Webhooks-Test",
         "Minimalist-GroupMe-Bot",
         "Birds-Twitter-Bot",
-        "Resume-Template"
+        "Resume-Template",
+        "Simple-Shift-Cipher",
+        "Strava-Scraper",
+        "Stock-Market-Simulator"
     ];
 
     if (div) {
