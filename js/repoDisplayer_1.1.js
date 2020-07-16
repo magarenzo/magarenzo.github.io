@@ -41,8 +41,7 @@ function repoDisplayer(id) {
 
                 if (jsonObject[key].name &&
                     jsonObject[key].html_url &&
-                    jsonObject[key].description &&
-                    jsonObject[key].language) {
+                    jsonObject[key].description) {
 
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
 
@@ -50,9 +49,15 @@ function repoDisplayer(id) {
 
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
-                        var language = JSON.stringify(jsonObject[key].language).split('"').join("");
+                        var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>" + description;
 
-                        div.innerHTML += "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>" + description + ", <strong>" + language + "</strong></p><hr>";
+                        if (jsonObject[key].language) {
+
+                            html += ", <strong>" + JSON.stringify(jsonObject[key].language).split('"').join(""); + "</strong>";
+
+                        }
+
+                        div.innerHTML += html + "</p><hr>";
 
                     }
 
