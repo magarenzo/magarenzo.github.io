@@ -52,9 +52,7 @@ function repoDisplayer(id) {
                         var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>" + description;
 
                         if (jsonObject[key].language) {
-
                             html += ", <strong>" + JSON.stringify(jsonObject[key].language).split('"').join(""); + "</strong>";
-
                         }
 
                         div.innerHTML += html + "</p><hr>";
