@@ -20,7 +20,8 @@ function repoDisplayer(id) {
         "Minimalist-GroupMe-Bot",
         "Birds-Twitter-Bot",
         "Resume-Template",
-        "Simple-Shift-Cipher"
+        "Simple-Shift-Cipher",
+        "magarenzo"
     ];
 
     if (div) {
