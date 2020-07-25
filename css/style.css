@@ -75,6 +75,9 @@ td {
     box-shadow: 5px 5px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
+    -moz-box-shadow: inset 0 0 10px #121212;
+    -webkit-box-shadow: inset 0 0 10px #121212;
+    box-shadow: inset 0 0 10px #121212;
 }
 
 .block-table {
@@ -82,6 +85,9 @@ td {
     box-shadow: 5px 5px 5px var(--secondary);
     animation-name: fade-in;
     animation-duration: 2s;
+    -moz-box-shadow: inset 0 0 10px #121212;
+    -webkit-box-shadow: inset 0 0 10px #121212;
+    box-shadow: inset 0 0 10px #121212;
 }
 
 .link-homepage {
@@ -166,11 +172,17 @@ td {
 
 ::-webkit-scrollbar-track {
     background: var(--secondary);
+    -moz-box-shadow: inset 0 0 10px #121212;
+    -webkit-box-shadow: inset 0 0 10px #121212;
+    box-shadow: inset 0 0 10px #121212;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 5px;
+    -moz-box-shadow: inset 0 0 10px #121212;
+    -webkit-box-shadow: inset 0 0 10px #121212;
+    box-shadow: inset 0 0 10px #121212;
 }
 
 #wrapper {
@@ -192,4 +204,7 @@ td {
     bottom: 0;
     width: 100%;
     background-color: var(--primary);
+    -moz-box-shadow: inset 0 0 10px #121212;
+    -webkit-box-shadow: inset 0 0 10px #121212;
+    box-shadow: inset 0 0 10px #121212;
 }
