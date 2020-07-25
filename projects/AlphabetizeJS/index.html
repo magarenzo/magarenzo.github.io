@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>AlphabetizeJS - Projects | magarenzo.com</title>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="/images/headshot-square.jpg">
+    <meta name="description" content="Quickly alphabetize a list of strings">
+    <meta name="keywords" content="programming, coding, development, engineering">
+    <meta name="author" content="Michael A. Agarenzo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="/images/headshot-circle.png">
+
+    <style>
+        body {
+            max-width: 960px;
+            margin: auto;
+            position: relative;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        
+        #strings {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AlphabetizeJS</h1>
+    <p><em>Quickly alphabetize a list of strings</em></p>
+    <p><iframe src="https://ghbtns.com/github-btn.html?user=magarenzo&repo=AlphabetizeJS&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>
+    <hr>
+
+    <textarea id="strings">Enter strings separated by newlines (delete me):</textarea><br><br>
+    <input type="submit" value="Alphabetize" onclick="alphabetize('strings', 'result');">
+    <p id="result"></p>
+
+    <hr>
+    <p><a href="https://magarenzo.com">magarenzo.com</a></p>
+
+    <script>
+        function alphabetize(stringsId, resultId) {
+            var stringsArray = document.getElementById(stringsId).value.split("\n");
+            var sortedStrings = stringsArray.sort().toString().replace(/,/g, ", ");
+            document.getElementById(resultId).innerHTML = sortedStrings;
+        }
+    </script>
+</body>
+
+</html>
