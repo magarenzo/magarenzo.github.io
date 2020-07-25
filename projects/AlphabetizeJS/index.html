@@ -32,23 +32,23 @@
     <p><iframe src="https://ghbtns.com/github-btn.html?user=magarenzo&repo=AlphabetizeJS&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>
     <hr>
 
-    <textarea id="strings">Enter strings (delete me):</textarea><br><br>
-    <input type="submit" value="Alphabetize (Newline Separated)" onclick="alphabetizeNewlines('strings', 'result');"><br><br>
-    <input type="submit" value="Alphabetize (Comma Separated)" onclick="alphabetizeCommas('strings', 'result');">
+    <textarea id="strings" placeholder="Enter strings to alphabetize:"></textarea><br><br>
+    <input type="submit" value="Alphabetize" onclick="alphabetize('strings', 'result');"><br><br>
     <p id="result"></p>
 
     <hr>
     <p><a href="https://magarenzo.com">magarenzo.com</a></p>
 
     <script>
-        function alphabetizeNewlines(stringsId, resultId) {
-            var stringsArray = document.getElementById(stringsId).value.split("\n");
-            document.getElementById(resultId).innerHTML = stringsArray.sort();
-        }
-
-        function alphabetizeCommas(stringsId, resultId) {
-            var stringsArray = document.getElementById(stringsId).value.split(",");
-            document.getElementById(resultId).innerHTML = stringsArray.sort();
+        function alphabetize(stringsId, resultId) {
+            var textArea = document.getElementById(stringsId).value.replace(/\n/g, ",");
+            var stringsArray = textArea.split(",");
+            stringsArray.sort(function(a, b) {
+                return a.localeCompare(b, "en", {
+                    "sensitivity": "base"
+                });
+            });
+            document.getElementById(resultId).innerHTML = stringsArray;
         }
     </script>
 </body>
