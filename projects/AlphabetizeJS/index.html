@@ -33,17 +33,22 @@
     <hr>
 
     <textarea id="strings">Enter strings separated by newlines (delete me):</textarea><br><br>
-    <input type="submit" value="Alphabetize" onclick="alphabetize('strings', 'result');">
+    <input type="submit" value="Alphabetize (Newline Separated)" onclick="alphabetizeNewlines('strings', 'result');"><br><br>
+    <input type="submit" value="Alphabetize (Comma Separated)" onclick="alphabetizeCommas('strings', 'result');">
     <p id="result"></p>
 
     <hr>
     <p><a href="https://magarenzo.com">magarenzo.com</a></p>
 
     <script>
-        function alphabetize(stringsId, resultId) {
+        function alphabetizeNewlines(stringsId, resultId) {
             var stringsArray = document.getElementById(stringsId).value.split("\n");
-            var sortedStrings = stringsArray.sort().toString().replace(/,/g, ", ");
-            document.getElementById(resultId).innerHTML = sortedStrings;
+            document.getElementById(resultId).innerHTML = stringsArray.sort();
+        }
+
+        function alphabetizeCommas(stringsId, resultId) {
+            var stringsArray = document.getElementById(stringsId).value.split(",");
+            document.getElementById(resultId).innerHTML = stringsArray.sort();
         }
     </script>
 </body>
