@@ -5,7 +5,7 @@
     <title>AlphabetizeJS - Projects | magarenzo.com</title>
     <meta charset="UTF-8">
     <meta property="og:image" content="/images/headshot-square.jpg">
-    <meta name="description" content="Quickly alphabetize a list of strings">
+    <meta name="description" content="Quickly alphabetize a list of words">
     <meta name="keywords" content="programming, coding, development, engineering">
     <meta name="author" content="Michael A. Agarenzo">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1, maximum-scale=1">
@@ -20,7 +20,7 @@
             padding-right: 1em;
         }
         
-        #strings {
+        #words {
             width: 100%;
         }
     </style>
@@ -28,26 +28,27 @@
 
 <body>
     <h1>AlphabetizeJS</h1>
-    <p><em>Quickly alphabetize a list of strings</em></p>
+    <p><em>Quickly alphabetize a list of words</em></p>
     <p><iframe src="https://ghbtns.com/github-btn.html?user=magarenzo&repo=AlphabetizeJS&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe></p>
 
-    <textarea id="strings" placeholder="Enter strings to alphabetize:"></textarea><br><br>
-    <input type="submit" value="Alphabetize" onclick="alphabetize('strings', 'result');"><br><br>
+    <textarea id="words" placeholder="Enter words to alphabetize:"></textarea><br><br>
+    <input type="submit" value="Alphabetize" onclick="alphabetize('words', 'result');"><br><br>
     <p id="result"></p>
 
     <hr>
     <p><a href="https://magarenzo.com">magarenzo.com</a></p>
 
     <script>
-        function alphabetize(stringsId, resultId) {
-            var textArea = document.getElementById(stringsId).value.replace(/\n/g, ",");
-            var stringsArray = textArea.split(",");
-            stringsArray.sort(function(a, b) {
+        function alphabetize(wordsId, resultId) {
+            var textArea = document.getElementById(wordsId).value.replace(/\n/g, ",");
+            var wordsArray = textArea.split(",");
+            wordsArray.sort(function(a, b) {
                 return a.localeCompare(b, "en", {
                     "sensitivity": "base"
                 });
             });
-            document.getElementById(resultId).innerHTML = stringsArray;
+            var wordsString = wordsArray.toString().replace(/,/g, ", ");
+            document.getElementById(resultId).innerHTML = wordsString;
         }
     </script>
 </body>
