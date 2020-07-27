@@ -21,7 +21,9 @@ function repoDisplayer(id) {
         "Birds-Twitter-Bot",
         "Resume-Template",
         "Simple-Shift-Cipher",
-        "magarenzo"
+        "magarenzo",
+        "Poker-Hand-Simulation",
+        "Zipcode-Query"
     ];
 
     if (div) {
