@@ -16,6 +16,10 @@ function showDiv(id, changeText) {
 
     }
 
+    location.href = "#" + id;
+    var url = window.location.href;
+    window.history.pushState("", "", url.split("#")[0]);
+
     if (changeText) {
 
         var button = document.getElementById(id + "-button");

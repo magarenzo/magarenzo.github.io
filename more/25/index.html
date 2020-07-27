@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
         h1,
         h2 {
             color: pink;
@@ -33,7 +42,11 @@
         }
         
         .block {
-            box-shadow: 10px 10px 5px pink;
+            animation-name: fade-in;
+            animation-duration: 2s;
+            -moz-box-shadow: inset 0 0 20px #121212;
+            -webkit-box-shadow: inset 0 0 20px #121212;
+            box-shadow: inset 0 0 20px #121212, 5px 5px 5px pink;
         }
         
         #love {
@@ -100,7 +113,6 @@
             <div class="block">
                 <h2>Oh yeah! Your gift</h2>
                 <p>So, without further ado, <strong>click the button!</strong></p>
-                <button type="button" onclick="showDiv('gift', false);">820 S Matte Trek B &#128690;</button>
                 <div id="gift" class="closed" style="display: none;">
                     <p><em>Coming June 24th, 2020</em></p>
                     <p><img class="image-border" src="/more/25/images/bike-1.jpg" alt="Bike Photo 1" width="100%"></p>
@@ -111,6 +123,7 @@
                     <p><img class="image-border" src="/more/25/images/bike-6.jpg" alt="Bike Photo 6" width="100%"></p>
                     <p><img class="image-border" src="/more/25/images/bike-7.jpg" alt="Bike Photo 7" width="100%"></p>
                 </div>
+                <button type="button" onclick="showDiv('gift', false);">820 S Matte Trek B &#128690;</button>
             </div><br><br>
 
             <div class="block">
@@ -120,7 +133,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="/js/showDiv_1.0.js"></script>
+    <script type="text/javascript" src="/js/showDiv.js"></script>
     <script>
         var time = new Date().getTime();
         var product = 1000 * 3600 * 24;
