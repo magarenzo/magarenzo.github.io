@@ -1,6 +1,7 @@
 :root {
-    --primary: #162447;
-    --secondary: #e43f5a;
+    --primary: #393e46;
+    --secondary: #00adb5;
+    --background: #222831;
 }
 
 #menu-mobile {
@@ -43,7 +44,7 @@
     }
     #menu {
         display: none;
-        background-color: #121212;
+        background-color: var(--background);
     }
     #menu li {
         float: initial;

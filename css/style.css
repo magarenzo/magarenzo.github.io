@@ -1,6 +1,7 @@
 :root {
-    --primary: #162447;
-    --secondary: #e43f5a;
+    --primary: #393e46;
+    --secondary: #00adb5;
+    --background: #222831;
 }
 
 @keyframes fade-in {
@@ -13,7 +14,7 @@
 }
 
 body {
-    background-color: #121212;
+    background-color: var(--background);
     color: white;
     font-family: Verdana, "Geneva", sans-serif;
     margin-bottom: 100px;
@@ -74,18 +75,18 @@ td {
     padding: 1em;
     animation-name: fade-in;
     animation-duration: 2s;
-    -moz-box-shadow: inset 0 0 20px #121212;
-    -webkit-box-shadow: inset 0 0 20px #121212;
-    box-shadow: inset 0 0 20px #121212, 5px 5px 5px var(--secondary);
+    -moz-box-shadow: inset 0 0 20px var(--background);
+    -webkit-box-shadow: inset 0 0 20px var(--background);
+    box-shadow: inset 0 0 20px var(--background), 5px 5px 5px var(--secondary);
 }
 
 .block-table {
     background-color: var(--primary);
     animation-name: fade-in;
     animation-duration: 2s;
-    -moz-box-shadow: inset 0 0 20px #121212;
-    -webkit-box-shadow: inset 0 0 20px #121212;
-    box-shadow: inset 0 0 20px #121212, 5px 5px 5px var(--secondary);
+    -moz-box-shadow: inset 0 0 20px var(--background);
+    -webkit-box-shadow: inset 0 0 20px var(--background);
+    box-shadow: inset 0 0 20px var(--background), 5px 5px 5px var(--secondary);
 }
 
 .link-homepage {
