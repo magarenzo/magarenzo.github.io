@@ -15,3 +15,9 @@ if (document.referrer.includes("experience")) {
     changePage(event, "more");
 
 }
+
+/**
+ * Run Firebase analytics
+ */
+
+firebase.analytics();
