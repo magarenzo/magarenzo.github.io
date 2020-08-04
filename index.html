@@ -58,11 +58,9 @@
             <div id="home" class="section">
                 <h1>magarenzo.com</h1><br>
                 <div class="block">
-                    <p>Hi, I'm <strong>Michael</strong>, a Technical Consultant at UiPath with <strong>2+ years of experience in product engineering, developing and supporting proprietary software</strong> out of the New York City Metropolitan Area, and
+                    <p id="hero-banner-text">Hi, I'm <strong>Michael</strong>, a Technical Consultant at UiPath with <strong>2+ years of experience in product engineering, developing and supporting proprietary software</strong> out of the New York City Metropolitan Area, and
                         a <strong>Computer Science graduate</strong> of Adelphi University</p>
-                    <hr>
-                    <p>Check out <a class="link-homepage" onclick="changePage(event, 'experience');">experience</a> for where I've worked, my education and skills, <a class="link-homepage" onclick="changePage(event, 'projects');">projects</a> to see what
-                        I'm working on, and <a class="link-homepage" onclick="changePage(event, 'more');">more</a> for some fun extras</p>
+                    <p><img class="image-border" src="/images/hero-banner-city.jpg" alt="Photograph of New York City" width="100%"></p>
                 </div>
             </div>
 
@@ -259,7 +257,7 @@
                             <a href="/pdfs/certifications/RPA-Starter-Training.pdf" target="_blank">RPA Starter</a>
                         </li>
                     </ul>
-                </div><br>
+                </div>
             </div>
 
             <div id="projects" class="section">
@@ -423,6 +421,19 @@
         <script src="/js/toggleMenu.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+        <script>
+            firebase.initializeApp({
+                apiKey: "AIzaSyBS_h8sKsOllQfY7ziQkzMUNsh2dz0akOw",
+                authDomain: "magarenzo-com.firebaseapp.com",
+                databaseURL: "https://magarenzo-com.firebaseio.com",
+                projectId: "magarenzo-com",
+                storageBucket: "magarenzo-com.appspot.com",
+                messagingSenderId: "473158920186",
+                appId: "1:473158920186:web:cd929bda1eee1a893ba643",
+                measurementId: "G-4W9PTW5H04"
+            });
+            firebase.analytics();
+        </script>
 </body>
 
 </html>

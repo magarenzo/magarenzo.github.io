@@ -89,15 +89,6 @@ td {
     box-shadow: inset 0 0 20px var(--background), 5px 5px 5px var(--secondary);
 }
 
-.link-homepage {
-    color: var(--secondary);
-}
-
-.link-homepage:hover {
-    cursor: pointer;
-    color: white;
-}
-
 .closed {
     animation-name: fade-in;
     animation-duration: 2s;
