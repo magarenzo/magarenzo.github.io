@@ -137,6 +137,20 @@ td {
     border-bottom: 1px solid white;
 }
 
+#gist h1, h2 {
+    color: black;
+}
+
+#gist a {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+#gist a:hover {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
 .page-text {
     vertical-align: top;
 }
