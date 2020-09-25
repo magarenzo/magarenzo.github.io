@@ -14,7 +14,8 @@ a:hover {
     cursor: pointer;
 }
 
-.section {
+.section,
+.sub-section {
     display: none;
 }
 
