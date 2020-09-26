@@ -1,6 +1,7 @@
 :root {
-    --dark: #292b2c;
+    --dark: #343a40;
     --light: white;
+    --uipath: #FA4616;
 }
 
 body {
@@ -10,6 +11,19 @@ body {
 
 a:hover {
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--uipath);
+    border-radius: 5px;
 }
 
 .navbar-brand:hover {
@@ -25,12 +39,20 @@ a:hover {
     margin-left: 1em;
 }
 
-.image-border {
-    border: 1px solid var(--dark);
+.image-left {
+    padding-right: 1em;
 }
 
 .image-right {
     padding: 1em;
+}
+
+.image-mobile {
+    width: 25%;
+}
+
+.uipath {
+    color: var(--uipath) !important;
 }
 
 #home {
@@ -49,10 +71,6 @@ a:hover {
     padding-top: 2em;
 }
 
-#uipath {
-    color: #FA4616;
-}
-
 #footer {
     position: fixed;
     left: 0;
@@ -60,4 +78,17 @@ a:hover {
     width: 100%;
     background-color: var(--dark);
     padding-left: 1em;
+}
+
+@media (max-width: 960px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .image-mobile {
+        width: 50%;
+    }
 }
