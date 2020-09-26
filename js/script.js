@@ -61,7 +61,7 @@ function main() {
 }
 
 function error() {
-    $("#error").html("<h1>Error 404 - Page Not Found</h1><hr><br><p>Click <a href='https://magarenzo.com'>here</a> to go back to <strong>magarenzo.com</strong></p>");
+    $("#error").html("<h1>Error 404 - Page Not Found</h1><hr><br><p>Click <a href='https://magarenzo.com'>here</a> to go back to <strong>magarenzo.com</strong></p><p>Did you expect something to be here? <a href='mailto:contact@magarenzo.com' target='_blank'>Email me</a> to let me know!</p>");
     $("#copyright").html(divs["copyright"].html)
     $("#footer").html(divs["footer"].html);
 }
