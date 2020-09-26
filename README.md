@@ -8,9 +8,13 @@ I use [http-server](https://www.npmjs.com/package/http-server) via [Node.js](htt
 
 ## Dependencies
 
+* [Bootstrap](https://getbootstrap.com/)
+
 * [ChangePageJS](https://github.com/magarenzo/ChangePageJS)
 
 * [Firebase](https://firebase.google.com/)
+
+* [jQuery](https://jquery.com/)
 
 * [RepoDisplayerJS](https://github.com/magarenzo/RepoDisplayerJS)
 
