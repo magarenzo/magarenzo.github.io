@@ -1,17 +1,19 @@
 :root {
-    --background: #7f8aa1;
-    --text: white;
     --dark: #292b2c;
+    --light: white;
 }
 
 body {
     margin-bottom: 100px;
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--light);
 }
 
 a:hover {
     cursor: pointer;
+}
+
+.navbar-brand:hover {
+    cursor: default;
 }
 
 .section,
@@ -21,6 +23,14 @@ a:hover {
 
 .social+.social {
     margin-left: 1em;
+}
+
+.image-border {
+    border: 1px solid var(--dark);
+}
+
+.image-right {
+    padding: 1em;
 }
 
 #home {
@@ -39,11 +49,15 @@ a:hover {
     padding-top: 2em;
 }
 
+#uipath {
+    color: #FA4616;
+}
+
 #footer {
-    text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: var(--dark);
+    padding-left: 1em;
 }

@@ -17,29 +17,14 @@
     <link rel="stylesheet" href="/css/mobile.css">
 </head>
 
-<body onload="main();">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" onclick="changePage(event, 'home');">magarenzo.com</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" onclick="changePage(event, 'home');"><img alt="Home" src="/images/icon-house.png" width="25" height="25"> Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" onclick="changePage(event, 'experience');"><img alt="Resume" src="/images/icon-document.png" width="25" height="25"> Experience</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" onclick="changePage(event, 'projects');"><img alt="Laptop" src="/images/icon-computer.png" width="25" height="25"> Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" onclick="changePage(event, 'more');"><img alt="Hammer" src="/images/icon-hammer.png" width="25" height="25"> More</a>
-            </li>
-        </ul>
-    </nav>
-
+<body onload="main(); repoDisplayer('projects-fill');">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"></nav>
     <div id="wrapper">
         <div id="content">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
             <div id="home" class="section"></div>
-            <div id="experience" class="section"></div>            
+            <div id="experience" class="section"></div>
             <div id="education" class="sub-section experience-sub-section"></div>
             <div id="skills" class="sub-section experience-sub-section"></div>
             <div id="aws" class="sub-section experience-sub-section"></div>
@@ -49,16 +34,8 @@
             <div id="more" class="section"></div>
             <div id="leadership" class="sub-section more-sub-section"></div>
             <div id="ultimate" class="sub-section more-sub-section"></div>
-            <hr><br>
-            <p><em>&copy; 2017 Michael A. Agarenzo.</em></p>
-            <div id="footer">
-                <br>
-                <p>
-                    <a class="social" href="mailto:contact@magarenzo.com" target="_blank"><img alt="Email" src="/images/icon-mail.png" width="25" height="25"></a>
-                    <a class="social" href="https://github.com/magarenzo" target="_blank"><img alt="GitHub" src="/images/icon-github.png" width="25" height="25"></a>
-                    <a class="social" href="https://linkedin.com/in/magarenzo" target="_blank"><img alt="LinkedIn" src="/images/icon-linkedin.png" width="25" height="25"></a>
-                </p>
-            </div>
+            <div id="copyright">
+            <div id="footer"></div>
         </div>
     </div>
 
@@ -86,6 +63,7 @@
     <!-- Custom JS -->
     <script src="/js/script.js"></script>
     <script src="/js/changePage.js"></script>
+    <script src="/js/repoDisplayer.js"></script>
 </body>
 
 </html>
