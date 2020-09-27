@@ -74,7 +74,8 @@ a:hover {
 #experience,
 #projects,
 #projects-fill,
-#more {
+#more,
+#error {
     animation-name: fade-in;
     animation-duration: 2s;
 }
