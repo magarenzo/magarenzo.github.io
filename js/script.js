@@ -86,7 +86,6 @@ function changePage(event, page) {
     for (var pageSubSection = 0; pageSubSection < pageSubSections.length; pageSubSection++) {
         pageSubSections[pageSubSection].style.display = "block";
     }
-
     navLinks = document.getElementsByClassName("nav-link");
     for (var navLink in navLinks) {
         for (var navLinkClass in navLinks[navLink].classList) {
