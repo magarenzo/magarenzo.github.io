@@ -137,8 +137,7 @@ function repoDisplayer(id) {
             for (var key in jsonObject) {
                 if (jsonObject[key].name &&
                     jsonObject[key].html_url &&
-                    jsonObject[key].description &&
-                    jsonObject[key].language) {
+                    jsonObject[key].description) {
                     var name = JSON.stringify(jsonObject[key].name).split('"').join("");
                     var language = JSON.stringify(jsonObject[key].language).split('"').join("");
                     if (!excludedProjects.includes(name)) {
@@ -147,6 +146,8 @@ function repoDisplayer(id) {
                         var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
                         if (jsonObject[key].language) {
                             html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
+                        } else {
+                            html += " " + "<img alt='Official logo for UiPath' src='/images/logo-uipath-small.png' width='25' height='25'> " + description;
                         }
                         div.innerHTML += html + "</p>";
                     }
