@@ -147,7 +147,7 @@ function repoDisplayer(id) {
                         if (jsonObject[key].language) {
                             html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
                         } else {
-                            html += " " + "<img alt='Official logo for UiPath' src='/images/logo-uipath-small.png' width='25' height='25'> " + description;
+                            html += " " + "<img alt='Icon for VB' src='/images/icon-VB.png' width='25' height='25'> " + description;
                         }
                         div.innerHTML += html + "</p>";
                     }
