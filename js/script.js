@@ -12,7 +12,7 @@ const divs = {
         "html": "<h1>magarenzo.com</h1><hr><br><img class='image-left image-mobile' alt='Professional headshot of Michael A. Agarenzo' src='/images/headshot-square.jpg' align='left'><p>Hi &#128075; I'm <strong>Michael</strong>, a <span class='uipath'>Technical Advisor at UiPath</span> with <strong>2+ years of experience creating solutions in product engineering</strong></p><p><strong>I develop, support, and consult on enterprise software</strong> in NYC, and am a Computer Science graduate of Adelphi University</p><p>Explore to get to know me!</p>"
     },
     "copyright": {
-        "html": "<br><hr><p><em>&copy; 2017-2020 Michael A. Agarenzo.</em></p>"
+        "html": "<p><em>&copy; 2017-2020 Michael A. Agarenzo.</em></p>"
     },
     "footer": {
         "html": "<br><p><a class='social' href='mailto:contact@magarenzo.com' target='_blank'><img alt='Email' src='/images/icon-mail.png' width='25' height='25'></a><a class='social' href='https://github.com/magarenzo' target='_blank'><img alt='GitHub' src='/images/icon-github.png' width='25' height='25'></a><a class='social' href='https://linkedin.com/in/magarenzo' target='_blank'><img alt='LinkedIn' src='/images/icon-linkedin.png' width='25' height='25'></a></p>"
