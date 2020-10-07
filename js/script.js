@@ -3,7 +3,7 @@ const divs = {
         "html": "<div id='content'></div>"
     },
     "content": {
-        "html": "<p>&nbsp;</p><p>&nbsp;</p><div id='home' class='section'></div><div id='experience' class='section'></div><div id='education' class='sub-section experience-sub-section'></div><div id='skills' class='sub-section experience-sub-section'></div><div id='aws' class='sub-section experience-sub-section'></div><div id='certs' class='sub-section experience-sub-section'></div><div id='projects' class='section'></div><div id='projects-fill' class='sub-section projects-sub-section'></div><div id='more' class='section'></div><div id='leadership' class='sub-section more-sub-section'></div><div id='ultimate' class='sub-section more-sub-section'></div><div id='copyright'></div><div id='footer'></div>"
+        "html": "<p>&nbsp;</p><p>&nbsp;</p><div id='home' class='section'></div><div id='experience' class='section'></div><div id='education' class='sub-section experience-sub-section'></div><div id='skills' class='sub-section experience-sub-section'></div><div id='aws' class='sub-section experience-sub-section'></div><div id='certs' class='sub-section experience-sub-section'></div><div id='projects' class='section'></div><div id='projects-fill' class='sub-section projects-sub-section'></div><div id='projects-fill-2' class='sub-section projects-sub-section'></div><div id='more' class='section'></div><div id='leadership' class='sub-section more-sub-section'></div><div id='ultimate' class='sub-section more-sub-section'></div><div id='copyright'></div><div id='footer'></div>"
     },
     "nav": {
         "html": "<a class='navbar-brand'><img alt='Professional headshot of Michael A. Agarenzo' src='/images/headshot-circle.png' width='50' height='50'></a><button id='button-toggle' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-div' aria-controls='nav-div' aria-expanded='true' aria-label='Toggle Nav'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='nav-div'><ul class='navbar-nav mr-auto'><li class='nav-item'><a id='link-home' class='nav-link uipath' onclick='changePage(event, \"home\");'><img alt='Home' src='/images/icon-house.png' width='25' height='25'> Home</a></li><li class='nav-item'><a id='link-experience' class='nav-link' onclick='changePage(event, \"experience\");'><img alt='Resume' src='/images/icon-document.png' width='25' height='25'> Experience</a></li><li class='nav-item'><a id='link-projects' class='nav-link' onclick='changePage(event, \"projects\");'><img alt='Laptop' src='/images/icon-computer.png' width='25' height='25'> Projects</a></li><li class='nav-item'><a id='link-more' class='nav-link' onclick='changePage(event, \"more\");'><img alt='Hammer' src='/images/icon-hammer.png' width='25' height='25'> More</a></li></ul></div>"
@@ -126,6 +126,43 @@ function repoDisplayer(id) {
         "Zipcode-Query"
     ];
     const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    const div = document.getElementById(id);
+    if (div) {
+        fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
+            if (response.status != 200) {
+                div.innerHTML += errorString;
+            }
+            return response.json()
+        }).then((jsonObject) => {
+            for (var key in jsonObject) {
+                if (jsonObject[key].name &&
+                    jsonObject[key].html_url &&
+                    jsonObject[key].description) {
+                    var name = JSON.stringify(jsonObject[key].name).split('"').join("");
+                    var language = JSON.stringify(jsonObject[key].language).split('"').join("");
+                    if (!excludedProjects.includes(name)) {
+                        var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
+                        var description = JSON.stringify(jsonObject[key].description).split('"').join("");
+                        var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
+                        if (jsonObject[key].language) {
+                            html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
+                        } else {
+                            html += " " + "<img alt='Icon for VB' src='/images/icon-VB.png' width='25' height='25'> " + description;
+                        }
+                        div.innerHTML += html + "</p>";
+                    }
+                }
+            }
+        }).catch(function() {
+            div.innerHTML += errorString;
+        });
+    }
+}
+
+function repoDisplayerTwo(id) {
+    const profileName = "SygWave";
+    const excludedProjects = [];
+    const errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub team's profile</p>";
     const div = document.getElementById(id);
     if (div) {
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
