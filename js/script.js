@@ -108,23 +108,7 @@ function changePage(event, page) {
 
 function repoDisplayer(id) {
     const profileName = "magarenzo";
-    const excludedProjects = [
-        "Different-and-Unordered-Combinations",
-        "Ultimate-and-Lacrosse-Study",
-        "Grading-System",
-        "Incident-System",
-        "METAR-Bot",
-        "Simple-RSA-Encryptions",
-        "Stack-Palindrome",
-        "GitHub-Webhooks-Test",
-        "Minimalist-GroupMe-Bot",
-        "Birds-Twitter-Bot",
-        "Resume-Template",
-        "Simple-Shift-Cipher",
-        "magarenzo",
-        "Poker-Hand-Simulation",
-        "Zipcode-Query"
-    ];
+    const excludedProjects = ["Different-and-Unordered-Combinations", "Ultimate-and-Lacrosse-Study", "Grading-System", "Incident-System", "METAR-Bot", "Simple-RSA-Encryptions", "Stack-Palindrome", "GitHub-Webhooks-Test", "Minimalist-GroupMe-Bot", "Birds-Twitter-Bot", "Resume-Template", "Simple-Shift-Cipher", "magarenzo", "Poker-Hand-Simulation", "Zipcode-Query"];
     const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
     const div = document.getElementById(id);
     if (div) {
@@ -161,7 +145,7 @@ function repoDisplayer(id) {
 
 function repoDisplayerTwo(id) {
     const profileName = "SygWave";
-    const excludedProjects = [];
+    const excludedProjects = ["sygwave.github.io"];
     const errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub team's profile</p>";
     const div = document.getElementById(id);
     if (div) {
