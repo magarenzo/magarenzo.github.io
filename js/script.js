@@ -164,7 +164,7 @@ function repoDisplayerTwo(id) {
                     if (!excludedProjects.includes(name)) {
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
-                        var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
+                        var html = "<hr><p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
                         if (jsonObject[key].language) {
                             html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
                         } else {
