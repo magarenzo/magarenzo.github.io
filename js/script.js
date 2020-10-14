@@ -1,3 +1,4 @@
+const blank = "_blank";
 const divs = {
     "wrapper": {
         "html": "<div id='content'></div>"
@@ -109,12 +110,19 @@ function changePage(event, page) {
 function repoDisplayer(id) {
     const profileName = "magarenzo";
     const excludedProjects = ["Different-and-Unordered-Combinations", "Ultimate-and-Lacrosse-Study", "Grading-System", "Incident-System", "METAR-Bot", "Simple-RSA-Encryptions", "Stack-Palindrome", "GitHub-Webhooks-Test", "Minimalist-GroupMe-Bot", "Birds-Twitter-Bot", "Resume-Template", "Simple-Shift-Cipher", "magarenzo", "Poker-Hand-Simulation", "Zipcode-Query"];
-    const errorString = "<p>Check out all of my projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on my GitHub profile</p>";
+    var error = document.createElement("p");
+    error.append("Check out all of my projects ");
+    var errorAnchor = document.createElement("a");
+    errorAnchor.innerText = "here";
+    errorAnchor.href = "https://github.com/" + profileName + "?tab=repositories";
+    errorAnchor.target = blank;
+    error.append(errorAnchor);
+    error.append(" on my GitHub profile");
     const div = document.getElementById(id);
     if (div) {
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
             if (response.status != 200) {
-                div.innerHTML += errorString;
+                div.append(error);
             }
             return response.json()
         }).then((jsonObject) => {
@@ -127,18 +135,31 @@ function repoDisplayer(id) {
                     if (!excludedProjects.includes(name)) {
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
-                        var html = "<p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
+                        var anchor = document.createElement("a");
+                        anchor.innerText = name;
+                        anchor.href = url;
+                        anchor.target = blank;
+                        var paragraph = document.createElement("p");
+                        paragraph.append(anchor);
+                        paragraph.append(document.createElement("br"));
+                        var image = document.createElement("img");
                         if (jsonObject[key].language) {
-                            html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
+                            image.alt = "Icon for " + language;
+                            image.src = "/images/icon-" + language + ".png";
                         } else {
-                            html += " " + "<img alt='Icon for VB' src='/images/icon-VB.png' width='25' height='25'> " + description;
+                            image.alt = "Icon for VB";
+                            image.src = "/images/icon-VB.png";
                         }
-                        div.innerHTML += html + "</p>";
+                        image.width = "25";
+                        image.height = "25";
+                        paragraph.append(image);
+                        paragraph.append(" " + description);
+                        div.append(paragraph);
                     }
                 }
             }
         }).catch(function() {
-            div.innerHTML += errorString;
+            div.append(error);
         });
     }
 }
@@ -146,12 +167,19 @@ function repoDisplayer(id) {
 function repoDisplayerTwo(id) {
     const profileName = "SygWave";
     const excludedProjects = ["sygwave.github.io"];
-    const errorString = "<p>Check out all of our projects <a href='https://github.com/" + profileName + "?tab=repositories' target='_blank'>here</a> on our GitHub team's profile</p>";
+    var error = document.createElement("p");
+    error.append("Check out all of our projects ");
+    var errorAnchor = document.createElement("a");
+    errorAnchor.innerText = "here";
+    errorAnchor.href = "https://github.com/" + profileName + "?tab=repositories";
+    errorAnchor.target = blank;
+    error.append(errorAnchor);
+    error.append(" on our GitHub profile");
     const div = document.getElementById(id);
     if (div) {
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
             if (response.status != 200) {
-                div.innerHTML += errorString;
+                div.append(error);
             }
             return response.json()
         }).then((jsonObject) => {
@@ -164,18 +192,29 @@ function repoDisplayerTwo(id) {
                     if (!excludedProjects.includes(name)) {
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
-                        var html = "<hr><p><a href='" + url + "' target='_blank'>" + name + "</a><br>";
+                        div.append(document.createElement("hr"));
+                        var anchor = document.createElement("a");
+                        anchor.innerText = name;
+                        anchor.href = url;
+                        anchor.target = blank;
+                        var paragraph = document.createElement("p");
+                        paragraph.append(anchor);
+                        paragraph.append(document.createElement("br"));
+                        var image = document.createElement("img");
                         if (jsonObject[key].language) {
-                            html += " " + "<img alt='Icon for " + language + "' src='/images/icon-" + language + ".png' width='25' height'25'> " + description;
-                        } else {
-                            html += " " + "<img alt='Icon for VB' src='/images/icon-VB.png' width='25' height='25'> " + description;
+                            image.alt = "Icon for " + language;
+                            image.src = "/images/icon-" + language + ".png";
                         }
-                        div.innerHTML += html + "</p>";
+                        image.width = "25";
+                        image.height = "25";
+                        paragraph.append(image);
+                        paragraph.append(" " + description);
+                        div.append(paragraph);
                     }
                 }
             }
         }).catch(function() {
-            div.innerHTML += errorString;
+            div.append(error);
         });
     }
 }
