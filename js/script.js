@@ -158,6 +158,7 @@ function repoDisplayer(id) {
                     }
                 }
             }
+            div.append(document.createElement("hr"));
         }).catch(function() {
             div.append(error);
         });
@@ -192,7 +193,6 @@ function repoDisplayerTwo(id) {
                     if (!excludedProjects.includes(name)) {
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
-                        div.append(document.createElement("hr"));
                         var anchor = document.createElement("a");
                         anchor.innerText = name;
                         anchor.href = url;
