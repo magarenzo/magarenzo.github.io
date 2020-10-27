@@ -158,7 +158,6 @@ function repoDisplayer(id) {
                     }
                 }
             }
-            div.append(document.createElement("hr"));
         }).catch(function() {
             div.append(error);
         });
@@ -194,9 +193,13 @@ function repoDisplayerTwo(id) {
                         var url = JSON.stringify(jsonObject[key].html_url).split('"').join("");
                         var description = JSON.stringify(jsonObject[key].description).split('"').join("");
                         var anchor = document.createElement("a");
-                        anchor.innerText = name;
-                        anchor.href = url;
                         anchor.target = blank;
+                        anchor.innerText = name;
+                        if (jsonObject[key].homepage) {
+                            anchor.href = JSON.stringify(jsonObject[key].homepage).split('"').join("");
+                        } else {
+                            anchor.href = url;
+                        }
                         var paragraph = document.createElement("p");
                         paragraph.append(anchor);
                         paragraph.append(document.createElement("br"));
@@ -213,7 +216,6 @@ function repoDisplayerTwo(id) {
                     }
                 }
             }
-            div.append(document.createElement("hr"));
             var uipathParagraph = document.createElement("p");
             var uipathAnchor = document.createElement("a");
             uipathAnchor.innerText = "Workflow Analyzer Command Line";
