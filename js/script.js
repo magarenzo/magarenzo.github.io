@@ -218,7 +218,7 @@ function repoDisplayerTwo(id) {
             }
             var uipathParagraph = document.createElement("p");
             var uipathAnchor = document.createElement("a");
-            uipathAnchor.innerText = "Workflow Analyzer Command Line";
+            uipathAnchor.innerText = "Workflow Analyzer Command Line Scripts";
             uipathAnchor.href = "https://connect.uipath.com/marketplace/components/uipath-command-line-workflow-analyzer";
             uipathAnchor.target = blank;
             uipathParagraph.append(uipathAnchor);
@@ -229,7 +229,7 @@ function repoDisplayerTwo(id) {
             uipathImage.width = "25";
             uipathImage.height = "25";
             uipathParagraph.append(uipathImage);
-            uipathParagraph.append(" Run UiPath Studio's Workflow Analyzer from command line and pipe its output to file");
+            uipathParagraph.append(" Use scripts to run UiPath Studio's Workflow Analyzer from command line and pipe its output to file");
             div.append(uipathParagraph);
         }).catch(function() {
             div.append(error);
