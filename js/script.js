@@ -218,18 +218,18 @@ function repoDisplayerTwo(id) {
             }
             var uipathParagraph = document.createElement("p");
             var uipathAnchor = document.createElement("a");
-            uipathAnchor.innerText = "Workflow Analyzer Command Line Scripts";
+            uipathAnchor.innerText = "Workflow Analyzer CLI Script";
             uipathAnchor.href = "https://connect.uipath.com/marketplace/components/uipath-command-line-workflow-analyzer";
             uipathAnchor.target = blank;
             uipathParagraph.append(uipathAnchor);
             uipathParagraph.append(document.createElement("br"));
             var uipathImage = document.createElement("img");
-            uipathImage.alt = "Icon for Batchfile";
-            uipathImage.src = "/images/icon-Batchfile.png";
+            uipathImage.alt = "Icon for PowerShell";
+            uipathImage.src = "/images/icon-PowerShell.png";
             uipathImage.width = "25";
             uipathImage.height = "25";
             uipathParagraph.append(uipathImage);
-            uipathParagraph.append(" Use scripts to run UiPath Studio's Workflow Analyzer from command line and pipe its output to file");
+            uipathParagraph.append(" Run UiPath Studio's Workflow Analyzer via command line and pipe results to file");
             div.append(uipathParagraph);
         }).catch(function() {
             div.append(error);
