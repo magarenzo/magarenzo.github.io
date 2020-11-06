@@ -166,7 +166,7 @@ function repoDisplayer(id) {
 
 function repoDisplayerTwo(id) {
     const profileName = "SygWave";
-    const excludedProjects = ["sygwave.github.io"];
+    const excludedProjects = [];
     var error = document.createElement("p");
     error.append("Check out all of SygWave's projects ");
     var errorAnchor = document.createElement("a");
@@ -204,7 +204,10 @@ function repoDisplayerTwo(id) {
                         paragraph.append(anchor);
                         paragraph.append(document.createElement("br"));
                         var image = document.createElement("img");
-                        if (jsonObject[key].language) {
+                        if (jsonObject[key].name == "sygwave.github.io") {
+                            image.alt = "Icon for HTML";
+                            image.src = "/images/icon-HTML.png";
+                        } else if (jsonObject[key].language) {
                             image.alt = "Icon for " + language;
                             image.src = "/images/icon-" + language + ".png";
                         }
