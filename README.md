@@ -1,6 +1,8 @@
 # magarenzo.github.io
 
-Source for my current static website displayed at [magarenzo.com](https://magarenzo.com)
+Source for my current static website
+
+[magarenzo.com](https://magarenzo.com)
 
 ## Development
 
