@@ -168,13 +168,13 @@ function repoDisplayerTwo(id) {
     const profileName = "SygWave";
     const excludedProjects = ["sygwave.github.io"];
     var error = document.createElement("p");
-    error.append("Check out all of our projects ");
+    error.append("Check out all of SygWave's projects ");
     var errorAnchor = document.createElement("a");
     errorAnchor.innerText = "here";
-    errorAnchor.href = "https://github.com/" + profileName + "?tab=repositories";
+    errorAnchor.href = "https://sygwave.github.io";
     errorAnchor.target = blank;
     error.append(errorAnchor);
-    error.append(" on our GitHub profile");
+    error.append(" on our website");
     const div = document.getElementById(id);
     if (div) {
         fetch("https://api.github.com/users/" + profileName + "/repos").then((response) => {
