@@ -143,7 +143,10 @@ function repoDisplayer(id) {
                         paragraph.append(anchor);
                         paragraph.append(document.createElement("br"));
                         var image = document.createElement("img");
-                        if (jsonObject[key].language) {
+                        if (jsonObject[key].name == "magarenzo.github.io") {
+                            image.alt = "Icon for HTML";
+                            image.src = "/images/icon-HTML.png";
+                        } else if (jsonObject[key].language) {
                             image.alt = "Icon for " + language;
                             image.src = "/images/icon-" + language + ".png";
                         } else {
