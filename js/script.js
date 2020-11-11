@@ -68,7 +68,7 @@ function error() {
     $("#nav").html("<a class='navbar-brand'><img alt='Professional headshot of Michael A. Agarenzo' src='/images/headshot-circle.png' width='50' height='50'></a><button id='button-toggle' class='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-div' aria-controls='nav-div' aria-expanded='true' aria-label='Toggle Nav'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='nav-div'><ul class='navbar-nav mr-auto'><li class='nav-item'><a id='link-home' class='nav-link' href='https://magarenzo.com'><img alt='Home' src='/images/icon-house.png' width='25' height='25'> Home</a></li></ul></div>");
     $("#wrapper").html(divs["wrapper"].html);
     $("#content").html("<p>&nbsp;</p><p>&nbsp;</p><div id='error'></div><div id='copyright'></div><div id='footer'></div>");
-    $("#error").html("<h1>Error 404 - Page Not Found</h1><hr><br><p>Did you expect something to be here?</p><p>Let me know <a href='mailto:contact@magarenzo.com' target='_blank'>by reaching out <img alt='Email' src='/images/icon-mail-blue.png' width='25' height='25'></a></p>");
+    $("#error").html("<h1>Error 404 - Page Not Found</h1><hr><p>Did you expect something to be here?</p><p>Let me know <a href='mailto:contact@magarenzo.com' target='_blank'>by reaching out <img alt='Email' src='/images/icon-mail-blue.png' width='25' height='25'></a></p>");
     $("#copyright").html(divs["copyright"].html);
     $("#footer").html(divs["footer"].html);
 }
