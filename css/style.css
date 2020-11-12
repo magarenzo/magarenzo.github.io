@@ -69,7 +69,7 @@ a:hover {
 }
 
 #content {
-    padding-top: 2em;
+    padding-top: 6em;
 }
 
 #footer {
@@ -95,9 +95,6 @@ a:hover {
     html,
     body {
         overflow-x: hidden;
-    }
-    h1 {
-        font-size: 32px;
     }
     .image-mobile {
         width: 50%;
