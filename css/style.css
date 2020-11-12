@@ -2,6 +2,7 @@
     --dark: #343a40;
     --light: white;
     --uipath: #FA4616;
+    --link: #007bff;
 }
 
 body {
@@ -80,9 +81,14 @@ a:hover {
     padding-left: 1em;
 }
 
-#teams {
-    clear: both;
-    padding-top: 1em;
+#part-time-a,
+#teams-a {
+    color: var(--link);
+}
+
+#part-time-div,
+#teams-div {
+    display: none;
 }
 
 @media (max-width: 960px) {
@@ -95,8 +101,5 @@ a:hover {
     }
     .image-mobile {
         width: 50%;
-    }
-    #teams {
-        padding-top: 0em;
     }
 }
