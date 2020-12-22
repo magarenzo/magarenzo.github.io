@@ -227,7 +227,7 @@ function repoDisplayerTwo(id) {
             var uipathParagraph = document.createElement("p");
             var uipathAnchor = document.createElement("a");
             uipathAnchor.innerText = "Workflow Analyzer CLI Script";
-            uipathAnchor.href = "https://connect.uipath.com/marketplace/components/uipath-command-line-workflow-analyzer";
+            uipathAnchor.href = "https://marketplace.uipath.com/listings/uipath-command-line-workflow-analyzer";
             uipathAnchor.target = blank;
             uipathParagraph.append(uipathAnchor);
             uipathParagraph.append(document.createElement("br"));
