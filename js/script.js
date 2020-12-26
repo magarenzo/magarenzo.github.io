@@ -111,7 +111,7 @@ function showDiv(id) {
 
 function repoDisplayer(id) {
     const profileName = "magarenzo";
-    const excludedProjects = ["Different-and-Unordered-Combinations", "Ultimate-and-Lacrosse-Study", "Grading-System", "Incident-System", "METAR-Bot", "Simple-RSA-Encryptions", "Stack-Palindrome", "GitHub-Webhooks-Test", "Minimalist-GroupMe-Bot", "Birds-Twitter-Bot", "Resume-Template", "Simple-Shift-Cipher", "magarenzo", "Poker-Hand-Simulation", "Zipcode-Query"];
+    const excludedProjects = ["Different-and-Unordered-Combinations", "Ultimate-and-Lacrosse-Study", "Grading-System", "Incident-System", "METAR-Bot", "Simple-RSA-Encryptions", "Stack-Palindrome", "GitHub-Webhooks-Test", "Minimalist-GroupMe-Bot", "Birdz-Twitter-Bot", "Resume-Template", "Simple-Shift-Cipher", "magarenzo", "Poker-Hand-Simulation", "Zipcode-Query"];
     var error = document.createElement("p");
     error.append("Check out all of my projects ");
     var errorAnchor = document.createElement("a");
