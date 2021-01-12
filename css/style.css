@@ -1,8 +1,12 @@
 :root {
-    --dark: #343a40;
+    --dark: #1B345C;
     --light: white;
     --uipath: #FA4616;
     --link: #007bff;
+}
+
+.bg-custom-dark {
+    background-color: var(--dark);
 }
 
 body {
