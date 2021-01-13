@@ -5,7 +5,7 @@
     --link: #007bff;
 }
 
-.bg-custom-dark {
+.bg-custom {
     background-color: var(--dark);
 }
 
